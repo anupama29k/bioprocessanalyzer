@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.pyo
+gem_sessions.csv
+.venv/
+.DS_Store

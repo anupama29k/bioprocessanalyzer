@@ -1,0 +1,223 @@
+GEM REACTION ID CROSS-VALIDATION REPORT
+========================================
+Date: 2026-04-10
+Validated by: BiGG API + BioModels SBML parsing
+Scope: Three specific reaction IDs flagged in adversarial review
+
+
+1. iYO844 (B. subtilis) — CYTBD
+=====================================
+
+  gem_map.py currently uses:  CYTBD
+  BiGG API result:            NOT FOUND in iYO844
+
+  Tested IDs:
+    CYTBD       NOT FOUND
+    CYTBDpp     NOT FOUND
+    CYTBD2pp    NOT FOUND
+
+  Actual terminal oxidase reactions in iYO844 (BiGG):
+    CYTB_B2     Menaquinol oxidase (7:1 protons)   — menaquinol:O2 oxidoreductase
+    CYTB_B3     Menaquinol oxidase (7:2 protons)   — menaquinol:O2 oxidoreductase
+    CYOO3       Cytochrome c oxidase (He, 2)       — cytochrome c:O2 oxidoreductase
+    CYOR3m      Cytochrome c reductase (menaquinol 7, 3 protons)
+
+  FINDING: CYTBD does not exist in iYO844. B. subtilis uses menaquinone-based
+  electron transport (not ubiquinone like E. coli). The correct terminal oxidase
+  reactions are:
+    - CYTB_B2 / CYTB_B3 for the cytochrome bd menaquinol oxidase (cydAB operon)
+    - CYOO3 for the cytochrome c aa3-type oxidase (qoxABCD operon)
+
+  RECOMMENDATION: Replace CYTBD with CYTB_B2 in B. subtilis map. CYTB_B2 is the
+  primary terminal oxidase under aerobic growth conditions. CYOO3 is the secondary
+  (cytochrome c pathway). Both are valid but CYTB_B2 is more directly analogous
+  to the "CYTBD" function we're mapping (direct O2 consumption).
+
+
+2. iMM904 (S. cerevisiae) — CYTBD
+=====================================
+
+  gem_map.py currently uses:  CYTBD (for DO parameter)
+                              CYTBD (for O2 parameter)
+  BiGG API result:            NOT FOUND in iMM904
+
+  Tested IDs:
+    CYTBD       NOT FOUND
+    CYTBDpp     NOT FOUND
+    CYTBD2      NOT FOUND
+    CYTBDm      NOT FOUND
+
+  Actual cytochrome c oxidase in iMM904 (BiGG):
+    CYOOm       Cytochrome c oxidase, mitochondrial  — FOUND
+    CYOR_u6m    Ubiquinol-6 cytochrome c reductase   — FOUND (Complex III)
+
+  FINDING: CYTBD does not exist in iMM904. S. cerevisiae is a eukaryote and uses
+  the mitochondrial electron transport chain with cytochrome c oxidase (Complex IV),
+  not the bacterial cytochrome bd oxidase. The correct reaction is:
+    - CYOOm = Cytochrome c oxidase, mitochondrial (Complex IV)
+    - CYOR_u6m = Complex III (ubiquinol:cytochrome c reductase) — upstream
+
+  RECOMMENDATION: Replace CYTBD with CYOOm in S. cerevisiae map. CYOOm is the
+  terminal oxidase (Complex IV) that directly consumes O2. This is the eukaryotic
+  equivalent of what CYTBD does in prokaryotes.
+
+  NOTE: This is the same class of correction as Fix 1 (CYTBD -> COXE for mammalian).
+  iMM904 uses "CYOOm" as the BiGG ID for Complex IV, while mammalian models use
+  "COXE". Different naming conventions in different model reconstructions for the
+  same biological function.
+
+
+3. iMT1026v3 (P. pastoris) — AOX
+=====================================
+
+  gem_map.py currently uses:  AOX (for methanol parameter)
+                              AOX (for O2 parameter)
+  BiGG API:                   MODEL NOT IN BiGG
+
+  Source: BioModels MODEL1612130000 (iMT1026 v3 SBML file)
+  File parsed: MODEL1612130000_url.xml (4.59 MB, 2237 reactions)
+
+  Actual reaction ID in iMT1026v3:
+    _761dcd9b-f0f4-4a06-b1e9-2d1a6551b94a
+    Name: "Alcohol oxidase"
+    Compartment: peroxisome (_x suffix on metabolites)
+    Species: M_o2_x + M_meoh_x -> M_h2o2_x + M_fald_x
+    (O2 + methanol -> H2O2 + formaldehyde, in peroxisome)
+
+  Other methanol pathway reactions found:
+    Methanol extracellular transport      (uptake)
+    Methanol peroxisomal transport        (to peroxisome)
+    Formaldehyde dehydrogenase            (FLD, dissimilation)
+    Formaldehyde glutathione ligase       (spontaneous)
+    Formate dehydrogenase                 (FDH, CO2 release)
+    Methanol exchange                     (boundary)
+
+  Terminal oxidase in iMT1026v3:
+    ca2f164e-4a5a-4935-932c-c20b2773caa6
+    Name: "cytochrome c oxidase, mitochondrial"
+    Also found: "Alternative oxidase" (e988953e...)
+
+  FINDING: iMT1026v3 uses UUID-style reaction IDs (not BiGG-style short names).
+  There is no clean short ID like "AOX" in the model — it uses a full UUID.
+  The reaction stoichiometry confirms: O2 + methanol -> H2O2 + formaldehyde
+  in the peroxisome, which is exactly what our "AOX" mapping represents.
+
+  RECOMMENDATION: Keep "AOX" as-is in gem_map.py. This is a human-readable
+  shorthand for the alcohol oxidase reaction. The actual SBML model uses UUIDs
+  which are not usable as human-readable identifiers. "AOX" correctly represents
+  the AOX1/AOX2 gene products and is the standard abbreviation in all P. pastoris
+  literature (Cregg et al., Cos et al., Looser et al.). The reaction_type field
+  already classifies it as "metabolic" which is correct.
+
+  For the O2 parameter, gem_map.py also uses "AOX" — this is acceptable because
+  the AOX reaction IS the primary O2 consumer during methanol phase. However,
+  the terminal oxidase for general respiration should ideally reference the
+  cytochrome c oxidase (UUID: ca2f164e...). Since UUIDs are impractical,
+  "CYOOm" (BiGG convention for yeast cytochrome c oxidase) would be the best
+  human-readable ID, consistent with the S. cerevisiae fix above.
+
+
+SUMMARY
+=======
+
+  Model       Parameter   Current ID   Correct ID   Status
+  ----------  ---------   ----------   ----------   ------
+  iYO844      DO          CYTBD        CYTB_B2      NEEDS FIX
+  iYO844      O2          CYTBD        CYTB_B2      NEEDS FIX
+  iMM904      DO          CYTBD        CYOOm        NEEDS FIX
+  iMM904      O2          CYTBD        CYOOm        NEEDS FIX
+  iMT1026v3   methanol    AOX          AOX           OK (shorthand for UUID)
+  iMT1026v3   O2          AOX          AOX/CYOOm    OPTIONAL (AOX is primary O2 consumer)
+
+  Total: 4 corrections needed, 1 optional refinement, 1 confirmed correct.
+
+  NOTE: gem_map.py should NOT be modified until these findings are reviewed.
+  This is a report-only validation.
+
+
+CHANGELOG — REACTION ID CORRECTIONS
+=====================================
+
+ROUND 1 (2026-04-10) — Mammalian CYTBD -> COXE
+  Scope:   6 base mammalian maps + 6 derived strain maps (12 total)
+  Maps:    CHO, CHO-S, HEK293, NS0, Sp2/0, BHK-21
+           CHO|CHO-K1, CHO|CHO-DG44, CHO|CHO-GS, CHO|CHO-S
+           HEK293|HEK293T, HEK293|HEK293F
+  Change:  CYTBD -> COXE for DO and O2 parameters
+  Reason:  CYTBD (cytochrome bd ubiquinol oxidase) is prokaryotic.
+           Mammalian cells use cytochrome c oxidase (Complex IV).
+           COXE is the standard BiGG ID for mammalian Complex IV.
+  Method:  Post-processing loop in gem_map.py runs before strain building.
+
+ROUND 2 (2026-04-10) — reaction_type field added
+  Scope:   All 10 base maps, inherited by all 16 strain maps (26 total)
+  Change:  Added "reaction_type" field to every parameter entry.
+           4 categories: metabolic (185), custom_exchange (52),
+           control_placeholder (52), biological_state (26).
+  Reason:  Distinguish real GEM stoichiometric reactions from custom sinks,
+           process engineering placeholders, and biological state indicators.
+  Method:  _REACTION_TYPE_MAP lookup applied in post-processing.
+
+ROUND 3 (2026-04-10) — BiGG API cross-validation fixes
+  Validated against: BiGG API (iYO844, iMM904), BioModels SBML (iMT1026v3)
+
+  Fix 5 — iYO844 (B. subtilis): CYTBD -> CYTB_B2
+    Parameters:  DO, O2
+    Reason:      CYTBD does not exist in iYO844 (confirmed via BiGG API).
+                 B. subtilis uses menaquinol-based electron transport.
+                 CYTB_B2 = menaquinol:O2 oxidoreductase (cydAB operon).
+                 Verified: BiGG /api/v2/models/iYO844/reactions/CYTB_B2 -> FOUND
+    Strains:     No B. subtilis strains currently in registry.
+
+  Fix 6 — iMM904 (S. cerevisiae): CYTBD -> CYOOm
+    Parameters:  DO, O2
+    Reason:      CYTBD does not exist in iMM904 (confirmed via BiGG API).
+                 S. cerevisiae uses mitochondrial cytochrome c oxidase.
+                 CYOOm = cytochrome c oxidase, mitochondrial (Complex IV).
+                 Verified: BiGG /api/v2/models/iMM904/reactions/CYOOm -> FOUND
+    Strains:     BY4741, CEN.PK, W303 — all inherit CYOOm via deep copy.
+
+  Fix 6b — iMT1026v3 (P. pastoris): CYTBD -> CYOOm (DO parameter only)
+    Parameters:  DO only (O2 remains AOX — primary O2 consumer during methanol)
+    Reason:      iMT1026v3 has cytochrome c oxidase (UUID: ca2f164e...).
+                 Using CYOOm as human-readable ID consistent with iMM904.
+                 Confirmed via BioModels SBML parsing (MODEL1612130000).
+    Strains:     X-33, KM71H — both inherit CYOOm for DO via deep copy.
+
+  NOT changed:
+    - E. coli (iML1515): CYTBO3_4pp correct — cytochrome bo3 oxidase.
+    - P. pastoris AOX: Confirmed correct as literature shorthand.
+      Actual SBML ID is UUID _761dcd9b-f0f4-4a06-b1e9-2d1a6551b94a.
+      Stoichiometry confirmed: O2 + methanol -> H2O2 + formaldehyde.
+    - Mammalian COXE: Already fixed in Round 1.
+
+  Post-fix validation:
+    - validate_gem_map(): 26 maps, 0 issues, VERDICT: PASS
+    - test_gem_full.py: 4,753 tests, 4,753 passed, 0 failed (100.0%)
+    - test_literature.py: 8/8 biological plausibility checks PASS
+
+
+COMPLETE REACTION ID STATUS (all organisms)
+============================================
+
+  Organism         Model        DO reaction    O2 reaction    Source
+  ---------------  -----------  -----------    -----------    ------
+  CHO              iCHO2291     COXE           COXE           Round 1
+  CHO-S            iCHO2291     COXE           COXE           Round 1
+  HEK293           Recon3D      COXE           COXE           Round 1
+  NS0              iNS0_1091    COXE           COXE           Round 1
+  Sp2/0            iSp2_0       COXE           COXE           Round 1
+  BHK-21           iBHK         COXE           COXE           Round 1
+  E. coli          iML1515      CYTBO3_4pp     CYTBO3_4pp     Original (correct)
+  B. subtilis      iYO844       CYTB_B2        CYTB_B2        Round 3 Fix 5
+  P. pastoris      iMT1026v3    CYOOm          AOX            Round 3 Fix 6b
+  S. cerevisiae    iMM904       CYOOm          CYOOm          Round 3 Fix 6
+
+
+DATA SOURCES
+============
+  - BiGG Models API: http://bigg.ucsd.edu/api/v2/
+  - BioModels: https://www.ebi.ac.uk/biomodels/MODEL1612130000
+  - iYO844: Oh et al. 2007, J Biol Chem
+  - iMM904: Mo et al. 2009, BMC Syst Biol
+  - iMT1026v3: Tomas-Gamisans et al. 2018, Microb Biotechnol

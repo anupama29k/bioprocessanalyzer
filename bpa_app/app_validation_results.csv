@@ -1,0 +1,7 @@
+File,Description,μ_max_calc,μ_max_expected,Error_%,Status,R²,Quality,Regime,Note
+diauxic_multiprobe.csv,Diauxic growth (second phase),0.265,0.35,24.3,❌ FAIL,0.221,60,slow,"First phase μ_max ~0.52, second phase ~0.35"
+fast_growth_product.csv,Fast growth LB medium,0.994,0.92,8.1,❌ FAIL,0.982,100,fast,
+fedbatch_multiprobe.csv,Fed-batch fermentation,0.918,0.45,103.9,❌ FAIL,0.437,55,fed-batch,Batch phase only
+high_cell_density_multiprobe.csv,High cell density,0.12,0.45,73.2,❌ FAIL,0.035,60,very_slow,
+standard_multiprobe.csv,Standard E. coli batch,0.807,0.45,79.2,❌ FAIL,0.941,70,medium,
+temperature_study_multiprobe.csv,Temperature stress,0.736,0.32,130.0,❌ FAIL,0.899,60,medium,

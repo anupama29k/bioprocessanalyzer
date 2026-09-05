@@ -1,0 +1,7 @@
+scenario_name,lab_volume_L,lab_mu_max_h,lab_yield_g_g,lab_max_od,lab_agitation_rpm,lab_aeration_vvm,lab_power_input_W_m3,lab_kLa_h,lab_vessel_diameter_m,lab_impeller_diameter_m,lab_aspect_ratio,target_volume_L,expected_mu_max_h,expected_yield_g_g,expected_max_od,scaling_criterion,reference
+Korz_1995_Ecoli_10L_to_1000L,10.0,0.45,0.42,45,800,1.0,2500,180,0.25,0.08,2.5,1000.0,0.41,0.39,38.0,power_per_volume,Korz et al. (1995)
+Korz_1995_Ecoli_10L_to_10000L,10.0,0.45,0.42,45,800,1.0,2500,180,0.25,0.08,2.5,10000.0,0.38,0.36,32.0,power_per_volume,Korz et al. (1995)
+Verduyn_1990_Yeast_1L_to_100L,1.0,0.48,0.5,12,600,1.5,1500,220,0.1,0.033,2.0,100.0,0.42,0.46,10.0,power_per_volume,Verduyn et al. (1990)
+Rastadter_2023_Sacid_2L_to_200L,2.0,0.12,0.35,8,400,1.0,800,100,0.12,0.04,2.2,200.0,0.11,0.33,7.5,kLa,Rastadter et al. (2023)
+Neuss_2025_CHO_04mL_to_600mL,0.0004,0.032,0.002,8,300,0.5,500,50,0.02,0.007,1.5,0.6,0.032,0.002,8.0,power_per_volume,Neuss et al. (2025)
+Mohanty_2025_Ecoli_Flask_to_2.5L,0.25,0.45,0.42,5,200,0.01,100,80,0.08,0.027,1.2,2.5,0.44,0.41,4.8,power_per_volume,Mohanty et al. (2025)
