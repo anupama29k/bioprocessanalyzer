@@ -16,10 +16,12 @@ st.set_page_config(
 
 # ── Import modules ────────────────────────────────────────────────────────────
 from modules import session, ui_styles
-from pages import (
+from views import (
     homepage,
     data_import,
     analysis,
+    growth_kinetics,
+    product_profiles,
     strain_library,
     mass_balance,
     scale_up,
@@ -51,6 +53,8 @@ with st.sidebar:
         "🏠 Dashboard": homepage,
         "📥 Data Import": data_import,
         "📊 Analysis": analysis,
+        "📈 Growth Kinetics": growth_kinetics,
+        "🧪 Product Profiles": product_profiles,
         "⚖️ Mass Balance": mass_balance,
         "🔬 Scale-up Model": scale_up,
         "✨ Golden Batch": golden_batch,
@@ -95,7 +99,7 @@ with st.sidebar:
             st.session_state.run_data    = _df
             st.session_state.run_name    = _selected_run
             # Re-detect sensor mapping for the new run
-            from pages.data_import import auto_detect_mapping
+            from views.data_import import auto_detect_mapping
             st.session_state.col_map = auto_detect_mapping(_df.columns.tolist())
             st.rerun()
         st.caption(f"{len(_run_names)} batch(es) loaded")

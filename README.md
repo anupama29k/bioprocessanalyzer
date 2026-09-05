@@ -42,6 +42,16 @@ streamlit run app.py
 
 Everything on this path runs fully offline — load any dataset from `sample_data/` or the organism CSVs in `bpa_app/`. For the full SYNAPSE platform: `pip install supabase python-dotenv`, add Supabase credentials to `.env`, and `streamlit run synapse.py`.
 
+## Screenshots
+
+| | |
+|---|---|
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Analysis](docs/screenshots/analysis.png) |
+| ![Growth Kinetics](docs/screenshots/growth-kinetics.png) | ![Mass Balance](docs/screenshots/mass-balance.png) |
+| ![Scale-up](docs/screenshots/scale-up.png) | ![Digital Twin](docs/screenshots/digital-twin.png) |
+
+*Growth Kinetics on the bundled E. coli MG1655 glucose dataset: μ = 0.448 ± 0.006 h⁻¹ (95% CI), R² = 0.9993, doubling time benchmarked against literature values.*
+
 ## Why I built it
 
 I spent nine years developing and scaling fermentation processes, including a 1,000 kg production campaign at a contract manufacturer. This is the analysis layer I always wanted at the bench: the calculations a process scientist actually runs — kinetics, mass balance, scale-down/scale-up criteria — with the sanity checks (elemental closure, thermodynamic yield limits, phase-aware μ) that catch bad data before it drives a bad decision.

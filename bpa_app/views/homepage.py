@@ -70,7 +70,7 @@ def render():
                 cols[0].caption(f"{len(df_run)} rows × {len(df_run.columns)} cols")
                 if cols[1].button("Load", key=f"home_load_{run_name}",
                                   disabled=is_active):
-                    from pages.data_import import auto_detect_mapping
+                    from views.data_import import auto_detect_mapping
                     st.session_state.active_run = run_name
                     st.session_state.run_data = df_run
                     st.session_state.run_name = run_name
@@ -221,7 +221,7 @@ def _load_saved_run(dm: DataManager, run_id: str):
     run_data = dm.get_run_by_id(run_id)
     if run_data and "data" in run_data:
         df = run_data["data"]
-        from pages.data_import import auto_detect_mapping
+        from views.data_import import auto_detect_mapping
 
         # Add to uploaded_runs
         runs = st.session_state.get("uploaded_runs", {})

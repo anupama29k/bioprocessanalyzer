@@ -6,7 +6,7 @@ from databank import ANALYTICAL_DATABANK
 from pulse import pulse_fragment  # Pulse live telemetry writer
 
 # Import all BPA page modules
-from pages import (
+from views import (
     homepage,
     data_import,
     analysis,
@@ -235,7 +235,7 @@ def render():
             st.session_state.active_run = _selected_run
             st.session_state.run_data = _df
             st.session_state.run_name = _selected_run
-            from pages.data_import import auto_detect_mapping
+            from views.data_import import auto_detect_mapping
             st.session_state.col_map = auto_detect_mapping(_df.columns.tolist())
             st.rerun()
         st.sidebar.caption(f"{len(_run_names)} batch(es) loaded")

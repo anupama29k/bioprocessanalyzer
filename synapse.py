@@ -39,7 +39,7 @@ from data_manager import DataManager  # noqa: E402
 from synapse_pages import instrument_reference, run_manager  # noqa: E402
 
 # Strain Library and Run Registry remain as standalone pages
-from pages import strain_library, run_registry  # noqa: E402
+from views import strain_library, run_registry  # noqa: E402
 
 # Pulse — imported so Run Manager can invoke it
 from pulse import pulse_fragment  # noqa: E402

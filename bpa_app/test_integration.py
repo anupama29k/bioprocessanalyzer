@@ -8,16 +8,16 @@ import numpy as np
 import importlib
 
 import modules.calcs as calcs; importlib.reload(calcs)
-import pages.data_import as di; importlib.reload(di)
-import pages.homepage as hp; importlib.reload(hp)
-import pages.scale_up as su; importlib.reload(su)
+import views.data_import as di; importlib.reload(di)
+import views.homepage as hp; importlib.reload(hp)
+import views.scale_up as su; importlib.reload(su)
 import data_manager as dmmod; importlib.reload(dmmod)
 
 from modules.calcs import (compute_growth_kinetics, compute_productivity,
                             compute_mass_balance, check_carbon_balance,
                             ScaleUpEngine, ScaleUpParameters,
                             SUBSTRATE_DB, BIOMASS_DB, PRODUCT_DB)
-from pages.data_import import auto_detect_mapping
+from views.data_import import auto_detect_mapping
 from data_manager import DataManager
 
 passed = 0

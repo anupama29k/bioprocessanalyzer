@@ -109,7 +109,7 @@ def _saved_runs():
 
         # Load into active session
         if st.button("📂 Load into active session", type="primary"):
-            from pages.data_import import auto_detect_mapping
+            from views.data_import import auto_detect_mapping
             df = run_data["data"]
             label = run_data.get("run_id", "loaded_run")
             existing = st.session_state.get("uploaded_runs", {})
