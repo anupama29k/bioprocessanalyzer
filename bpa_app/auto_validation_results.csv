@@ -1,3 +1,0 @@
-File,Description,μ_max_calc,μ_max_expected,μ_max_error,μ_max_pass,R²,Fed_Batch,Yield_calc,Yield_expected,Yield_pass
-fast_growth_product.csv,Fast growth in LB medium,1.027,0.92,11.6%,❌,0.982,No,N/A,N/A,N/A
-standard_ecoli_product.csv,Standard E. coli with glucose,N/A,0.45,N/A,❌,N/A,N/A,N/A,0.42,N/A

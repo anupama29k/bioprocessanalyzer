@@ -1,7 +1,0 @@
-File,mu_max,mu_95CI,lag_h,max_OD,quality_pct,R2,n_exp_pts,sensors,rows,fedbatch_det,mu_status,lag_status,overall
-diauxic_multiprobe.csv,0.491,"[0.461, 0.522]",1.57,9.5,88,0.9914,19,6,80,no,PASS,PASS,PASS
-fedbatch_multiprobe.csv,0.444,"[0.355, 0.533]",4.65,85.7,78,0.9379,15,13,144,YES,PASS,PASS,PASS
-high_cell_density_multiprobe.csv,0.374,"[0.041, 0.707]",9.0,1.6,44,0.5483,6,11,48,no,PASS,PASS,PARTIAL
-standard_multiprobe.csv,0.447,"[0.436, 0.459]",1.0,8.5,91,0.9924,47,12,96,no,PASS,PASS,PASS
-stress_multiprobe.csv,0.166,"[0.160, 0.172]",0.63,4.2,86,0.9796,57,8,96,no,PASS,PASS,PASS
-temperature_study_multiprobe.csv,0.22,"[0.206, 0.234]",0.39,7.6,81,0.98,43,3,72,no,PASS,PASS,PASS

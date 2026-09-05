@@ -6,3 +6,4 @@ __pycache__/
 run_registry.json
 validation_log.txt
 *.log
+bpa_app/data/
