@@ -1,0 +1,3 @@
+dataset_id,title,citation,doi,license,measured,n_runs,n_observations
+simensen2022,"E. coli MG1655 aerobic batch on glucose M9, 1 L",Simensen V et al. (2022) PLOS ONE 17:e0262450,10.1371/journal.pone.0262450,CC BY 4.0,True,1,2240
+hans2020,8 E. coli K-12 strains (Keio knockouts) in 24 parallel fed-batch mini-bioreactors,Hans S et al. (2020) Bioengineering 7:145,10.3390/bioengineering7040145,CC BY 4.0,True,24,19604
