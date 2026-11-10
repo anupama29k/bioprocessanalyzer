@@ -1,0 +1,173 @@
+{
+  "schema_version": "0.2",
+  "datasets": 3,
+  "runs": 77,
+  "observations": 100239,
+  "conditions": 27,
+  "contrasts": 11,
+  "organisms": [
+    "Escherichia coli",
+    "Saccharomyces cerevisiae",
+    "Saccharomyces pastorianus"
+  ],
+  "perturbations": 11,
+  "observations_sha256_16": "57efb95c6a62d1a9",
+  "engine": "bioprocessanalyzer@2439bf9",
+  "variables": {
+    "od600": {
+      "unit": "OD",
+      "description": "optical density at 600 nm, 1 cm path"
+    },
+    "biomass_gL": {
+      "unit": "g/L",
+      "description": "dry cell weight concentration"
+    },
+    "glucose_gL": {
+      "unit": "g/L",
+      "description": "glucose in broth"
+    },
+    "glycerol_gL": {
+      "unit": "g/L",
+      "description": "glycerol in broth"
+    },
+    "acetate_gL": {
+      "unit": "g/L",
+      "description": "acetate in broth"
+    },
+    "lactate_gL": {
+      "unit": "g/L",
+      "description": "lactate in broth"
+    },
+    "formate_gL": {
+      "unit": "g/L",
+      "description": "formate in broth"
+    },
+    "succinate_gL": {
+      "unit": "g/L",
+      "description": "succinate in broth"
+    },
+    "ethanol_gL": {
+      "unit": "g/L",
+      "description": "ethanol in broth"
+    },
+    "product_gL": {
+      "unit": "g/L",
+      "description": "target product titer"
+    },
+    "DO_percent": {
+      "unit": "% air sat.",
+      "description": "dissolved oxygen"
+    },
+    "pH": {
+      "unit": "pH",
+      "description": "broth pH"
+    },
+    "temperature_C": {
+      "unit": "°C",
+      "description": "broth temperature"
+    },
+    "OUR_mmol_Lh": {
+      "unit": "mmol/L/h",
+      "description": "oxygen uptake rate"
+    },
+    "CER_mmol_Lh": {
+      "unit": "mmol/L/h",
+      "description": "CO2 evolution rate"
+    },
+    "agitation_rpm": {
+      "unit": "rpm",
+      "description": "stirrer speed"
+    },
+    "vcd_cells_mL": {
+      "unit": "cells/mL",
+      "description": "viable cell density"
+    },
+    "viability_percent": {
+      "unit": "%",
+      "description": "viable fraction of total cells"
+    },
+    "ethanol_pct_ww": {
+      "unit": "% w/w",
+      "description": "alcohol content (brewing analyser)"
+    },
+    "extract_plato": {
+      "unit": "°P",
+      "description": "real extract (dissolved solids), °P = 259 − 259/SG"
+    },
+    "dCO2_percent": {
+      "unit": "% sat.",
+      "description": "dissolved CO2"
+    },
+    "permittivity_pF_cm": {
+      "unit": "pF/cm",
+      "description": "dielectric permittivity (live-biomass proxy)"
+    }
+  },
+  "phenotypes": {
+    "mu_batch_h": {
+      "unit": "h⁻¹",
+      "description": "specific growth rate in the batch phase (until glucose depletion; for cell counts, samples below 80 % of peak VCD)",
+      "confounded_by_feed": false
+    },
+    "mu_batch_se_h": {
+      "unit": "h⁻¹",
+      "description": "standard error of mu_batch_h",
+      "confounded_by_feed": false
+    },
+    "glucose_depletion_h": {
+      "unit": "h",
+      "description": "first sample with glucose < 0.1 g/L (resolution = sampling interval)",
+      "confounded_by_feed": false
+    },
+    "acetate_peak_gL": {
+      "unit": "g/L",
+      "description": "highest acetate up to 0.5 h after glucose depletion (overflow)",
+      "confounded_by_feed": false
+    },
+    "acetate_reconsumed_frac": {
+      "unit": "–",
+      "description": "fraction of peak acetate consumed 0.75–2.5 h after glucose depletion",
+      "confounded_by_feed": false
+    },
+    "Yxs_batch_gg": {
+      "unit": "g/g",
+      "description": "biomass yield on glucose in the batch phase (only if glucose falls monotonically)",
+      "confounded_by_feed": false
+    },
+    "vcd_max_1e6_mL": {
+      "unit": "10⁶ cells/mL",
+      "description": "peak viable cell density",
+      "confounded_by_feed": false
+    },
+    "viability_end_pct": {
+      "unit": "%",
+      "description": "viability at the last sample",
+      "confounded_by_feed": false
+    },
+    "ethanol_end_pct_ww": {
+      "unit": "% w/w",
+      "description": "alcohol at the last sample",
+      "confounded_by_feed": false
+    },
+    "extract_consumed_frac": {
+      "unit": "–",
+      "description": "fraction of the initial real extract consumed by the last sample",
+      "confounded_by_feed": false
+    },
+    "DO_min_pct": {
+      "unit": "% sat.",
+      "description": "lowest dissolved oxygen (< 5 % = oxygen-limited)",
+      "confounded_by_feed": false
+    },
+    "mu_fedbatch_h": {
+      "unit": "h⁻¹",
+      "description": "mean growth rate after glucose depletion (fed-batch); depends on the feed",
+      "confounded_by_feed": true
+    },
+    "biomass_final_gL": {
+      "unit": "g/L",
+      "description": "last measured biomass",
+      "confounded_by_feed": true
+    }
+  }
+}
