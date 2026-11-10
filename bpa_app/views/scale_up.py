@@ -123,6 +123,132 @@ class ScaleUpVisualizer:
         return pd.DataFrame(rows)
 
 
+def _render_from_run():
+    """Operating-window check of the loaded run in a target vessel."""
+    from modules import process_scaleup as ps
+    from modules.calcs import compute_growth_kinetics
+
+    df = st.session_state.get("run_data")
+    if df is None:
+        st.info("Load a run in **Data Import** to scale up from its own data, "
+                "or use the Quick / Advanced modes with literature presets.")
+        return
+    cm = st.session_state.get("col_map", {})
+    cols = list(df.columns)
+    num = lambda c: pd.to_numeric(df[c], errors="coerce").to_numpy(dtype=float)
+
+    st.caption("Uses this run's growth rate, biomass and oxygen demand to check whether a "
+               "target vessel can supply O₂, remove heat and mix fast enough.")
+    with st.expander("Run data", expanded=True):
+        c1, c2, c3, c4 = st.columns(4)
+        tcol = c1.selectbox("Time (h)", cols, index=cols.index(cm["time"]) if cm.get("time") in cols else 0,
+                            key="sr_t")
+        odcol = c2.selectbox("OD₆₀₀", cols, index=cols.index(cm["od"]) if cm.get("od") in cols else 0,
+                             key="sr_od")
+        dcw = c3.number_input("OD→DCW (g/L per OD)", 0.1, 2.0, 0.40, 0.01, key="sr_dcw")
+        none = "— none —"
+        guess = next((c for c in cols if "our" in c.lower()), none)
+        ourcol = c4.selectbox("OUR (mmol/L/h)", [none] + cols, index=([none] + cols).index(guess),
+                              key="sr_our")
+
+    t, od = num(tcol), num(odcol)
+    ok = np.isfinite(t) & np.isfinite(od)
+    gk = compute_growth_kinetics(t[ok], od[ok], dcw)
+    if not gk.get("mu"):
+        st.warning("No exponential phase found in the OD data.")
+        return
+    fr = st.session_state.get("flux_result") or {}
+    q_flux = None
+    for row in fr.get("fluxes", []):
+        if row.get("Reaction") == "O2 uptake":
+            q_flux = abs(row["Flux"])
+    sources = (["Measured OUR ÷ biomass"] if ourcol != none else []) + \
+              (["Flux Analysis result"] if q_flux else []) + ["Typical yield (Y_X/O ≈ 1 g/g)"]
+    src = st.radio("O₂ demand from", sources, horizontal=True, key="sr_src")
+    proc = ps.process_from_run(
+        t, od, gk["mu"], dcw,
+        our=num(ourcol) if (ourcol != none and src.startswith("Measured")) else None,
+        q_o2=q_flux if src.startswith("Flux") else None,
+        window=(float(gk["exp_t"][0]), float(gk["exp_t"][-1])))
+
+    m1, m2, m3, m4 = st.columns(4)
+    m1.metric("μ", f"{proc.mu_h:.3f} h⁻¹")
+    m2.metric("q_O₂", f"{proc.q_o2:.1f} mmol/g/h", help=proc.source)
+    m3.metric("Biomass reached", f"{proc.x_max_gL:.2f} g/L")
+    m4.metric("Peak OUR (run)", f"{proc.our_peak:.1f} mmol/L/h")
+
+    with st.expander("Target vessel", expanded=True):
+        c1, c2, c3, c4 = st.columns(4)
+        V = c1.number_input("Working volume (L)", 1.0, 500000.0, 1000.0, 100.0, key="sr_V")
+        x_t = c2.number_input("Target biomass (g DCW/L)", 0.1, 200.0,
+                              float(round(max(proc.x_max_gL, 0.1), 2)), 1.0, key="sr_xt",
+                              help="Biomass the scaled process should reach — raise it to "
+                                   "test a high-cell-density fed-batch.")
+        hd = c3.number_input("H/D", 0.8, 4.0, 2.5, 0.1, key="sr_hd")
+        imp = c4.selectbox("Impellers", ["Rushton (Np 5.0)", "Pitched blade (Np 1.3)",
+                                         "Hydrofoil (Np 0.6)"], key="sr_imp")
+        Np = {"Rushton": 5.0, "Pitched": 1.3, "Hydrofoil": 0.6}[imp.split()[0]]
+        c1, c2, c3, c4 = st.columns(4)
+        n_imp = c1.number_input("Number of impellers", 1, 6, 2, key="sr_ni")
+        vvm = c2.number_input("Aeration (vvm)", 0.1, 3.0, 1.0, 0.1, key="sr_vvm")
+        do = c3.number_input("DO setpoint (%)", 5.0, 80.0, 30.0, 5.0, key="sr_do")
+        pv_max = c4.number_input("Max gassed P/V (W/m³)", 200.0, 20000.0, 3000.0, 250.0, key="sr_pv")
+        c1, c2, c3, c4 = st.columns(4)
+        tip_max = c1.number_input("Max tip speed (m/s)", 1.0, 10.0, 6.0, 0.5, key="sr_tip")
+        bar = c2.number_input("Back-pressure (bar g)", 0.0, 2.0, 0.0, 0.1, key="sr_bar")
+        o2f = c3.number_input("Inlet O₂ fraction", 0.21, 1.0, 0.21, 0.05, key="sr_o2")
+        coal = c4.selectbox("Broth", ["Coalescing (conservative)", "Non-coalescing (salts)"],
+                            key="sr_coal").startswith("Coal")
+        c1, c2 = st.columns(2)
+        U = c1.number_input("Jacket U (W/m²K)", 100.0, 1500.0, 400.0, 50.0, key="sr_U")
+        tc = c2.number_input("Coolant temperature (°C)", 2.0, 30.0, 15.0, 1.0, key="sr_tc")
+
+    vessel = ps.Vessel(volume_L=V, hd=hd, Np=Np, n_imp=int(n_imp), vvm=vvm,
+                       max_PV_W_m3=pv_max, max_tip_m_s=tip_max, do_setpoint_pct=do,
+                       head_pressure_bar_g=bar, o2_fraction=o2f, U_W_m2K=U,
+                       coolant_C=tc, coalescing=coal)
+    r = ps.evaluate(proc, vessel, x_t)
+
+    st.subheader(f"Verdict at {V:,.0f} L")
+    for sev, msg in r["verdict"]:
+        {"ok": st.success, "warn": st.warning, "fail": st.error}[sev](msg)
+
+    k1, k2, k3, k4 = st.columns(4)
+    k1.metric("kLa required / max", f"{r['kLa required (h⁻¹)']:.0f} / {r['kLa max achievable (h⁻¹)']:.0f} h⁻¹")
+    k2.metric("Max biomass before O₂ limit", f"{r['Max biomass before O₂ limitation (g/L)']:.1f} g/L")
+    k3.metric("Agitation required / max", f"{r['Agitation required (rpm)']:.0f} / {r['Agitation max (rpm)']:.0f} rpm")
+    k4.metric("Fed-batch μ max at target X", f"{r['Fed-batch μ max at target X (h⁻¹)']:.3f} h⁻¹")
+
+    vols = sorted({v for v in [1, 10, 100, 1000, 10000, 100000] if v <= max(V * 10, 10)} | {V})
+    scan = pd.DataFrame(ps.scan_volumes(proc, vessel, vols, x_t))
+    fig = make_subplots(rows=1, cols=2, subplot_titles=("Oxygen transfer", "Mixing vs O₂ depletion"))
+    fig.add_trace(go.Scatter(x=scan["Volume (L)"], y=scan["kLa max achievable (h⁻¹)"],
+                             name="kLa max achievable", mode="lines+markers"), 1, 1)
+    fig.add_trace(go.Scatter(x=scan["Volume (L)"], y=scan["kLa required (h⁻¹)"],
+                             name="kLa required", mode="lines+markers",
+                             line=dict(dash="dash")), 1, 1)
+    fig.add_trace(go.Scatter(x=scan["Volume (L)"], y=scan["Mixing time (s)"],
+                             name="Mixing time", mode="lines+markers"), 1, 2)
+    o2t = r["O₂ depletion time (s)"]
+    fig.add_hline(y=o2t, line_dash="dot", annotation_text=f"O₂ depletion {o2t:.0f} s", row=1, col=2)
+    fig.update_xaxes(type="log", title_text="Working volume (L)")
+    fig.update_yaxes(title_text="h⁻¹", row=1, col=1)
+    fig.update_yaxes(title_text="s", row=1, col=2)
+    fig.update_layout(height=380, margin=dict(t=40, b=20), legend=dict(orientation="h", y=-0.25))
+    st.plotly_chart(fig, width="stretch")
+
+    with st.expander("All numbers"):
+        detail = pd.DataFrame([{"Quantity": k, "Value": (f"{v:.3g}" if isinstance(v, float) else str(v))}
+                               for k, v in r.items() if k not in ("verdict", "o2_ok", "heat_ok", "mix_ok")])
+        st.dataframe(detail, hide_index=True, width="stretch")
+        st.dataframe(scan.round(2), hide_index=True, width="stretch")
+        st.download_button("⬇ Download scale-up scan (CSV)", scan.to_csv(index=False),
+                           file_name=f"scaleup_{st.session_state.get('run_name') or 'run'}.csv")
+    st.caption("kLa: van't Riet (1979); metabolic heat 460 kJ/mol O₂ (Cooney 1969); mixing "
+               "time: Nienow (1997). q_O₂ is assumed proportional to μ (maintenance "
+               "neglected) for the fed-batch limit.")
+
+
 def render():
     st.title("🔬 Scale-up Model")
     st.caption("Predict performance at larger scales based on lab data.")
@@ -139,8 +265,11 @@ def render():
     has_analysis = mu_from_analysis is not None
 
     # ── Mode selector: Quick (single target) or Advanced (multi-scale) ────
-    mode = st.radio("Mode", ["🚀 Quick Scale-Up", "🔧 Advanced Multi-Scale"],
+    mode = st.radio("Mode", ["🧪 From this run", "🚀 Quick Scale-Up", "🔧 Advanced Multi-Scale"],
                     horizontal=True, label_visibility="collapsed")
+    if "From this run" in mode:
+        _render_from_run()
+        return
 
     # ── Literature preset ─────────────────────────────────────────────────
     preset = st.selectbox("Load reference dataset",

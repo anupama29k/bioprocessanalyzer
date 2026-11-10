@@ -13,7 +13,7 @@ A multi-page Streamlit app built around `ferment.py`, an analysis engine with au
 | **Growth Kinetics** | μ, doubling time, lag, productivity, R², Luedeking–Piret growth/non-growth-associated product model, literature comparison per organism/medium |
 | **Flux Analysis** | Genome-scale FBA (iML1515 for *E. coli*, yeast-GEM for *S. cerevisiae*) constrained by the run's measured specific rates: growth the measured uptake can support vs observed μ, the substrate uptake the observed μ requires, an off-gas O₂/CO₂ check, and a central-carbon flux map with flux-variability ranges |
 | **Mass Balance** | Multi-substrate, multi-product C/H/O/N elemental balance, degree-of-reduction checks, and thermodynamic impossible-yield detection |
-| **Scale-up** | Full engineering model: kLa (van't Riet), mixing time (Nienow), P/V, tip speed, Reynolds number — with a literature validation dataset |
+| **Scale-up** | **From this run:** uses the loaded run's μ, biomass and O₂ demand (measured OUR, Flux Analysis, or a default yield) to check a target vessel — kLa required vs achievable within P/V and tip-speed limits, biomass ceiling before O₂ limitation, fed-batch μ limit at a target biomass, metabolic + agitation heat vs jacket capacity, and mixing time vs O₂ depletion time. Plus the full engineering model: kLa (van't Riet), mixing time (Nienow), P/V, tip speed, Reynolds number — with a literature validation dataset |
 | **Digital Twin** | Self-learning Monod-ODE fit and prediction for batch, fed-batch and continuous modes |
 | **Product & Metabolite Profiles** | Time-course multi-metabolite plots, assay integration, anomaly and contamination detection |
 | **Golden Batch** | KPI comparison against a reference run with automated explanations and a radar chart |
