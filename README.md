@@ -11,6 +11,7 @@ A multi-page Streamlit app built around `ferment.py`, an analysis engine with au
 | **Data Import** | Universal parsing (CSV/TSV/JSON, Eppendorf/Infors/Sartorius exports) with full sensor column mapping; organized run storage and metadata via `data_manager.py` |
 | **Analysis** | Combined growth, substrate, product and sensor profiles on one timeline, with lag/exponential/stationary phase overlay |
 | **Growth Kinetics** | μ, doubling time, lag, productivity, R², Luedeking–Piret growth/non-growth-associated product model, literature comparison per organism/medium |
+| **Flux Analysis** | Genome-scale FBA (iML1515 for *E. coli*, yeast-GEM for *S. cerevisiae*) constrained by the run's measured specific rates: growth the measured uptake can support vs observed μ, the substrate uptake the observed μ requires, an off-gas O₂/CO₂ check, and a central-carbon flux map with flux-variability ranges |
 | **Mass Balance** | Multi-substrate, multi-product C/H/O/N elemental balance, degree-of-reduction checks, and thermodynamic impossible-yield detection |
 | **Scale-up** | Full engineering model: kLa (van't Riet), mixing time (Nienow), P/V, tip speed, Reynolds number — with a literature validation dataset |
 | **Digital Twin** | Self-learning Monod-ODE fit and prediction for batch, fed-batch and continuous modes |
