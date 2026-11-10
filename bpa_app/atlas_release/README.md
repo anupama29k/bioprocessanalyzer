@@ -7,5 +7,5 @@ Do not edit these files here. Build a new release in the atlas repository and co
 
     cp ../bioprocess-atlas/release/* bpa_app/atlas_release/
 
-Snapshot: schema v0.3, atlas commit e4ade03 (7 datasets, 146 runs, incl. CHO, Pichia and B. subtilis). The data is CC BY 4.0; credit the original studies
+Snapshot: schema v0.4, atlas commit 6b1ad3a (8 datasets, 171 runs, incl. NISTCHO with product quality). The data is CC BY 4.0; credit the original studies
 listed in datasets.csv.

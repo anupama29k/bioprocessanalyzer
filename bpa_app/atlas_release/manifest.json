@@ -1,9 +1,9 @@
 {
-  "schema_version": "0.3",
-  "datasets": 7,
-  "runs": 146,
-  "observations": 220453,
-  "conditions": 66,
+  "schema_version": "0.4",
+  "datasets": 8,
+  "runs": 171,
+  "observations": 222062,
+  "conditions": 73,
   "contrasts": 30,
   "organisms": [
     "Bacillus subtilis",
@@ -13,8 +13,8 @@
     "Saccharomyces cerevisiae",
     "Saccharomyces pastorianus"
   ],
-  "perturbations": 25,
-  "observations_sha256_16": "eaf2afd38de2b933",
+  "perturbations": 31,
+  "observations_sha256_16": "5f0b6e868e796e3a",
   "engine": "bioprocessanalyzer@2439bf9",
   "variables": {
     "od600": {
@@ -133,6 +133,18 @@
       "unit": "g/L",
       "description": "ammonium in broth (mass basis, as reported)"
     },
+    "galactosylation_index": {
+      "unit": "galactoses/glycan",
+      "description": "mean galactose residues per N-glycan on the product (0–2)"
+    },
+    "afucosylation_percent": {
+      "unit": "%",
+      "description": "N-glycans on the product lacking core fucose"
+    },
+    "g0f_percent": {
+      "unit": "%",
+      "description": "share of the product carrying G0F on both heavy chains"
+    },
     "product_activity_AU_mL": {
       "unit": "AU/mL",
       "description": "target enzyme activity in broth (assay-specific units; compare within a product only)"
@@ -227,6 +239,21 @@
     "product_per_biomass_gg": {
       "unit": "g/g",
       "description": "product titer ÷ biomass at the last sample",
+      "confounded_by_feed": false
+    },
+    "galactosylation_end_idx": {
+      "unit": "galactoses/glycan",
+      "description": "mean galactose per N-glycan at the last sample (product quality)",
+      "confounded_by_feed": false
+    },
+    "afucosylation_end_pct": {
+      "unit": "%",
+      "description": "afucosylated N-glycans at the last sample (product quality)",
+      "confounded_by_feed": false
+    },
+    "g0f_end_pct": {
+      "unit": "%",
+      "description": "G0F/G0F share at the last sample (product quality)",
       "confounded_by_feed": false
     },
     "activity_final_AU_mL": {
