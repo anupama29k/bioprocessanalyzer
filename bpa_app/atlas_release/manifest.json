@@ -1,19 +1,20 @@
 {
   "schema_version": "0.3",
-  "datasets": 6,
-  "runs": 133,
-  "observations": 219233,
-  "conditions": 59,
-  "contrasts": 24,
+  "datasets": 7,
+  "runs": 146,
+  "observations": 220453,
+  "conditions": 66,
+  "contrasts": 30,
   "organisms": [
+    "Bacillus subtilis",
     "Cricetulus griseus (CHO)",
     "Escherichia coli",
     "Komagataella phaffii",
     "Saccharomyces cerevisiae",
     "Saccharomyces pastorianus"
   ],
-  "perturbations": 19,
-  "observations_sha256_16": "4e7f66fedf5f069f",
+  "perturbations": 25,
+  "observations_sha256_16": "eaf2afd38de2b933",
   "engine": "bioprocessanalyzer@2439bf9",
   "variables": {
     "od600": {
@@ -128,6 +129,10 @@
       "unit": "g/L",
       "description": "arabitol in broth"
     },
+    "ammonium_gL": {
+      "unit": "g/L",
+      "description": "ammonium in broth (mass basis, as reported)"
+    },
     "product_activity_AU_mL": {
       "unit": "AU/mL",
       "description": "target enzyme activity in broth (assay-specific units; compare within a product only)"
@@ -207,6 +212,21 @@
     "qp_pg_cell_day": {
       "unit": "pg/cell/day",
       "description": "cell-specific productivity: product made ÷ integral of viable cells",
+      "confounded_by_feed": false
+    },
+    "acetate_end_gL": {
+      "unit": "g/L",
+      "description": "acetate at the last sample (late overflow, unlike the batch-phase peak)",
+      "confounded_by_feed": false
+    },
+    "glucose_end_gL": {
+      "unit": "g/L",
+      "description": "glucose at the last sample (high = fed faster than consumed)",
+      "confounded_by_feed": true
+    },
+    "product_per_biomass_gg": {
+      "unit": "g/g",
+      "description": "product titer ÷ biomass at the last sample",
       "confounded_by_feed": false
     },
     "activity_final_AU_mL": {

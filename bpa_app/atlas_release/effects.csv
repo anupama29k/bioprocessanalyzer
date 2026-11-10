@@ -4,6 +4,8 @@ hans2020,BW25113 ΔaceA,BW25113,gene_knockout,ΔaceA,,glucose_depletion_h,h,2.75
 hans2020,BW25113 ΔaceA,BW25113,gene_knockout,ΔaceA,,acetate_peak_gL,g/L,0.501146,0.012012356429943269,3,0.5007158333333334,0.013421527431083748,3,0.0004301666666666204,0.08591033836555795,0.03377446674395253,0.9690102270386515,False
 hans2020,BW25113 ΔaceA,BW25113,gene_knockout,ΔaceA,,acetate_reconsumed_frac,–,0.053561360874727036,0.04277966325200873,3,0.7820610198314744,0.17730757091289162,3,-0.7284996589567473,-93.15125552654844,-5.648466004828338,0.01505530915981575,False
 hans2020,BW25113 ΔaceA,BW25113,gene_knockout,ΔaceA,,DO_min_pct,% sat.,0.04,0.06928203230275508,3,0.0,0.0,3,0.04,,0.8164965809277261,0.42264973081037416,False
+hans2020,BW25113 ΔaceA,BW25113,gene_knockout,ΔaceA,,acetate_end_gL,g/L,0.5419431666666666,0.11348173724473616,3,0.4671018333333334,0.1393139197499063,3,0.07484133333333326,16.022487601739922,0.5890419320228608,0.5120937640114633,False
+hans2020,BW25113 ΔaceA,BW25113,gene_knockout,ΔaceA,,glucose_end_gL,g/L,0.2901769516666667,0.492393120149014,3,0.26737420500000003,0.45234942712142623,3,0.02280274666666665,8.528401857863077,0.048229628399077074,0.9557497248636184,True
 hans2020,BW25113 ΔaceA,BW25113,gene_knockout,ΔaceA,,mu_fedbatch_h,h⁻¹,0.09050027127041484,0.037187560858000464,3,0.08213555633031767,0.020017835097346885,3,0.008364714940097162,10.184036383046458,0.28010054455565475,0.7537163789222211,True
 hans2020,BW25113 ΔaceA,BW25113,gene_knockout,ΔaceA,,biomass_final_gL,g/L,12.678043333333335,4.047029406445342,3,12.678033333333333,1.9648059556437967,3,1.000000000139778e-05,7.887658708405354e-05,3.1435577570217796e-06,0.9999971780787597,True
 hans2020,BW25113 ΔfliA,BW25113,gene_knockout,ΔfliA,,mu_batch_h,h⁻¹,0.38086071439959224,0.013123871480239748,2,0.3063748602064659,0.029120259358674332,3,0.07448585419312631,24.311999405868455,3.2979245194150977,0.032817642305147623,False
@@ -11,6 +13,8 @@ hans2020,BW25113 ΔfliA,BW25113,gene_knockout,ΔfliA,,glucose_depletion_h,h,2.10
 hans2020,BW25113 ΔfliA,BW25113,gene_knockout,ΔfliA,,acetate_peak_gL,g/L,0.4327608333333333,0.012692157660671133,3,0.5007158333333334,0.013421527431083748,3,-0.06795500000000004,-13.571570035565761,-5.202521885967492,0.003144535137240805,False
 hans2020,BW25113 ΔfliA,BW25113,gene_knockout,ΔfliA,,acetate_reconsumed_frac,–,0.6582993676999318,0.19168122115324876,3,0.7820610198314744,0.17730757091289162,3,-0.12376165213154255,-15.8250633893263,-0.670306859645688,0.4580418603613254,False
 hans2020,BW25113 ΔfliA,BW25113,gene_knockout,ΔfliA,,DO_min_pct,% sat.,0.0,0.0,3,0.0,0.0,3,0.0,,,,False
+hans2020,BW25113 ΔfliA,BW25113,gene_knockout,ΔfliA,,acetate_end_gL,g/L,0.5469535,0.14844737176774134,3,0.4671018333333334,0.1393139197499063,3,0.0798516666666666,17.095130219641597,0.554706124845574,0.534322529313786,False
+hans2020,BW25113 ΔfliA,BW25113,gene_knockout,ΔfliA,,glucose_end_gL,g/L,0.37758263166666667,0.641041798323472,3,0.26737420500000003,0.45234942712142623,3,0.11020842666666664,41.21879545809837,0.198653633397401,0.8210109024703586,True
 hans2020,BW25113 ΔfliA,BW25113,gene_knockout,ΔfliA,,mu_fedbatch_h,h⁻¹,0.060556101357138487,0.013384165393746955,3,0.08213555633031767,0.020017835097346885,3,-0.021579454973179188,-26.272975964751378,-1.267353552472558,0.20571954393287678,True
 hans2020,BW25113 ΔfliA,BW25113,gene_knockout,ΔfliA,,biomass_final_gL,g/L,13.122483333333333,1.7156412375066457,3,12.678033333333333,1.9648059556437967,3,0.4444499999999998,3.505669912000009,0.2409679887063291,0.7828366569664852,True
 hans2020,BW25113 ΔgatC,BW25113,gene_knockout,ΔgatC,,mu_batch_h,h⁻¹,0.29434341267689046,0.05056195816566319,2,0.3063748602064659,0.029120259358674332,3,-0.012031447529575467,-3.927034849226041,-0.2916125016761909,0.7985478181315586,False
@@ -18,6 +22,8 @@ hans2020,BW25113 ΔgatC,BW25113,gene_knockout,ΔgatC,,glucose_depletion_h,h,2.10
 hans2020,BW25113 ΔgatC,BW25113,gene_knockout,ΔgatC,,acetate_peak_gL,g/L,0.45355850000000003,0.004912096090265313,3,0.5007158333333334,0.013421527431083748,3,-0.04715733333333333,-9.417983253974727,-4.66622957609567,0.016699767872621025,False
 hans2020,BW25113 ΔgatC,BW25113,gene_knockout,ΔgatC,,acetate_reconsumed_frac,–,0.6231390835881715,0.2025930113839711,3,0.7820610198314744,0.17730757091289162,3,-0.15892193624330286,-20.320912590369076,-0.8348030979407064,0.3653248232209167,False
 hans2020,BW25113 ΔgatC,BW25113,gene_knockout,ΔgatC,,DO_min_pct,% sat.,0.33,0.5715767664977295,3,0.0,0.0,3,0.33,,0.8164965809277263,0.42264973081037416,False
+hans2020,BW25113 ΔgatC,BW25113,gene_knockout,ΔgatC,,acetate_end_gL,g/L,0.32877723333333336,0.34545221895808303,3,0.4671018333333334,0.1393139197499063,3,-0.13832460000000002,-29.613371245599197,-0.5251759203488261,0.571658111835688,False
+hans2020,BW25113 ΔgatC,BW25113,gene_knockout,ΔgatC,,glucose_end_gL,g/L,1.0584683933333332,1.7918473707601417,3,0.26737420500000003,0.45234942712142623,3,0.7910941883333331,295.87528398011807,0.6053776875046373,0.5279904146800318,True
 hans2020,BW25113 ΔgatC,BW25113,gene_knockout,ΔgatC,,mu_fedbatch_h,h⁻¹,0.09349868709842869,0.03008913250827496,3,0.08213555633031767,0.020017835097346885,3,0.011363130768111018,13.834606199552436,0.44466181785460795,0.6190171915718042,True
 hans2020,BW25113 ΔgatC,BW25113,gene_knockout,ΔgatC,,biomass_final_gL,g/L,10.708083333333335,4.0273937150262995,3,12.678033333333333,1.9648059556437967,3,-1.969949999999999,-15.53829326840913,-0.6217050942356454,0.5035082509461425,True
 hans2020,BW25113 ΔgatZ,BW25113,gene_knockout,ΔgatZ,,mu_batch_h,h⁻¹,0.32302135989853914,0.07518222796637909,3,0.3063748602064659,0.029120259358674332,3,0.016646499692073213,5.433376511654764,0.29199090464357635,0.7477749512960571,False
@@ -25,6 +31,8 @@ hans2020,BW25113 ΔgatZ,BW25113,gene_knockout,ΔgatZ,,glucose_depletion_h,h,2.40
 hans2020,BW25113 ΔgatZ,BW25113,gene_knockout,ΔgatZ,,acetate_peak_gL,g/L,0.43228833333333333,0.013950007037035245,3,0.5007158333333334,0.013421527431083748,3,-0.06842750000000003,-13.665934936482603,-4.9989706846151725,0.0036225364497965862,False
 hans2020,BW25113 ΔgatZ,BW25113,gene_knockout,ΔgatZ,,acetate_reconsumed_frac,–,0.7608423674431964,0.10087102524400912,3,0.7820610198314744,0.17730757091289162,3,-0.021218652388277914,-2.713170948329624,-0.1471020089791773,0.8679266269354807,False
 hans2020,BW25113 ΔgatZ,BW25113,gene_knockout,ΔgatZ,,DO_min_pct,% sat.,0.02666666666666667,0.046188021535170064,3,0.0,0.0,3,0.02666666666666667,,0.816496580927726,0.4226497308103742,False
+hans2020,BW25113 ΔgatZ,BW25113,gene_knockout,ΔgatZ,,acetate_end_gL,g/L,0.6020705000000001,0.03930942335814658,3,0.4671018333333334,0.1393139197499063,3,0.13496866666666668,28.89491263682331,1.3186169111677246,0.23060013981397834,False
+hans2020,BW25113 ΔgatZ,BW25113,gene_knockout,ΔgatZ,,glucose_end_gL,g/L,1.4809337266666667,0.07462055720057928,3,0.26737420500000003,0.45234942712142623,3,1.2135595216666666,453.88055353606995,3.7434486624914376,0.04016645296148899,True
 hans2020,BW25113 ΔgatZ,BW25113,gene_knockout,ΔgatZ,,mu_fedbatch_h,h⁻¹,0.04565366425998901,0.045295999761760714,3,0.08213555633031767,0.020017835097346885,3,-0.03648189207032866,-44.416685903498966,-1.0418208385366063,0.29899543504168075,True
 hans2020,BW25113 ΔgatZ,BW25113,gene_knockout,ΔgatZ,,biomass_final_gL,g/L,10.2639,2.959220321300865,3,12.678033333333333,1.9648059556437967,3,-2.414133333333334,-19.041859804754157,-0.961148516195363,0.3133907453192998,True
 hans2020,BW25113 ΔglcB,BW25113,gene_knockout,ΔglcB,,mu_batch_h,h⁻¹,0.3344167431843605,0.007812289088987232,3,0.3063748602064659,0.029120259358674332,3,0.02804188297789456,9.152801557868395,1.3153312092706806,0.2328747962530242,False
@@ -32,6 +40,8 @@ hans2020,BW25113 ΔglcB,BW25113,gene_knockout,ΔglcB,,glucose_depletion_h,h,2.40
 hans2020,BW25113 ΔglcB,BW25113,gene_knockout,ΔglcB,,acetate_peak_gL,g/L,0.43775349999999996,0.02459079206227403,3,0.5007158333333334,0.013421527431083748,3,-0.0629623333333334,-12.574464225384007,-3.1783667995796696,0.028430445154315472,False
 hans2020,BW25113 ΔglcB,BW25113,gene_knockout,ΔglcB,,acetate_reconsumed_frac,–,0.7626886848829383,0.061437987335771826,3,0.7820610198314744,0.17730757091289162,3,-0.019372334948536074,-2.4770873956498463,-0.1459983388474407,0.8716965881466991,False
 hans2020,BW25113 ΔglcB,BW25113,gene_knockout,ΔglcB,,DO_min_pct,% sat.,0.0,0.0,3,0.0,0.0,3,0.0,,,,False
+hans2020,BW25113 ΔglcB,BW25113,gene_knockout,ΔglcB,,acetate_end_gL,g/L,0.4444506666666667,0.17973793553555503,3,0.4671018333333334,0.1393139197499063,3,-0.022651166666666667,-4.8492994568279375,-0.1408643561014234,0.8718978042809691,False
+hans2020,BW25113 ΔglcB,BW25113,gene_knockout,ΔglcB,,glucose_end_gL,g/L,1.1161055033333334,0.9607215497873605,3,0.26737420500000003,0.45234942712142623,3,0.8487312983333333,317.43200445732344,1.1303333611326605,0.2648366911990086,True
 hans2020,BW25113 ΔglcB,BW25113,gene_knockout,ΔglcB,,mu_fedbatch_h,h⁻¹,0.10977660530239182,0.021934317125262698,3,0.08213555633031767,0.020017835097346885,3,0.027641048972074145,33.65296371879731,1.3163687945797482,0.1827981508988062,True
 hans2020,BW25113 ΔglcB,BW25113,gene_knockout,ΔglcB,,biomass_final_gL,g/L,14.576999999999998,2.1032312949364362,3,12.678033333333333,1.9648059556437967,3,1.8989666666666647,14.978400961242656,0.9330633528469021,0.3171620246298434,True
 hans2020,BW25113 ΔompT,BW25113,gene_knockout,ΔompT,,mu_batch_h,h⁻¹,0.269928511780495,0.03187472902914973,2,0.3063748602064659,0.029120259358674332,3,-0.03644634842597094,-11.895998386228479,-1.193843725587007,0.31917325767692056,False
@@ -39,6 +49,8 @@ hans2020,BW25113 ΔompT,BW25113,gene_knockout,ΔompT,,glucose_depletion_h,h,2.10
 hans2020,BW25113 ΔompT,BW25113,gene_knockout,ΔompT,,acetate_peak_gL,g/L,0.4477288333333333,0.008081610209811756,3,0.5007158333333334,0.013421527431083748,3,-0.05298700000000006,-10.582249745780636,-4.783028497371861,0.0076855444787138115,False
 hans2020,BW25113 ΔompT,BW25113,gene_knockout,ΔompT,,acetate_reconsumed_frac,–,0.37972441146909075,0.27637821037838955,3,0.7820610198314744,0.17730757091289162,3,-0.4023366083623836,-51.44567983315199,-1.7328024948710916,0.11303949612243565,False
 hans2020,BW25113 ΔompT,BW25113,gene_knockout,ΔompT,,DO_min_pct,% sat.,0.0,0.0,3,0.0,0.0,3,0.0,,,,False
+hans2020,BW25113 ΔompT,BW25113,gene_knockout,ΔompT,,acetate_end_gL,g/L,0.5038623333333333,0.07094853604080448,3,0.4671018333333334,0.1393139197499063,3,0.03676049999999992,7.869911307705557,0.33252743171326193,0.7113711964424841,False
+hans2020,BW25113 ΔompT,BW25113,gene_knockout,ΔompT,,glucose_end_gL,g/L,0.5623193000000001,0.9615633519812739,3,0.26737420500000003,0.45234942712142623,3,0.29494509500000005,110.31172397501847,0.3925239042208548,0.665244385273344,True
 hans2020,BW25113 ΔompT,BW25113,gene_knockout,ΔompT,,mu_fedbatch_h,h⁻¹,0.07273520983790162,0.003369592273606496,3,0.08213555633031767,0.020017835097346885,3,-0.009400346492416056,-11.444917295758572,-0.6548992319268141,0.5027309410590435,True
 hans2020,BW25113 ΔompT,BW25113,gene_knockout,ΔompT,,biomass_final_gL,g/L,12.061883333333332,1.8813253189795038,3,12.678033333333333,1.9648059556437967,3,-0.6161500000000011,-4.859980911865936,-0.32032443499103075,0.7148675552993639,True
 hans2020,W3110,BW25113,strain,W3110,,mu_batch_h,h⁻¹,0.2718463435173716,0.013751657462287582,2,0.3063748602064659,0.029120259358674332,3,-0.034528516689094346,-11.270022829492465,-1.5162929216158476,0.17631783381467922,False
@@ -46,6 +58,8 @@ hans2020,W3110,BW25113,strain,W3110,,glucose_depletion_h,h,2.105566666666667,0.8
 hans2020,W3110,BW25113,strain,W3110,,acetate_peak_gL,g/L,0.34129975,0.03108264633400765,2,0.5007158333333334,0.013421527431083748,3,-0.15941608333333335,-31.837635784768135,-6.658922973158103,0.06046311933956365,False
 hans2020,W3110,BW25113,strain,W3110,,acetate_reconsumed_frac,–,0.5633446503847623,0.08677918383553027,2,0.7820610198314744,0.17730757091289162,3,-0.21871636944671202,-27.966662945794564,-1.566891325638249,0.16621948192672126,False
 hans2020,W3110,BW25113,strain,W3110,,DO_min_pct,% sat.,0.0,0.0,3,0.0,0.0,3,0.0,,,,False
+hans2020,W3110,BW25113,strain,W3110,,acetate_end_gL,g/L,0.38827249999999996,0.20471695775325988,3,0.4671018333333334,0.1393139197499063,3,-0.07882933333333342,-16.876262884859884,-0.4502056926549836,0.6144256165529002,False
+hans2020,W3110,BW25113,strain,W3110,,glucose_end_gL,g/L,0.679705965,1.1643359993748092,3,0.26737420500000003,0.45234942712142623,3,0.41233176,154.21523553478167,0.46682914783448587,0.6132852113336525,True
 hans2020,W3110,BW25113,strain,W3110,,mu_fedbatch_h,h⁻¹,0.07221812669932538,0.023064102454079652,3,0.08213555633031767,0.020017835097346885,3,-0.009917429630992292,-12.074465766212384,-0.45925186253541517,0.6043869838991454,True
 hans2020,W3110,BW25113,strain,W3110,,biomass_final_gL,g/L,13.10075,2.2421399426663804,3,12.678033333333333,1.9648059556437967,3,0.4227166666666662,3.3342447961171695,0.20052605064713877,0.8182813938611261,True
 schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,vcd_max_1e6_mL,10⁶ cells/mL,9.785,0.27577164466275395,2,26.74,,1,-16.955,-63.406881077038136,,,False
@@ -54,6 +68,7 @@ schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,dec
 schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,1794.96,49.21463197058364,2,4485.24,,1,-2690.2799999999997,-59.98073681675897,,,False
 schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,titer_final_gL,g/L,1.725,0.03535533905932741,2,3.32,,1,-1.5949999999999998,-48.04216867469879,,,False
 schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,qp_pg_cell_day,pg/cell/day,19.657238305055355,0.16078421736544016,2,16.3201969125398,,1,3.3370413925155553,20.447310840664578,,,False
+schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,glucose_end_gL,g/L,20.08,1.0040916292848963,2,7.31,,1,12.77,174.6922024623803,,,False
 schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,diameter_end_um,µm,20.655,0.8273149339882593,2,17.36,,1,3.2950000000000017,18.980414746543794,,,False
 schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,mu_batch_h,h⁻¹,0.024908406610316028,0.0007390938159546749,2,0.02902963388649005,,1,-0.004121227276174023,-14.196621604973048,,,False
 schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,vcd_max_1e6_mL,10⁶ cells/mL,24.064999999999998,0.10606601717798363,2,26.74,,1,-2.6750000000000007,-10.0037397157816,,,False
@@ -62,6 +77,7 @@ schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard pr
 schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,3782.8199999999997,24.352757544064737,2,4485.24,,1,-702.4200000000001,-15.66070043074619,,,False
 schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,titer_final_gL,g/L,3.9850000000000003,0.12020815280171335,2,3.32,,1,0.6650000000000005,20.030120481927717,,,False
 schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,qp_pg_cell_day,pg/cell/day,23.667685856904438,0.8701612699146758,2,16.3201969125398,,1,7.347488944364638,45.02083512680608,,,False
+schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,glucose_end_gL,g/L,5.785,0.45961940777125615,2,7.31,,1,-1.5249999999999995,-20.861833105335148,,,False
 schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,diameter_end_um,µm,17.495,0.02121320343559723,2,17.36,,1,0.13500000000000156,0.7776497695852536,,,False
 schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,mu_batch_h,h⁻¹,0.014085665567320244,0.000742543372726626,2,0.02902963388649005,,1,-0.014943968319169807,-51.47832169569491,,,False
 schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,vcd_max_1e6_mL,10⁶ cells/mL,6.4,1.1172287142747452,2,26.74,,1,-20.339999999999996,-76.06581899775617,,,False
@@ -70,6 +86,7 @@ schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standa
 schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,835.26,128.89142407468387,2,4485.24,,1,-3649.9799999999996,-81.37758514594536,,,False
 schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,titer_final_gL,g/L,1.43,0.07071067811865482,2,3.32,,1,-1.89,-56.92771084337349,,,False
 schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,qp_pg_cell_day,pg/cell/day,33.73517809679702,3.377181355441788,2,16.3201969125398,,1,17.414981184257222,106.70815602032495,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,glucose_end_gL,g/L,15.125,0.13435028842544494,2,7.31,,1,7.815,106.90834473324213,,,True
 schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,diameter_end_um,µm,21.03,0.09899494936611705,2,17.36,,1,3.6700000000000017,21.140552995391726,,,False
 schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,mu_batch_h,h⁻¹,0.013437006937978743,0.0011257035363758053,2,0.02902963388649005,,1,-0.015592626948511308,-53.7127922779897,,,False
 schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,vcd_max_1e6_mL,10⁶ cells/mL,6.43,0.21213203435596412,2,26.74,,1,-20.31,-75.95362752430816,,,False
@@ -78,6 +95,7 @@ schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard
 schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,801.9,39.11714713523976,2,4485.24,,1,-3683.3399999999997,-82.1213580544185,,,False
 schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,titer_final_gL,g/L,1.39,0.0,2,3.32,,1,-1.93,-58.13253012048193,,,False
 schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,qp_pg_cell_day,pg/cell/day,34.15960961624813,1.6663255710701246,2,16.3201969125398,,1,17.839412703708334,109.30880797155842,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,glucose_end_gL,g/L,17.1,0.509116882454316,2,7.31,,1,9.790000000000003,133.92612859097127,,,True
 schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,diameter_end_um,µm,20.814999999999998,0.03535533905932788,2,17.36,,1,3.4549999999999983,19.902073732718883,,,False
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,mu_batch_h,h⁻¹,0.028104128908733192,0.0010582488728699533,2,0.027701400638799487,,1,0.00040272826993370536,1.4538191594891003,,,False
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,vcd_max_1e6_mL,10⁶ cells/mL,23.17,0.9050966799187792,2,24.86,,1,-1.6899999999999977,-6.798069187449707,,,False
@@ -86,6 +104,7 @@ schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 fr
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,3627.1800000000003,72.54915574973971,2,3714.24,,1,-87.05999999999949,-2.343951925562149,,,False
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,titer_final_gL,g/L,3.45,0.05656854249492385,2,3.32,,1,0.13000000000000034,3.915662650602414,,,False
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,qp_pg_cell_day,pg/cell/day,22.76229402094838,0.08098307618286903,2,21.387955544068237,,1,1.374338476880144,6.425758993413022,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,glucose_end_gL,g/L,2.08,0.4808326112068523,2,2.55,,1,-0.46999999999999975,-18.4313725490196,,,True
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,diameter_end_um,µm,18.67,0.02828427124746381,2,18.11,,1,0.5600000000000023,3.0922142462727953,,,False
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,mu_batch_h,h⁻¹,0.028124554856328508,0.001470595203284668,2,0.027701400638799487,,1,0.0004231542175290211,1.527555314067186,,,False
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,vcd_max_1e6_mL,10⁶ cells/mL,21.995,0.9121677477306457,2,24.86,,1,-2.8649999999999984,-11.524537409493153,,,False
@@ -94,6 +113,7 @@ schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 fr
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,3458.52,190.40971403791335,2,3714.24,,1,-255.7199999999998,-6.884853967433435,,,False
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,titer_final_gL,g/L,3.465,0.049497474683058214,2,3.32,,1,0.14500000000000002,4.367469879518082,,,False
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,qp_pg_cell_day,pg/cell/day,24.002494880711637,0.9779815626451177,2,21.387955544068237,,1,2.6145393366434,12.224353708124847,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,glucose_end_gL,g/L,1.7799999999999998,0.3535533905932736,2,2.55,,1,-0.77,-30.196078431372552,,,True
 schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,diameter_end_um,µm,18.63,0.282842712474618,2,18.11,,1,0.5199999999999996,2.8713418001104385,,,False
 schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,mu_batch_h,h⁻¹,0.02805618081623216,0.0012499014528480018,3,0.027640936126508465,,1,0.00041524468972369694,1.5022815718801485,,,False
 schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,vcd_max_1e6_mL,10⁶ cells/mL,18.683333333333334,0.5689756878227158,3,23.37,,1,-4.686666666666667,-20.054200542005418,,,False
@@ -102,6 +122,7 @@ schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limita
 schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,3313.8799999999997,50.671317330418724,3,3906.36,,1,-592.4800000000005,-15.167060895565188,,,False
 schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,titer_final_gL,g/L,2.8633333333333333,0.10214368964029709,3,2.76,,1,0.1033333333333335,3.7439613526570215,,,False
 schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,qp_pg_cell_day,pg/cell/day,20.3705573017144,0.6118797097790577,3,16.83408595213959,,1,3.5364713495748106,21.00780143115124,,,False
+schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,glucose_end_gL,g/L,4.776666666666667,0.2730079363925769,3,0.81,,1,3.9666666666666672,489.7119341563786,,,True
 schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,diameter_end_um,µm,17.456666666666667,0.17039170558842728,3,14.89,,1,2.5666666666666664,17.237519588090432,,,False
 schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,mu_batch_h,h⁻¹,0.02893713540732104,0.0014446355029084142,3,0.027640936126508465,,1,0.001296199280812576,4.689418892616604,,,False
 schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,vcd_max_1e6_mL,10⁶ cells/mL,22.459999999999997,0.1931320791582808,3,23.37,,1,-0.9100000000000037,-3.8938810440736105,,,False
@@ -110,6 +131,7 @@ schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutr
 schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,4097.24,61.961420254864926,3,3906.36,,1,190.87999999999965,4.886390399246343,,,False
 schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,titer_final_gL,g/L,2.4633333333333334,0.11150485789118485,3,2.76,,1,-0.2966666666666664,-10.748792270531393,,,False
 schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,qp_pg_cell_day,pg/cell/day,14.045052081717964,0.8408701313470199,3,16.83408595213959,,1,-2.7890338704216244,-16.567777296320287,,,False
+schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,glucose_end_gL,g/L,4.583333333333333,0.24110855093366812,3,0.81,,1,3.773333333333333,465.8436213991769,,,True
 schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,diameter_end_um,µm,16.243333333333332,0.12662279942148283,3,14.89,,1,1.3533333333333317,9.088873964629496,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,vcd_max_1e6_mL,10⁶ cells/mL,40.436081560000005,0.9107903602894324,2,124.87852496,5.747706157166353,2,-84.44244339999999,-67.61966753454836,-20.52088016724336,0.02691655541704969,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,viability_end_pct,%,26.11666666666667,1.6970562748477132,2,90.07833333333332,2.255670631985075,2,-63.961666666666645,-71.00671637648712,-32.04488698457965,0.0014577977093204342,False
@@ -394,6 +416,25 @@ glutamine_mM                       8
 lower_impeller      standard (20 mm)
 feeding                         none
 events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,glucose_end_gL,g/L,0.0,0.0,2,0.0,0.0,2,0.0,,,,True
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
 Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,viability_80_h,h,119.0,0.0,2,145.5,4.949747468305833,2,-26.5,-18.21305841924399,-7.571428571428571,0.08359800487376252,False
 CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
 medium                       TCX6D
@@ -547,6 +588,25 @@ lower_impeller                                      standard (20 mm)
 feeding                                        exponential from 48 h
 events              R02 feed line blocked; feed effective from ~66 h
 Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,746.9227500000001,9.400866804744979,2,2617.616583333333,,1,-1870.6938333333328,-71.465540264539,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,glucose_end_gL,g/L,0.0,0.0,2,0.0,,1,0.0,,,,True
 CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
 medium                              TCX6D
 agitation_rpm                         100
@@ -736,6 +796,25 @@ glutamine_mM                            8
 lower_impeller           standard (20 mm)
 feeding             exponential from 48 h
 events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,glucose_end_gL,g/L,0.0,,1,0.0,0.0,2,0.0,,,,True
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
 Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,viability_80_h,h,148.5,,1,136.0,0.0,2,12.5,9.191176470588225,,,False
 CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
 medium                                                          TCX6D
@@ -775,27 +854,90 @@ lower_impeller           standard (20 mm)
 feeding             exponential from 48 h
 events                                NaN
 Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,mu_fedbatch_h,h⁻¹,-0.0523260348691337,,1,-0.023360026623495185,0.004484903552609328,2,-0.028966008245638518,123.99818164806761,,,True
+K. phaffii · hypoxia,Crl1_mu0.030_hypoxia,Crl1_mu0.030_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,glucose_end_gL,g/L,0.0,,1,0.0,,1,0.0,,,,True
 K. phaffii · hypoxia,Crl1_mu0.030_hypoxia,Crl1_mu0.030_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,activity_final_AU_mL,AU/mL,344.32029,,1,186.78,,1,157.54029,84.34537423707036,,,False
 K. phaffii · hypoxia,Crl1_mu0.030_hypoxia,Crl1_mu0.030_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,arabitol_end_gL,g/L,0.0,,1,0.0,,1,0.0,,,,False
 K. phaffii · hypoxia,Crl1_mu0.030_hypoxia,Crl1_mu0.030_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,mu_fedbatch_h,h⁻¹,0.019837883744440503,,1,0.016121456589120488,,1,0.003716427155320015,23.052676008370334,,,True
 K. phaffii · hypoxia,Crl1_mu0.030_hypoxia,Crl1_mu0.030_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,biomass_final_gL,g/L,81.94999999999999,,1,85.45,,1,-3.500000000000014,-4.09596255119955,,,True
+K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,glucose_end_gL,g/L,0.0,,1,0.0,,1,0.0,,,,True
 K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,activity_final_AU_mL,AU/mL,331.90521,,1,131.0,,1,200.90521,153.36275572519088,,,False
 K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,ethanol_end_gL,g/L,8.1699802,,1,0.0,,1,8.1699802,,,,False
 K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,arabitol_end_gL,g/L,4.220611,,1,0.0,,1,4.220611,,,,False
 K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,mu_fedbatch_h,h⁻¹,0.05909639391171919,,1,0.07401239986445178,,1,-0.01491600595273259,-20.15338778373644,,,True
 K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,biomass_final_gL,g/L,89.17499999999998,,1,89.7,,1,-0.5250000000000199,-0.5852842809364822,,,True
+K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,glucose_end_gL,g/L,5.3451224690019465,,1,0.0,,1,5.3451224690019465,,,,True
 K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,activity_final_AU_mL,AU/mL,297.38831,,1,168.37,,1,129.01830999999999,76.6278493793431,,,False
 K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,ethanol_end_gL,g/L,11.388271,,1,0.0,,1,11.388271,,,,False
 K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,arabitol_end_gL,g/L,2.8171093,,1,0.0,,1,2.8171093,,,,False
 K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,mu_fedbatch_h,h⁻¹,0.06635403178415958,,1,0.09077857172762299,,1,-0.024424539943463414,-26.90562263608657,,,True
 K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,biomass_final_gL,g/L,68.60000000000001,,1,81.0,,1,-12.399999999999991,-15.308641975308635,,,True
+K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,glucose_end_gL,g/L,0.0,,1,0.0,,1,0.0,,,,True
 K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,activity_final_AU_mL,AU/mL,24.075319,,1,13.765778,,1,10.309541000000001,74.89254148948213,,,False
 K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,ethanol_end_gL,g/L,9.4307367,,1,0.0,,1,9.4307367,,,,False
 K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,arabitol_end_gL,g/L,3.3364397,,1,0.0,,1,3.3364397,,,,False
 K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,mu_fedbatch_h,h⁻¹,0.044921891724620376,,1,0.04489021400780489,,1,3.167771681548276e-05,0.0705670879848741,,,True
 K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,biomass_final_gL,g/L,92.3,,1,92.65,,1,-0.3500000000000085,-0.37776578521317994,,,True
+K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,glucose_end_gL,g/L,0.0,,1,0.0,,1,0.0,,,,True
 K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,activity_final_AU_mL,AU/mL,10.88205558057969,,1,5.8141373000000005,,1,5.06791828057969,87.16543863832884,,,False
 K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,ethanol_end_gL,g/L,13.240551,,1,0.0,,1,13.240551,,,,False
 K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,arabitol_end_gL,g/L,0.0,,1,0.0,,1,0.0,,,,False
 K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,mu_fedbatch_h,h⁻¹,0.04664516770321187,,1,0.04217608702752292,,1,0.0044690806756889495,10.59624301508235,,,True
 K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,biomass_final_gL,g/L,97.3875,,1,89.6,,1,7.7875000000000085,8.69140625,,,True
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,mu_batch_h,h⁻¹,0.3170983760930717,0.007451251997721441,2,0.33405424057109767,0.01409444699116837,2,-0.016955864478025995,-5.0757818398109,-1.504072832256077,0.3073724812783067,False
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,glucose_depletion_h,h,14.7915,1.826456815804851,2,17.25,3.8890872965260113,2,-2.458500000000001,-14.252173913043487,-0.8092044308800013,0.531553452810351,False
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,acetate_peak_gL,g/L,0.241962172125233,0.020754634965608195,2,0.24875,0.0045961940777125634,2,-0.006787827874767005,-2.72877502503196,-0.4515796056811295,0.7245345977510733,False
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,Yxs_batch_gg,g/g,0.30269956543074,0.020336586967169855,2,0.276131518823568,0.06859452374647898,2,0.02656804660717199,9.621519021212288,0.5251594182543634,0.6813157785020955,False
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,titer_final_gL,g/L,30.6819375,0.9021798644463858,2,19.745,0.7919595949289314,2,10.936937499999999,55.39092175234235,12.884256835787136,0.006360326558351441,False
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,acetate_end_gL,g/L,0.06807448861072098,0.029536338704364784,2,0.025750000000000002,0.0031819805153394643,2,0.042324488610720974,164.36694606105232,2.014857629965568,0.2888580569965329,False
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,glucose_end_gL,g/L,0.0533273,0.006411902870443377,2,0.005,0.007071067811865475,2,0.048327300000000004,966.5459999999999,7.160091168849676,0.019441078108909233,False
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,product_per_biomass_gg,g/g,0.730551958086529,0.004358705825035079,2,0.5436781655777868,0.014441088186289764,2,0.18687379250874214,34.37213490266699,17.5198881299632,0.022628501423834445,False
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,mu_fedbatch_h,h⁻¹,0.11504106694532218,0.0029084654388343584,2,0.06386380840239214,0.001461166311957768,2,0.05117725854293004,80.13499323509355,22.23608773370384,0.007680778419174137,False
+B. subtilis · surfactin feed rate,feed for µ = 0.15 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.15 vs 0.075 h⁻¹,0.15,biomass_final_gL,g/L,41.9953596287703,0.9843713891228076,2,36.3109048723898,0.4921856945614013,2,5.684454756380504,15.654952076677286,7.304488726499285,0.03939448753780812,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,mu_batch_h,h⁻¹,0.3432899031732256,,1,0.33405424057109767,0.01409444699116837,2,0.009235662602127936,2.7647194618271254,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,glucose_depletion_h,h,12.375,0.5303300858899106,2,17.25,3.8890872965260113,2,-4.875,-28.260869565217394,-1.7564716615330753,0.32274329202936736,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,acetate_peak_gL,g/L,0.2902578736026735,0.12344985071421094,2,0.24875,0.0045961940777125634,2,0.04150787360267352,16.68658235283358,0.4751755875571111,0.7174267954079689,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,Yxs_batch_gg,g/g,0.2839525805798942,,1,0.276131518823568,0.06859452374647898,2,0.007821061756326186,2.832368354632986,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,titer_final_gL,g/L,34.1725,1.2551145366061258,2,19.745,0.7919595949289314,2,14.427499999999998,73.06913142567737,13.748233192871062,0.00989853500929107,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,acetate_end_gL,g/L,0.08649913453135845,0.020496143021513324,2,0.025750000000000002,0.0031819805153394643,2,0.06074913453135845,235.91896905381918,4.142012167795446,0.14197331185168058,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,glucose_end_gL,g/L,0.034328100000000035,0.044272662676871015,2,0.005,0.007071067811865475,2,0.029328100000000034,586.5620000000007,0.9251102227130742,0.5186599176123122,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,product_per_biomass_gg,g/g,0.7101250609756097,0.03816971028098411,2,0.5436781655777868,0.014441088186289764,2,0.16644689539782287,30.61496781297692,5.767957525648339,0.07180829355568306,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,mu_fedbatch_h,h⁻¹,0.17517673283044544,0.0014737432422339588,2,0.06386380840239214,0.001461166311957768,2,0.1113129244280533,174.29734807967364,75.85371905266683,0.00017384713225135896,False
+B. subtilis · surfactin feed rate,feed for µ = 0.2 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.2 vs 0.075 h⁻¹,0.2,biomass_final_gL,g/L,48.143851508120655,0.8203094909356672,2,36.3109048723898,0.4921856945614013,2,11.832946635730856,32.587859424920104,17.492855684535947,0.007422607677112226,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,mu_batch_h,h⁻¹,0.3244546681789987,0.15081439758355955,2,0.33405424057109767,0.01409444699116837,2,-0.009599572392098965,-2.8736567976768046,-0.08962636114939575,0.9429032996218598,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,glucose_depletion_h,h,12.2915,1.119350034618305,2,17.25,3.8890872965260113,2,-4.958500000000001,-28.74492753623189,-1.732748844313325,0.3059241536394059,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,acetate_peak_gL,g/L,0.44325145760301954,0.00954388018405966,2,0.24875,0.0045961940777125634,2,0.19450145760301954,78.19154074493248,25.966942787789616,0.006733568797995666,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,Yxs_batch_gg,g/g,0.279879471551196,0.02046535900818609,2,0.276131518823568,0.06859452374647898,2,0.0037479527276280122,1.3573071062643605,0.07404621494020842,0.951520164967541,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,titer_final_gL,g/L,35.982,1.0917728701520324,2,19.745,0.7919595949289314,2,16.237,82.23347682957709,17.02489274274283,0.0050674134724375,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,acetate_end_gL,g/L,0.3926597294100985,0.47707118580284835,2,0.025750000000000002,0.0031819805153394643,2,0.36690972941009853,1424.8921530489263,1.0876305036693965,0.4732802867824497,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,glucose_end_gL,g/L,0.09478010000000005,0.08396539473199652,2,0.005,0.007071067811865475,2,0.08978010000000004,1795.602000000001,1.5068158277894506,0.37055440278918633,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,product_per_biomass_gg,g/g,0.7455566518682945,0.0023463257499844897,2,0.5436781655777868,0.014441088186289764,2,0.20187848629050764,37.131983418161354,19.514037936728734,0.028174605361244387,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,mu_fedbatch_h,h⁻¹,0.2107288445572838,0.002681951380180768,2,0.06386380840239214,0.001461166311957768,2,0.14686503615489166,229.96598516256122,68.00520707603334,0.0011335960202694766,False
+B. subtilis · surfactin feed rate,feed for µ = 0.25 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.25 vs 0.075 h⁻¹,0.25,biomass_final_gL,g/L,48.259860788863115,1.3124951854970734,2,36.3109048723898,0.4921856945614013,2,11.948955916473317,32.907348242811494,12.055238161201437,0.02859066287249955,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,mu_batch_h,h⁻¹,0.412819791780598,0.014234753211307948,2,0.33405424057109767,0.01409444699116837,2,0.07876555120950035,23.578671258548646,5.560664235647477,0.03085840908031735,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,glucose_depletion_h,h,13.5,0.3535533905932738,2,17.25,3.8890872965260113,2,-3.75,-21.739130434782606,-1.3580361906377778,0.4013777232982166,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,acetate_peak_gL,g/L,0.347486607899896,0.008504220663834286,2,0.24875,0.0045961940777125634,2,0.098736607899896,39.69310870347578,14.44478411934752,0.012578618884973611,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,Yxs_batch_gg,g/g,0.2886228609748015,0.020418526063580585,2,0.276131518823568,0.06859452374647898,2,0.012491342151233487,4.523692986751993,0.24683061212027757,0.8410863489535273,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,titer_final_gL,g/L,29.667,2.1411193334328673,2,19.745,0.7919595949289314,2,9.922,50.250696378830085,6.146515995546118,0.06751134745519465,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,acetate_end_gL,g/L,2.6453128221236875,0.3651318085835162,2,0.025750000000000002,0.0031819805153394643,2,2.6195628221236875,10173.05950339296,10.145598161711346,0.06252610809900272,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,glucose_end_gL,g/L,0.2701119999999999,0.27207771883783516,2,0.005,0.007071067811865475,2,0.2651119999999999,5302.239999999998,1.3775418023342787,0.3995207483552976,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,product_per_biomass_gg,g/g,0.6389074996873045,0.023552330356486444,2,0.5436781655777868,0.014441088186289764,2,0.09522933410951773,17.515754749561086,4.87472660810735,0.05662402789979262,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,mu_fedbatch_h,h⁻¹,0.2673215179668594,0.02214103563138989,2,0.06386380840239214,0.001461166311957768,2,0.20345770956446724,318.58060872681426,12.967240389927293,0.04799613579305785,False
+B. subtilis · surfactin feed rate,feed for µ = 0.3 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.3 vs 0.075 h⁻¹,0.3,biomass_final_gL,g/L,46.40371229698376,1.6406189818713444,2,36.3109048723898,0.4921856945614013,2,10.092807424593964,27.795527156549515,8.333088681423995,0.054338640464990554,False
+B. subtilis · surfactin feed rate,feed for µ = 0.4 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.4 vs 0.075 h⁻¹,0.4,mu_batch_h,h⁻¹,0.3471877019857349,,1,0.33405424057109767,0.01409444699116837,2,0.013133461414637226,3.9315356069673957,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.4 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.4 vs 0.075 h⁻¹,0.4,glucose_depletion_h,h,12.5,,1,17.25,3.8890872965260113,2,-4.75,-27.536231884057973,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.4 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.4 vs 0.075 h⁻¹,0.4,acetate_peak_gL,g/L,1.6316821328268099,1.9851247198251945,2,0.24875,0.0045961940777125634,2,1.3829321328268098,555.9526162117828,0.9852056732022901,0.5047427848918066,False
+B. subtilis · surfactin feed rate,feed for µ = 0.4 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.4 vs 0.075 h⁻¹,0.4,titer_final_gL,g/L,19.45775,0.09793428919433719,2,19.745,0.7919595949289314,2,-0.2872500000000002,-1.454798683210945,-0.5090688627727268,0.6982045346139506,False
+B. subtilis · surfactin feed rate,feed for µ = 0.4 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.4 vs 0.075 h⁻¹,0.4,acetate_end_gL,g/L,1.8078885067584958,1.7359312760344192,2,0.025750000000000002,0.0031819805153394643,2,1.7821385067584958,6920.926239838817,1.451854832639993,0.38397733953162794,False
+B. subtilis · surfactin feed rate,feed for µ = 0.4 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.4 vs 0.075 h⁻¹,0.4,glucose_end_gL,g/L,48.53432,6.106574162327031,2,0.005,0.007071067811865475,2,48.52932,970586.3999999999,11.238834521809311,0.0564955271093399,False
+B. subtilis · surfactin feed rate,feed for µ = 0.4 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.4 vs 0.075 h⁻¹,0.4,product_per_biomass_gg,g/g,0.5358961429154756,0.004566840917406735,2,0.5436781655777868,0.014441088186289764,2,-0.007782022662311205,-1.4313656782668382,-0.7266240616191869,0.5829127830683034,False
+B. subtilis · surfactin feed rate,feed for µ = 0.4 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.4 vs 0.075 h⁻¹,0.4,mu_fedbatch_h,h⁻¹,0.3097127196463949,,1,0.06386380840239214,0.001461166311957768,2,0.24584891124400277,384.9581122612695,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.4 h⁻¹,feed for µ = 0.075 h⁻¹,feed,feed for µ = 0.4 vs 0.075 h⁻¹,0.4,biomass_final_gL,g/L,36.3109048723898,0.4921856945614013,2,36.3109048723898,0.4921856945614013,2,0.0,0.0,0.0,1.0,False
+B. subtilis · surfactin feed rate,feed for µ = 0.075 h⁻¹,batch (no feed),feed,fed-batch (µ = 0.075) vs batch,,mu_batch_h,h⁻¹,0.33405424057109767,0.01409444699116837,2,0.5165739198620173,,1,-0.1825196792909196,-35.332732116958724,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.075 h⁻¹,batch (no feed),feed,fed-batch (µ = 0.075) vs batch,,glucose_depletion_h,h,17.25,3.8890872965260113,2,14.0,,1,3.25,23.214285714285722,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.075 h⁻¹,batch (no feed),feed,fed-batch (µ = 0.075) vs batch,,acetate_peak_gL,g/L,0.24875,0.0045961940777125634,2,0.45499999999999996,,1,-0.20624999999999996,-45.32967032967032,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.075 h⁻¹,batch (no feed),feed,fed-batch (µ = 0.075) vs batch,,Yxs_batch_gg,g/g,0.276131518823568,0.06859452374647898,2,0.22795413273822626,,1,0.04817738608534175,21.134684204504772,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.075 h⁻¹,batch (no feed),feed,fed-batch (µ = 0.075) vs batch,,titer_final_gL,g/L,19.745,0.7919595949289314,2,3.0999999999999996,,1,16.645000000000003,536.9354838709678,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.075 h⁻¹,batch (no feed),feed,fed-batch (µ = 0.075) vs batch,,acetate_end_gL,g/L,0.025750000000000002,0.0031819805153394643,2,0.515,,1,-0.48925,-95.0,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.075 h⁻¹,batch (no feed),feed,fed-batch (µ = 0.075) vs batch,,glucose_end_gL,g/L,0.005,0.007071067811865475,2,0.010499999999999999,,1,-0.005499999999999999,-52.38095238095237,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.075 h⁻¹,batch (no feed),feed,fed-batch (µ = 0.075) vs batch,,product_per_biomass_gg,g/g,0.5436781655777868,0.014441088186289764,2,0.4607241379310344,,1,0.08295402764675242,18.005140346948735,,,False
+B. subtilis · surfactin feed rate,feed for µ = 0.075 h⁻¹,batch (no feed),feed,fed-batch (µ = 0.075) vs batch,,biomass_final_gL,g/L,36.3109048723898,0.4921856945614013,2,6.728538283062646,,1,29.58236658932715,439.65517241379314,,,False
