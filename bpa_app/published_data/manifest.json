@@ -1,0 +1,14 @@
+{
+  "simensen2022_ecoli_mg1655_batch": {
+    "file": "simensen2022_ecoli_mg1655_batch/sampling_with_offgas.csv",
+    "organism": "E. coli K-12 MG1655",
+    "mode": "Batch",
+    "time_col": "Time_h",
+    "od_col": "OD_600nm",
+    "dcw_factor": 0.5,
+    "expected": {"mu_max": 0.71},
+    "tolerance": {"mu_max": 0.10},
+    "doi": "10.1371/journal.pone.0262450",
+    "license": "CC BY 4.0"
+  }
+}

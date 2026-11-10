@@ -244,10 +244,21 @@ def _detect_growth_changepoints(t, ln_od, min_seg=None, penalty_factor=None,
     return []
 
 
-MAX_LN_DROP = np.log(0.75)  # largest OD drop (−25 %) tolerated inside an exponential window
+MAX_LN_DROP = np.log(0.75)
 
 
-def _fit_phase(t, od, ln_od, phase_start, phase_end, min_pts=5):
+def _has_plateau(t, ln_od):
+    """True if the last readings grow much slower than the fastest stretch."""
+    if len(t) < 3:
+        return False
+    rates = np.diff(ln_od) / np.maximum(np.diff(t), 1e-9)
+    peak = np.max(rates)
+    if peak <= 0:
+        return True
+    return bool(rates[-1] < 0.25 * peak)  # largest OD drop (−25 %) tolerated inside an exponential window
+
+
+def _fit_phase(t, od, ln_od, phase_start, phase_end, min_pts=5, plateaued=True):
     """Fit a single growth phase using sliding-window regression.
 
     Returns dict with mu, r2, etc. for this phase, or None if no fit.
@@ -274,7 +285,7 @@ def _fit_phase(t, od, ln_od, phase_start, phase_end, min_pts=5):
             span = t_ph[j-1] - t_ph[i]
             if span < min_span:
                 continue
-            if od_ph[i:j].max() > max_od_ph * 0.92:
+            if plateaued and od_ph[i:j].max() > max_od_ph * 0.92:
                 continue
             # A true exponential window cannot contain a large OD drop.
             # Drops >25 % between consecutive readings are near-detection-
@@ -337,7 +348,12 @@ def compute_growth_kinetics(time_h, od, dcw_factor=0.4):
     n          = len(t)
     total_span = float(t[-1] - t[0])
     ln_od      = np.log(np.clip(od, 1e-9, None))
-    MIN_PTS    = 5
+    # Bioreactor runs are often sparsely sampled (5–8 OD points); allow a
+    # 3-point exponential window there, flagged by a lower quality score.
+    MIN_PTS    = 5 if n >= 10 else max(3, n - 2)
+    # Exclude near-maximum readings only if the whole culture plateaued; runs
+    # harvested mid-exponential have their highest OD still on the line.
+    plateaued  = _has_plateau(t, ln_od)
 
     # ── Diauxic / multi-phase detection ──────────────────────────────────────
     # Detect changepoints where growth rate shifts significantly, then fit
@@ -349,14 +365,14 @@ def compute_growth_kinetics(time_h, od, dcw_factor=0.4):
     for seg_idx in range(len(boundaries) - 1):
         seg_start = boundaries[seg_idx]
         seg_end   = boundaries[seg_idx + 1]
-        phase = _fit_phase(t, od, ln_od, seg_start, seg_end, MIN_PTS)
+        phase = _fit_phase(t, od, ln_od, seg_start, seg_end, MIN_PTS, plateaued)
         if phase is not None:
             phase["phase_idx"] = seg_idx
             phases.append(phase)
 
     # If segmented fitting yielded no phases, fall back to full-dataset fit
     if not phases:
-        full_phase = _fit_phase(t, od, ln_od, 0, n, MIN_PTS)
+        full_phase = _fit_phase(t, od, ln_od, 0, n, MIN_PTS, plateaued)
         if full_phase is not None:
             full_phase["phase_idx"] = 0
             phases.append(full_phase)
@@ -365,7 +381,7 @@ def compute_growth_kinetics(time_h, od, dcw_factor=0.4):
     # Always also fit the full dataset: changepoint boundaries can clip
     # valid exponential data, so the unconstrained fit is a useful
     # competitor.  It's added as a hidden candidate — not a reported phase.
-    full_fit = _fit_phase(t, od, ln_od, 0, n, MIN_PTS) if changepoints else None
+    full_fit = _fit_phase(t, od, ln_od, 0, n, MIN_PTS, plateaued) if changepoints else None
 
     res["phases"] = phases
     res["changepoints"] = [float(t[cp]) for cp in changepoints]
