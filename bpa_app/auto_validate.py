@@ -128,8 +128,8 @@ def fit_exponential_growth(time, od, phase_start, phase_end, growth_regime):
     except:
         return None, None, None
 
-def calculate_kinetics_auto(df, time_col, od_col, substrate_col=None, product_col=None):
-    """Automated kinetics calculation"""
+def _legacy_kinetics(df, time_col, od_col, substrate_col=None, product_col=None):
+    """Old standalone kinetics (kept only for yield / fed-batch fields)."""
     
     time = df[time_col].values
     od = df[od_col].values
@@ -187,6 +187,23 @@ def calculate_kinetics_auto(df, time_col, od_col, substrate_col=None, product_co
     }
     
     return result
+
+def calculate_kinetics_auto(df, time_col, od_col, substrate_col=None, product_col=None):
+    """Validate the engine the app actually uses (modules.calcs), not a copy."""
+    from modules.calcs import compute_growth_kinetics
+    d = df[[time_col, od_col]].dropna()
+    real = compute_growth_kinetics(d[time_col].values, d[od_col].values)
+    legacy = _legacy_kinetics(df, time_col, od_col, substrate_col, product_col) or {}
+    if real.get("mu") is None:
+        return None
+    return {
+        "mu_max": real["mu"],
+        "r_squared": real["r2"],
+        "lag_time": real.get("lag_h"),
+        "is_fed_batch": legacy.get("is_fed_batch", False),
+        "yields": legacy.get("yields", {}),
+    }
+
 
 # ============================================================================
 # EXPECTED VALUES FROM LITERATURE

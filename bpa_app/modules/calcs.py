@@ -244,6 +244,9 @@ def _detect_growth_changepoints(t, ln_od, min_seg=None, penalty_factor=None,
     return []
 
 
+MAX_LN_DROP = np.log(0.75)  # largest OD drop (−25 %) tolerated inside an exponential window
+
+
 def _fit_phase(t, od, ln_od, phase_start, phase_end, min_pts=5):
     """Fit a single growth phase using sliding-window regression.
 
@@ -259,7 +262,9 @@ def _fit_phase(t, od, ln_od, phase_start, phase_end, min_pts=5):
         return None
 
     span_ph = float(t_ph[-1] - t_ph[0])
-    min_span = max(2.0, span_ph * 0.15)
+    # 15 % of the phase, capped at 6 h so long stationary tails (fed-batch,
+    # extended runs) do not demand a window longer than the exponential phase.
+    min_span = max(2.0, min(span_ph * 0.15, 6.0))
     best_score, best = -np.inf, None
 
     for i in range(n_ph - min_pts + 1):
@@ -270,6 +275,11 @@ def _fit_phase(t, od, ln_od, phase_start, phase_end, min_pts=5):
             if span < min_span:
                 continue
             if od_ph[i:j].max() > max_od_ph * 0.92:
+                continue
+            # A true exponential window cannot contain a large OD drop.
+            # Drops >25 % between consecutive readings are near-detection-
+            # limit noise or sampling artefacts; including them inflates μ.
+            if np.min(np.diff(ln_ph[i:j])) < MAX_LN_DROP:
                 continue
             sl, ic, r, _, _ = linregress(t_ph[i:j], ln_ph[i:j])
             if sl <= 0:
