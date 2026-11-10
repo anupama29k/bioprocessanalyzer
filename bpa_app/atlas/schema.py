@@ -18,7 +18,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field, asdict
 
-SCHEMA_VERSION = "0.1"
+SCHEMA_VERSION = "0.2"
 
 # Controlled vocabulary: variable name → (unit, description). Names carry the unit.
 VARIABLES = {
@@ -38,6 +38,12 @@ VARIABLES = {
     "OUR_mmol_Lh":     ("mmol/L/h", "oxygen uptake rate"),
     "CER_mmol_Lh":     ("mmol/L/h", "CO2 evolution rate"),
     "agitation_rpm":   ("rpm", "stirrer speed"),
+    "vcd_cells_mL":    ("cells/mL", "viable cell density"),
+    "viability_percent": ("%", "viable fraction of total cells"),
+    "ethanol_pct_ww":  ("% w/w", "alcohol content (brewing analyser)"),
+    "extract_plato":   ("°P", "real extract (dissolved solids), °P = 259 − 259/SG"),
+    "dCO2_percent":    ("% sat.", "dissolved CO2"),
+    "permittivity_pF_cm": ("pF/cm", "dielectric permittivity (live-biomass proxy)"),
 }
 
 PERTURBATION_TYPES = ("none", "gene_knockout", "strain", "medium", "feed",
@@ -82,4 +88,8 @@ class Dataset:
     license: str
     measured: bool               # True = real experiment, False = simulated
     runs: list = field(default_factory=list)          # list[Run]
+    # Explicit comparisons, for designs where a run serves as reference for
+    # several contrasts or the reference lives in another campaign. Each:
+    # {campaign, perturbation_type, perturbation, dose, runs: [...], reference_runs: [...]}
+    contrasts: list = field(default_factory=list)
     observations: list = field(default_factory=list)  # (run_id, time_h, variable, value)

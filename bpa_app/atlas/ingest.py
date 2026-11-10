@@ -77,3 +77,86 @@ def hans2020() -> Dataset:
 
 
 INGESTERS = {"simensen2022": simensen2022, "hans2020": hans2020}
+
+
+def uhlendorff2026() -> Dataset:
+    """52 yeast propagation runs (S. cerevisiae W-68, S. pastorianus W-34/70)."""
+    D = ROOT / "uhlendorff2026_yeast_propagation"
+    cond = pd.read_csv(D / "conditions.csv")
+    off = pd.read_csv(D / "offline_all_runs.csv")
+    inl = pd.read_csv(D / "inline_15min_medians.csv.gz")
+    ds = Dataset(
+        dataset_id="uhlendorff2026",
+        title="Yeast propagation: 2 strains × temperature, aeration, wort, pre-culture, scale (52 runs)",
+        citation="Uhlendorff S et al. (2026) Zenodo dataset; data descriptor on Preprints.org 202611.0120",
+        doi="10.5281/zenodo.19690248", license="CC BY 4.0", measured=True)
+
+    def label(c):
+        vvm = "? vvm" if pd.isna(c.aeration_vvm) else f"{c.aeration_vvm:g} vvm"
+        return (f"{c.strain} · {c.preculture_h:g} h pre · {c.wort_plato:g} °P · {vvm} · "
+                f"{c.temperature_C:g} °C · {c.scale_L:g} L")
+
+    cond["condition"] = cond.apply(label, axis=1)
+    rid = lambda r: f"uhlendorff2026:{r}"
+    for c in cond.itertuples():
+        same_exp = cond[(cond.experiment == c.experiment)]
+        ref_c = same_exp[same_exp.temperature_C == 22].iloc[0] if (same_exp.temperature_C == 22).any() else c
+        is_ref = c.temperature_C == 22 or ref_c is c
+        pert = "" if is_ref else f"{c.temperature_C:g} °C"
+        ds.runs.append(Run(
+            run_id=rid(c.run), dataset_id=ds.dataset_id, organism=c.species, strain=c.strain,
+            mode="Batch", vessel="stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L)",
+            working_volume_L=float(c.scale_L), medium=f"brewer's wort, {c.wort_plato:g} °P",
+            temperature_C=float(c.temperature_C), pH_setpoint=None,
+            replicate=int(c.reactor[1:]), campaign=c.experiment,
+            # comparisons for this dataset are the explicit one-factor contrasts below
+            reference_condition=c.condition, condition=c.condition,
+            perturbation_type="none" if is_ref else "temperature", perturbation=pert,
+            perturbation_dose=None if is_ref else float(c.temperature_C), is_reference=bool(is_ref),
+            source_doi=ds.doi, license=ds.license,
+            notes=f"aeration {'unresolved (1 or 0.5 vvm)' if pd.isna(c.aeration_vvm) else str(c.aeration_vvm) + ' vvm'}; "
+                  "pH and DO not controlled; 400 rpm"))
+
+    offmap = {"VCD Mean (cells/mL)": "vcd_cells_mL", "Viability Mean (%)": "viability_percent",
+              "Alcohol content (% w/w)": "ethanol_pct_ww"}
+    for col, var in offmap.items():
+        for r, t, v in off[["run", "Time (h)", col]].dropna().itertuples(index=False):
+            ds.observations.append((rid(r), float(t), var, float(v)))
+    for r, t, sg in off[["run", "Time (h)", "Real extract (SG)"]].dropna().itertuples(index=False):
+        ds.observations.append((rid(r), float(t), "extract_plato", float(259 - 259 / sg)))
+    inmap = {"Temperature (°C)": "temperature_C", "pH": "pH", "Dissolved O2 (% air sat)": "DO_percent",
+             "Dissolved CO2 (%-sat)": "dCO2_percent", "Permittivity (pF/cm)": "permittivity_pF_cm"}
+    for col, var in inmap.items():
+        for r, t, v in inl[["run", "Time (h)", col]].dropna().itertuples(index=False):
+            ds.observations.append((rid(r), float(t), var, float(v)))
+
+    # One-factor contrasts (same-day controls where the design has them)
+    def sel(strain, **kw):
+        m = cond.strain == strain
+        for k, v in kw.items():
+            m &= (cond[k].isin(v) if isinstance(v, (list, tuple)) else (cond[k] == v))
+        return [rid(r) for r in cond[m].run]
+
+    for strain, e37, e30, eref24, e3h, epilot in (
+            ("W-68", "EXP007", "EXP011", ["EXP001", "EXP002"], "EXP005", "EXP013"),
+            ("W-34/70", "EXP008", "EXP012", ["EXP003", "EXP004"], "EXP006", None)):
+        add = lambda ptype, pert, dose, runs, ref: ds.contrasts.append(dict(
+            campaign=f"uhlendorff2026 · {strain}", perturbation_type=ptype, perturbation=pert,
+            dose=dose, runs=runs, reference_runs=ref))
+        add("temperature", "37 °C vs 22 °C (same day)", 37,
+            sel(strain, experiment=e37, temperature_C=37), sel(strain, experiment=e37, temperature_C=22))
+        add("temperature", "30 °C vs 22 °C (same day, 24 °P)", 30,
+            sel(strain, experiment=e30, temperature_C=30), sel(strain, experiment=e30, temperature_C=22))
+        add("preculture", "3 h vs 24 h pre-culture", 3,
+            sel(strain, experiment=e3h), sel(strain, experiment=eref24))
+        add("aeration", "0.5 vs 1 vvm", 0.5,
+            sel(strain, experiment=e37, temperature_C=22), sel(strain, experiment=e3h))
+        add("medium", "24 °P vs 12 °P wort", 24,
+            sel(strain, experiment=e30, temperature_C=22), sel(strain, experiment=e37, temperature_C=22))
+        if epilot:
+            add("scale", "10 L vs 0.7 L", 10,
+                sel(strain, experiment=epilot), sel(strain, experiment=e37, temperature_C=22))
+    return ds
+
+
+INGESTERS["uhlendorff2026"] = uhlendorff2026

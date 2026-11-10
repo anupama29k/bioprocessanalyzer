@@ -1,11 +1,17 @@
 {
-  "schema_version": "0.1",
-  "datasets": 2,
-  "runs": 25,
-  "observations": 21844,
-  "conditions": 9,
-  "perturbations": 7,
-  "observations_sha256_16": "e5b5e64c5ae19bcf",
+  "schema_version": "0.2",
+  "datasets": 3,
+  "runs": 77,
+  "observations": 100239,
+  "conditions": 27,
+  "contrasts": 11,
+  "organisms": [
+    "Escherichia coli",
+    "Saccharomyces cerevisiae",
+    "Saccharomyces pastorianus"
+  ],
+  "perturbations": 11,
+  "observations_sha256_16": "57efb95c6a62d1a9",
   "variables": {
     "od600": {
       "unit": "OD",
@@ -70,12 +76,36 @@
     "agitation_rpm": {
       "unit": "rpm",
       "description": "stirrer speed"
+    },
+    "vcd_cells_mL": {
+      "unit": "cells/mL",
+      "description": "viable cell density"
+    },
+    "viability_percent": {
+      "unit": "%",
+      "description": "viable fraction of total cells"
+    },
+    "ethanol_pct_ww": {
+      "unit": "% w/w",
+      "description": "alcohol content (brewing analyser)"
+    },
+    "extract_plato": {
+      "unit": "°P",
+      "description": "real extract (dissolved solids), °P = 259 − 259/SG"
+    },
+    "dCO2_percent": {
+      "unit": "% sat.",
+      "description": "dissolved CO2"
+    },
+    "permittivity_pF_cm": {
+      "unit": "pF/cm",
+      "description": "dielectric permittivity (live-biomass proxy)"
     }
   },
   "phenotypes": {
     "mu_batch_h": {
       "unit": "h⁻¹",
-      "description": "specific growth rate in the batch phase (until glucose depletion)",
+      "description": "specific growth rate in the batch phase (until glucose depletion; for cell counts, samples below 80 % of peak VCD)",
       "confounded_by_feed": false
     },
     "mu_batch_se_h": {
@@ -101,6 +131,31 @@
     "Yxs_batch_gg": {
       "unit": "g/g",
       "description": "biomass yield on glucose in the batch phase (only if glucose falls monotonically)",
+      "confounded_by_feed": false
+    },
+    "vcd_max_1e6_mL": {
+      "unit": "10⁶ cells/mL",
+      "description": "peak viable cell density",
+      "confounded_by_feed": false
+    },
+    "viability_end_pct": {
+      "unit": "%",
+      "description": "viability at the last sample",
+      "confounded_by_feed": false
+    },
+    "ethanol_end_pct_ww": {
+      "unit": "% w/w",
+      "description": "alcohol at the last sample",
+      "confounded_by_feed": false
+    },
+    "extract_consumed_frac": {
+      "unit": "–",
+      "description": "fraction of the initial real extract consumed by the last sample",
+      "confounded_by_feed": false
+    },
+    "DO_min_pct": {
+      "unit": "% sat.",
+      "description": "lowest dissolved oxygen (< 5 % = oxygen-limited)",
       "confounded_by_feed": false
     },
     "mu_fedbatch_h": {

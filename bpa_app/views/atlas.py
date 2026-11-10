@@ -42,10 +42,11 @@ def render():
         else:
             camp = st.selectbox("Campaign", sorted(e.campaign.unique()))
             e = e[e.campaign == camp]
-            ref = e.reference.iloc[0]
-            st.caption(f"Each cell: effect size d = (perturbed − {ref}) / pooled SD of the batch-phase "
-                       "phenotype. Only phenotypes measured under identical conditions are shown; "
-                       "• p < 0.05, ◦ p < 0.15 (Welch t-test).")
+            refs_ = e.reference.unique()
+            ref = refs_[0] if len(refs_) == 1 else "its reference"
+            st.caption(f"Each cell: effect size d = (perturbed − {ref}) / pooled SD; colour needs ≥ 2 runs "
+                       "per arm, the % change is shown either way. Only phenotypes measured under the same "
+                       "conditions are compared; • p < 0.05, ◦ p < 0.15 (Welch t-test).")
             piv = e.pivot(index="perturbation", columns="phenotype", values="effect_size_d")
             pv = e.pivot(index="perturbation", columns="phenotype", values="p_welch")
             pct = e.pivot(index="perturbation", columns="phenotype", values="pct_change")
@@ -73,13 +74,24 @@ def render():
 
     with tab_runs:
         r = runs.copy()
-        camp = st.selectbox("Campaign ", sorted(r.campaign.unique()), key="atl_camp")
-        r = r[r.campaign == camp]
+        dsid = st.selectbox("Dataset", sorted(r.dataset_id.unique()), key="atl_camp",
+                            format_func=lambda d: dsets.set_index("dataset_id").title.get(d, d))
+        r = r[r.dataset_id == dsid]
         conds = sorted(r.condition.unique())
-        refc = r.reference_condition.iloc[0]
-        pick = st.multiselect("Conditions", conds,
-                              default=[c for c in conds if c == refc][:1] +
-                                      [c for c in conds if c != refc][:1])
+        refs = [c for c in conds if c in set(r[r.is_reference].condition)]
+        others = [c for c in conds if c not in refs]
+        default = (refs[:1] + others[:1]) or conds[:2]
+        cfile = REL / "contrasts.csv"
+        if cfile.exists():
+            cc = pd.read_csv(cfile)
+            cc = cc[cc.dataset_id == dsid] if "dataset_id" in cc else cc.iloc[:0]
+            if len(cc):
+                first = cc.iloc[0]
+                pair = [r.set_index("run_id").condition.get(first.reference_runs.split(";")[0]),
+                        r.set_index("run_id").condition.get(first.runs.split(";")[0])]
+                if all(p in conds for p in pair):
+                    default = pair
+        pick = st.multiselect("Conditions", conds, default=default)
         vars_ = sorted(obs[obs.run_id.isin(r.run_id)].variable.unique())
         var = st.selectbox("Variable", vars_, index=vars_.index("biomass_gL") if "biomass_gL" in vars_ else 0)
         fig = go.Figure()

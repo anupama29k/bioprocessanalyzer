@@ -23,7 +23,7 @@ OUT = Path(__file__).parent.parent / "atlas_release"
 
 
 def build(datasets=None, out: Path = OUT) -> dict:
-    runs, obs, meta = [], [], []
+    runs, obs, meta, contrasts = [], [], [], []
     for name in datasets or INGESTERS:
         ds = INGESTERS[name]()
         unknown = {o[2] for o in ds.observations} - set(VARIABLES)
@@ -31,6 +31,7 @@ def build(datasets=None, out: Path = OUT) -> dict:
             raise ValueError(f"{name}: variables outside the vocabulary: {sorted(unknown)}")
         runs += [r.row() for r in ds.runs]
         obs += ds.observations
+        contrasts += [{**c, "dataset_id": ds.dataset_id} for c in ds.contrasts]
         meta.append({"dataset_id": ds.dataset_id, "title": ds.title, "citation": ds.citation,
                      "doi": ds.doi, "license": ds.license, "measured": ds.measured,
                      "n_runs": len(ds.runs), "n_observations": len(ds.observations)})
@@ -39,7 +40,7 @@ def build(datasets=None, out: Path = OUT) -> dict:
     by_run = dict(tuple(obs.groupby("run_id")))
     pheno = pd.DataFrame([run_phenotypes(r, by_run.get(r["run_id"], obs.iloc[:0]))
                           for r in runs.to_dict("records")])
-    eff = effects(runs, pheno)
+    eff = effects(runs, pheno, contrasts)
 
     out.mkdir(exist_ok=True)
     runs.to_csv(out / "runs.csv", index=False)
@@ -47,11 +48,16 @@ def build(datasets=None, out: Path = OUT) -> dict:
     pheno.to_csv(out / "phenotypes.csv", index=False)
     eff.to_csv(out / "effects.csv", index=False)
     pd.DataFrame(meta).to_csv(out / "datasets.csv", index=False)
+    pd.DataFrame([{**{k: v for k, v in c.items() if k not in ("runs", "reference_runs")},
+                   "runs": ";".join(c["runs"]), "reference_runs": ";".join(c["reference_runs"])}
+                  for c in contrasts]).to_csv(out / "contrasts.csv", index=False)
     digest = hashlib.sha256(pd.util.hash_pandas_object(obs, index=False).values.tobytes()).hexdigest()[:16]
     manifest = {
         "schema_version": SCHEMA_VERSION,
         "datasets": len(meta), "runs": len(runs), "observations": len(obs),
         "conditions": int(runs.condition.nunique()),
+        "contrasts": len(contrasts),
+        "organisms": sorted(runs.organism.unique().tolist()),
         "perturbations": int((~runs.is_reference).groupby(runs.condition).first().sum()),
         "observations_sha256_16": digest,
         "variables": {k: {"unit": u, "description": d} for k, (u, d) in VARIABLES.items()},
@@ -67,7 +73,8 @@ if __name__ == "__main__":
     r = build()
     m = r["manifest"]
     print(f"Atlas v{m['schema_version']}: {m['datasets']} datasets, {m['runs']} runs, "
-          f"{m['conditions']} conditions, {m['observations']:,} observations")
+          f"{m['conditions']} conditions, {m['contrasts']} explicit contrasts, "
+          f"{len(m['organisms'])} organisms, {m['observations']:,} observations")
     e = r["effects"]
     if len(e):
         sig = e[(e.p_welch < 0.05) & ~e.confounded_by_feed].sort_values("p_welch")
