@@ -1,0 +1,579 @@
+run_id,dataset_id,organism,strain,mode,vessel,working_volume_L,medium,temperature_C,pH_setpoint,replicate,campaign,reference_condition,condition,perturbation_type,perturbation,perturbation_dose,is_reference,dcw_per_od,source_doi,license,notes
+simensen2022:batch1,simensen2022,Escherichia coli,K-12 MG1655,Batch,"Eppendorf BioFlo 115, 3 L",1.0,"modified M9, 2% glucose",37.0,7.0,1,simensen2022,MG1655,MG1655,none,,,True,0.5,10.1371/journal.pone.0262450,CC BY 4.0,OD not recorded after 5.25 h; harvest at ~7.5 h
+hans2020:BW25113:r1,hans2020,Escherichia coli,K-12 BW25113,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,1,hans2020,BW25113,BW25113,none,,,True,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113:r2,hans2020,Escherichia coli,K-12 BW25113,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,2,hans2020,BW25113,BW25113,none,,,True,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113:r3,hans2020,Escherichia coli,K-12 BW25113,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,3,hans2020,BW25113,BW25113,none,,,True,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔaceA:r1,hans2020,Escherichia coli,K-12 BW25113 ΔaceA,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,1,hans2020,BW25113,BW25113 ΔaceA,gene_knockout,ΔaceA,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔaceA:r2,hans2020,Escherichia coli,K-12 BW25113 ΔaceA,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,2,hans2020,BW25113,BW25113 ΔaceA,gene_knockout,ΔaceA,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔaceA:r3,hans2020,Escherichia coli,K-12 BW25113 ΔaceA,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,3,hans2020,BW25113,BW25113 ΔaceA,gene_knockout,ΔaceA,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔfliA:r1,hans2020,Escherichia coli,K-12 BW25113 ΔfliA,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,1,hans2020,BW25113,BW25113 ΔfliA,gene_knockout,ΔfliA,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔfliA:r2,hans2020,Escherichia coli,K-12 BW25113 ΔfliA,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,2,hans2020,BW25113,BW25113 ΔfliA,gene_knockout,ΔfliA,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔfliA:r3,hans2020,Escherichia coli,K-12 BW25113 ΔfliA,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,3,hans2020,BW25113,BW25113 ΔfliA,gene_knockout,ΔfliA,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔgatC:r1,hans2020,Escherichia coli,K-12 BW25113 ΔgatC,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,1,hans2020,BW25113,BW25113 ΔgatC,gene_knockout,ΔgatC,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔgatC:r2,hans2020,Escherichia coli,K-12 BW25113 ΔgatC,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,2,hans2020,BW25113,BW25113 ΔgatC,gene_knockout,ΔgatC,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔgatC:r3,hans2020,Escherichia coli,K-12 BW25113 ΔgatC,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,3,hans2020,BW25113,BW25113 ΔgatC,gene_knockout,ΔgatC,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔgatZ:r1,hans2020,Escherichia coli,K-12 BW25113 ΔgatZ,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,1,hans2020,BW25113,BW25113 ΔgatZ,gene_knockout,ΔgatZ,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔgatZ:r2,hans2020,Escherichia coli,K-12 BW25113 ΔgatZ,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,2,hans2020,BW25113,BW25113 ΔgatZ,gene_knockout,ΔgatZ,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔgatZ:r3,hans2020,Escherichia coli,K-12 BW25113 ΔgatZ,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,3,hans2020,BW25113,BW25113 ΔgatZ,gene_knockout,ΔgatZ,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔglcB:r1,hans2020,Escherichia coli,K-12 BW25113 ΔglcB,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,1,hans2020,BW25113,BW25113 ΔglcB,gene_knockout,ΔglcB,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔglcB:r2,hans2020,Escherichia coli,K-12 BW25113 ΔglcB,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,2,hans2020,BW25113,BW25113 ΔglcB,gene_knockout,ΔglcB,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔglcB:r3,hans2020,Escherichia coli,K-12 BW25113 ΔglcB,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,3,hans2020,BW25113,BW25113 ΔglcB,gene_knockout,ΔglcB,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔompT:r1,hans2020,Escherichia coli,K-12 BW25113 ΔompT,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,1,hans2020,BW25113,BW25113 ΔompT,gene_knockout,ΔompT,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔompT:r2,hans2020,Escherichia coli,K-12 BW25113 ΔompT,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,2,hans2020,BW25113,BW25113 ΔompT,gene_knockout,ΔompT,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:BW25113_ΔompT:r3,hans2020,Escherichia coli,K-12 BW25113 ΔompT,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,3,hans2020,BW25113,BW25113 ΔompT,gene_knockout,ΔompT,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:W3110:r1,hans2020,Escherichia coli,K-12 W3110,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,1,hans2020,BW25113,W3110,strain,W3110,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:W3110:r2,hans2020,Escherichia coli,K-12 W3110,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,2,hans2020,BW25113,W3110,strain,W3110,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+hans2020:W3110:r3,hans2020,Escherichia coli,K-12 W3110,Fed-batch,2mag bioREACTOR 48 on Tecan/Hamilton liquid handlers,,"defined medium; batch on 5 g/L glucose (+5 g/L pulse at 1 h), then 400 g/L glucose pulses every 5 min",37.0,,3,hans2020,BW25113,W3110,strain,W3110,,False,,10.3390/bioengineering7040145,CC BY 4.0,"3000 rpm; feed rate adapted per strain by the model (fed-batch phase is confounded by feed, batch phase is not); biomass = OD × 2.62 path × 0.33 g/L"
+uhlendorff2026:EXP001_W-68_small-scale_R01,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,1,EXP001,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP001_W-68_small-scale_R02,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,2,EXP001,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP001_W-68_small-scale_R03,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,3,EXP001,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP001_W-68_small-scale_R04,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,4,EXP001,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP002_W-68_small-scale_R01,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,1,EXP002,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP002_W-68_small-scale_R02,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,2,EXP002,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP002_W-68_small-scale_R03,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,3,EXP002,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP002_W-68_small-scale_R04,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,4,EXP002,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP003_W-3470_small-scale_R01,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,1,EXP003,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP003_W-3470_small-scale_R02,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,2,EXP003,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP003_W-3470_small-scale_R03,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,3,EXP003,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP003_W-3470_small-scale_R04,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,4,EXP003,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP004_W-3470_small-scale_R01,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,1,EXP004,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP004_W-3470_small-scale_R02,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,2,EXP004,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP004_W-3470_small-scale_R03,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,3,EXP004,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP004_W-3470_small-scale_R04,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,4,EXP004,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP005_W-68_small-scale_R01,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,1,EXP005,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP005_W-68_small-scale_R02,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,2,EXP005,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP005_W-68_small-scale_R03,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,3,EXP005,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP005_W-68_small-scale_R04,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,4,EXP005,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP006_W-3470_small-scale_R01,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,1,EXP006,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP006_W-3470_small-scale_R02,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,2,EXP006,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP006_W-3470_small-scale_R03,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,3,EXP006,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP006_W-3470_small-scale_R04,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,4,EXP006,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 1.0 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP007_W-68_small-scale_R01,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,1,EXP007,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP007_W-68_small-scale_R02,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,2,EXP007,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP007_W-68_small-scale_R03,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",37.0,,3,EXP007,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,temperature,37 °C,37.0,False,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP007_W-68_small-scale_R04,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",37.0,,4,EXP007,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,temperature,37 °C,37.0,False,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP008_W-3470_small-scale_R01,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,1,EXP008,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP008_W-3470_small-scale_R02,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",22.0,,2,EXP008,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP008_W-3470_small-scale_R03,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",37.0,,3,EXP008,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,temperature,37 °C,37.0,False,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP008_W-3470_small-scale_R04,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 12 °P",37.0,,4,EXP008,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,temperature,37 °C,37.0,False,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP009_W-68_small-scale_R01,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,1,EXP009,W-68 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration unresolved (1 or 0.5 vvm); pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP009_W-68_small-scale_R02,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,2,EXP009,W-68 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration unresolved (1 or 0.5 vvm); pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP009_W-68_small-scale_R03,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,3,EXP009,W-68 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration unresolved (1 or 0.5 vvm); pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP009_W-68_small-scale_R04,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,4,EXP009,W-68 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration unresolved (1 or 0.5 vvm); pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP010_W-3470_small-scale_R01,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,1,EXP010,W-34/70 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration unresolved (1 or 0.5 vvm); pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP010_W-3470_small-scale_R02,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,2,EXP010,W-34/70 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration unresolved (1 or 0.5 vvm); pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP010_W-3470_small-scale_R03,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,3,EXP010,W-34/70 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration unresolved (1 or 0.5 vvm); pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP010_W-3470_small-scale_R04,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,4,EXP010,W-34/70 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · ? vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration unresolved (1 or 0.5 vvm); pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP011_W-68_small-scale_R01,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,1,EXP011,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP011_W-68_small-scale_R02,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,2,EXP011,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP011_W-68_small-scale_R03,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",30.0,,3,EXP011,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,temperature,30 °C,30.0,False,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP011_W-68_small-scale_R04,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",30.0,,4,EXP011,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,temperature,30 °C,30.0,False,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP012_W-3470_small-scale_R01,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,1,EXP012,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP012_W-3470_small-scale_R02,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",22.0,,2,EXP012,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP012_W-3470_small-scale_R03,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",30.0,,3,EXP012,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,temperature,30 °C,30.0,False,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP012_W-3470_small-scale_R04,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),0.7,"brewer's wort, 24 °P",30.0,,4,EXP012,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,temperature,30 °C,30.0,False,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP013_W-68_pilot-scale,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),10.0,"brewer's wort, 12 °P",22.0,,1,EXP013,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP014_W-3470_pilot-scale,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),10.0,"brewer's wort, 12 °P",22.0,,1,EXP014,W-34/70 · 24 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-34/70 · 24 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP015_W-3470_pilot-scale,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),10.0,"brewer's wort, 12 °P",30.0,,1,EXP015,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 30 °C · 10 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 30 °C · 10 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+uhlendorff2026:EXP016_W-68_pilot-scale,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),10.0,"brewer's wort, 12 °P",30.0,,1,EXP016,W-68 · 24 h pre · 12 °P · 0.5 vvm · 30 °C · 10 L,W-68 · 24 h pre · 12 °P · 0.5 vvm · 30 °C · 10 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+schellenberg2021:nu_1.1_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,glutamate 1.2 g/L (low glutamine),medium,glutamate 1.2 g/L (low glutamine),1.2,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value; glutamine near zero at day 0 in these vessels (as measured)
+schellenberg2021:nu_1.1_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · ambr15 · nutrients,standard process,glutamate 1.2 g/L (low glutamine),medium,glutamate 1.2 g/L (low glutamine),1.2,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value; glutamine near zero at day 0 in these vessels (as measured)
+schellenberg2021:nu_1.2_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,glutamate 2 g/L (low glutamine),medium,glutamate 2 g/L (low glutamine),2.0,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value; glutamine near zero at day 0 in these vessels (as measured)
+schellenberg2021:nu_1.2_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · ambr15 · nutrients,standard process,glutamate 2 g/L (low glutamine),medium,glutamate 2 g/L (low glutamine),2.0,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value; glutamine near zero at day 0 in these vessels (as measured)
+schellenberg2021:nu_2_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,glucose 12 g/L (overfeeding),feed,glucose 12 g/L (overfeeding),12.0,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:nu_2_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · ambr15 · nutrients,standard process,glucose 12 g/L (overfeeding),feed,glucose 12 g/L (overfeeding),12.0,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:nu_3_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,decreased feed,feed,decreased feed,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:nu_3_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · ambr15 · nutrients,standard process,decreased feed,feed,decreased feed,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:nu_reference_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,standard process,none,,,True,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_0_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,7.3,1,schellenberg2021 · ambr15 · pH,standard process,pH 7.3 from day 0,pH,pH 7.3 from day 0,7.3,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_0_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,7.3,2,schellenberg2021 · ambr15 · pH,standard process,pH 7.3 from day 0,pH,pH 7.3 from day 0,7.3,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_5_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,7.3,1,schellenberg2021 · ambr15 · pH,standard process,pH 7.3 from day 5,pH,pH 7.3 from day 5,7.3,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_5_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,7.3,2,schellenberg2021 · ambr15 · pH,standard process,pH 7.3 from day 5,pH,pH 7.3 from day 5,7.3,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_reference_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · pH,standard process,standard process,none,,,True,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_co2_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · shake flask,standard process,CO2 limitation,other,CO2 limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_co2_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · shake flask,standard process,CO2 limitation,other,CO2 limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_co2_3,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,3,schellenberg2021 · shake flask,standard process,CO2 limitation,other,CO2 limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_nu_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · shake flask,standard process,nutrient limitation,medium,nutrient limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_nu_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · shake flask,standard process,nutrient limitation,medium,nutrient limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_nu_3,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,3,schellenberg2021 · shake flask,standard process,nutrient limitation,medium,nutrient limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_reference_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · shake flask,standard process,standard process,none,,,True,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+uhlendorff2026_cho:EXP001_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP001, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP001, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP001; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP001_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP001, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP001, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP001; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP002_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP002, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP002, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP002; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP002_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP002, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP002, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP002; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP003_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP003, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP003, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP003; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP003_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP003, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP003, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP003; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP004_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                     80
+aeration_vvm                   0.125
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP004, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                     80
+aeration_vvm                   0.125
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP004, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP004
+uhlendorff2026_cho:EXP004_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                     80
+aeration_vvm                   0.125
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP004, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                     80
+aeration_vvm                   0.125
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP004, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP004
+uhlendorff2026_cho:EXP005_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP005; O2 supply impaired after ~55 h (cylinder closed); visible from ~103.6 h; reopened at 121.35 h
+uhlendorff2026_cho:EXP005_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP005; O2 supply impaired after ~55 h (cylinder closed); visible from ~103.6 h; reopened at 121.35 h
+uhlendorff2026_cho:EXP006_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              600000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP006, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 6e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              600000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP006, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 6e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP006
+uhlendorff2026_cho:EXP006_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              600000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP006, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 6e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              600000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP006, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 6e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP006
+uhlendorff2026_cho:EXP007_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       6
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP007, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 6 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       6
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP007, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 6 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP007
+uhlendorff2026_cho:EXP007_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       6
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP007, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 6 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       6
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP007, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 6 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP007
+uhlendorff2026_cho:EXP008_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TCX6D,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP008
+uhlendorff2026_cho:EXP008_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TCX6D,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP008
+uhlendorff2026_cho:EXP009_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TCX6D,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP009
+uhlendorff2026_cho:EXP009_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TCX6D,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP009
+uhlendorff2026_cho:EXP010_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP010; R02 feed line blocked; feed effective from ~66 h
+uhlendorff2026_cho:EXP010_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP010; R02 feed line blocked; feed effective from ~66 h; excluded from contrasts: feed line blocked until ~66 h
+uhlendorff2026_cho:EXP011_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TCX6D,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP011; R02 bacterial contamination from ~51 h; R02 feed and O2 enrichment stopped ~67 h; Pen/Strep added to both reactors
+uhlendorff2026_cho:EXP011_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TCX6D,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP011; R02 bacterial contamination from ~51 h; R02 feed and O2 enrichment stopped ~67 h; Pen/Strep added to both reactors; excluded from contrasts: bacterial contamination from ~51 h
+uhlendorff2026_cho:EXP012_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TCX6D,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP012
+uhlendorff2026_cho:EXP012_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TCX6D,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP012
+salesvallverdu2024:Crl1_mu0.030_hypoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-Crl1 producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,Crl1_mu0.030_hypoxia,Crl1_mu0.030_hypoxia,none,,,True,,10.34810/data1118,CC BY 4.0,set growth rate 0.03 h⁻¹; hypoxia; time = hours of fed-batch phase
+salesvallverdu2024:Crl1_mu0.030_normoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-Crl1 producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,Crl1_mu0.030_normoxia,Crl1_mu0.030_normoxia,none,,,True,,10.34810/data1118,CC BY 4.0,set growth rate 0.03 h⁻¹; normoxia; time = hours of fed-batch phase; ethanol column dropped (copy of the hypoxia run)
+salesvallverdu2024:Crl1_mu0.065_hypoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-Crl1 producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,Crl1_mu0.065_hypoxia,Crl1_mu0.065_hypoxia,none,,,True,,10.34810/data1118,CC BY 4.0,set growth rate 0.065 h⁻¹; hypoxia; time = hours of fed-batch phase
+salesvallverdu2024:Crl1_mu0.100_hypoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-Crl1 producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,Crl1_mu0.100_hypoxia,Crl1_mu0.100_hypoxia,none,,,True,,10.34810/data1118,CC BY 4.0,set growth rate 0.1 h⁻¹; hypoxia; time = hours of fed-batch phase
+salesvallverdu2024:Crl1_mu0.100_normoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-Crl1 producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,Crl1_mu0.100_normoxia,Crl1_mu0.100_normoxia,none,,,True,,10.34810/data1118,CC BY 4.0,set growth rate 0.1 h⁻¹; normoxia; time = hours of fed-batch phase
+salesvallverdu2024:Crl1_mu0.120_hypoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-Crl1 producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,Crl1_mu0.120_hypoxia,Crl1_mu0.120_hypoxia,none,,,True,,10.34810/data1118,CC BY 4.0,set growth rate 0.12 h⁻¹; hypoxia; time = hours of fed-batch phase
+salesvallverdu2024:Crl1_mu0.120_normoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-Crl1 producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,Crl1_mu0.120_normoxia,Crl1_mu0.120_normoxia,none,,,True,,10.34810/data1118,CC BY 4.0,set growth rate 0.12 h⁻¹; normoxia; time = hours of fed-batch phase
+salesvallverdu2024:proROL_mu-default_normoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-proROL producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,proROL_mu-default_normoxia,proROL_mu-default_normoxia,none,,,True,,10.34810/data1118,CC BY 4.0,normoxia; time = hours of fed-batch phase
+salesvallverdu2024:proROL_mu-default_hypoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-proROL producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,proROL_mu-default_hypoxia,proROL_mu-default_hypoxia,none,,,True,,10.34810/data1118,CC BY 4.0,hypoxia; time = hours of fed-batch phase
+salesvallverdu2024:CalB_mu-default_normoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-CalB producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,CalB_mu-default_normoxia,CalB_mu-default_normoxia,none,,,True,,10.34810/data1118,CC BY 4.0,normoxia; time = hours of fed-batch phase
+salesvallverdu2024:CalB_mu-default_hypoxia,salesvallverdu2024,Komagataella phaffii,P_GAP-CalB producer,Fed-batch,stirred-tank bioreactor (bench),,"defined medium, glucose-limited fed-batch",,,1,salesvallverdu2024,CalB_mu-default_hypoxia,CalB_mu-default_hypoxia,none,,,True,,10.34810/data1118,CC BY 4.0,hypoxia; time = hours of fed-batch phase
+hiller2024:batch_R1,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,1,hiller2024,batch (no feed),batch (no feed),none,batch (no feed),,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %"
+hiller2024:mu0.075_R1,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,1,hiller2024,feed for µ = 0.075 h⁻¹,feed for µ = 0.075 h⁻¹,none,,0.075,True,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %"
+hiller2024:mu0.075_R2,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,2,hiller2024,feed for µ = 0.075 h⁻¹,feed for µ = 0.075 h⁻¹,none,,0.075,True,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 14.5 h"
+hiller2024:mu0.150_R1,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,1,hiller2024,feed for µ = 0.15 h⁻¹,feed for µ = 0.15 h⁻¹,feed,feed for µ = 0.15 h⁻¹,0.15,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 12.5 h"
+hiller2024:mu0.150_R2,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,2,hiller2024,feed for µ = 0.15 h⁻¹,feed for µ = 0.15 h⁻¹,feed,feed for µ = 0.15 h⁻¹,0.15,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 16.083 h"
+hiller2024:mu0.200_R1,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,1,hiller2024,feed for µ = 0.2 h⁻¹,feed for µ = 0.2 h⁻¹,feed,feed for µ = 0.2 h⁻¹,0.2,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 12.75 h"
+hiller2024:mu0.200_R2,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,2,hiller2024,feed for µ = 0.2 h⁻¹,feed for µ = 0.2 h⁻¹,feed,feed for µ = 0.2 h⁻¹,0.2,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 12.33 h"
+hiller2024:mu0.250_R1,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,1,hiller2024,feed for µ = 0.25 h⁻¹,feed for µ = 0.25 h⁻¹,feed,feed for µ = 0.25 h⁻¹,0.25,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 11.5 h"
+hiller2024:mu0.250_R2,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,2,hiller2024,feed for µ = 0.25 h⁻¹,feed for µ = 0.25 h⁻¹,feed,feed for µ = 0.25 h⁻¹,0.25,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 13.083 h"
+hiller2024:mu0.300_R1,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,1,hiller2024,feed for µ = 0.3 h⁻¹,feed for µ = 0.3 h⁻¹,feed,feed for µ = 0.3 h⁻¹,0.3,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 13.75 h"
+hiller2024:mu0.300_R2,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,2,hiller2024,feed for µ = 0.3 h⁻¹,feed for µ = 0.3 h⁻¹,feed,feed for µ = 0.3 h⁻¹,0.3,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 13.25 h"
+hiller2024:mu0.400_R1,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,1,hiller2024,feed for µ = 0.4 h⁻¹,feed for µ = 0.4 h⁻¹,feed,feed for µ = 0.4 h⁻¹,0.4,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 13 h"
+hiller2024:mu0.400_R2,hiller2024,Bacillus subtilis,"BMV9 (spo0A3 trp+ sfp+ ΔmanPA), surfactin producer",Fed-batch,"30 L stirred-tank bioreactor, 3 Rushton turbines",12.0,"chemically defined mineral salt medium, glucose",37.0,7.0,2,hiller2024,feed for µ = 0.4 h⁻¹,feed for µ = 0.4 h⁻¹,feed,feed for µ = 0.4 h⁻¹,0.4,False,,10.1186/s12934-024-02531-w,CC BY 4.0,"batch volume 12 L in a 30 L vessel, final volume ≈ 18.7 L; DO held above 50 %; feed started at 12.5 h"
