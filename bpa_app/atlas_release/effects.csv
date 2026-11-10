@@ -775,3 +775,27 @@ lower_impeller           standard (20 mm)
 feeding             exponential from 48 h
 events                                NaN
 Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,mu_fedbatch_h,h⁻¹,-0.0523260348691337,,1,-0.023360026623495185,0.004484903552609328,2,-0.028966008245638518,123.99818164806761,,,True
+K. phaffii · hypoxia,Crl1_mu0.030_hypoxia,Crl1_mu0.030_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,activity_final_AU_mL,AU/mL,344.32029,,1,186.78,,1,157.54029,84.34537423707036,,,False
+K. phaffii · hypoxia,Crl1_mu0.030_hypoxia,Crl1_mu0.030_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,arabitol_end_gL,g/L,0.0,,1,0.0,,1,0.0,,,,False
+K. phaffii · hypoxia,Crl1_mu0.030_hypoxia,Crl1_mu0.030_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,mu_fedbatch_h,h⁻¹,0.019837883744440503,,1,0.016121456589120488,,1,0.003716427155320015,23.052676008370334,,,True
+K. phaffii · hypoxia,Crl1_mu0.030_hypoxia,Crl1_mu0.030_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,biomass_final_gL,g/L,81.94999999999999,,1,85.45,,1,-3.500000000000014,-4.09596255119955,,,True
+K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,activity_final_AU_mL,AU/mL,331.90521,,1,131.0,,1,200.90521,153.36275572519088,,,False
+K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,ethanol_end_gL,g/L,8.1699802,,1,0.0,,1,8.1699802,,,,False
+K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,arabitol_end_gL,g/L,4.220611,,1,0.0,,1,4.220611,,,,False
+K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,mu_fedbatch_h,h⁻¹,0.05909639391171919,,1,0.07401239986445178,,1,-0.01491600595273259,-20.15338778373644,,,True
+K. phaffii · hypoxia,Crl1_mu0.100_hypoxia,Crl1_mu0.100_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,biomass_final_gL,g/L,89.17499999999998,,1,89.7,,1,-0.5250000000000199,-0.5852842809364822,,,True
+K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,activity_final_AU_mL,AU/mL,297.38831,,1,168.37,,1,129.01830999999999,76.6278493793431,,,False
+K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,ethanol_end_gL,g/L,11.388271,,1,0.0,,1,11.388271,,,,False
+K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,arabitol_end_gL,g/L,2.8171093,,1,0.0,,1,2.8171093,,,,False
+K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,mu_fedbatch_h,h⁻¹,0.06635403178415958,,1,0.09077857172762299,,1,-0.024424539943463414,-26.90562263608657,,,True
+K. phaffii · hypoxia,Crl1_mu0.120_hypoxia,Crl1_mu0.120_normoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,biomass_final_gL,g/L,68.60000000000001,,1,81.0,,1,-12.399999999999991,-15.308641975308635,,,True
+K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,activity_final_AU_mL,AU/mL,24.075319,,1,13.765778,,1,10.309541000000001,74.89254148948213,,,False
+K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,ethanol_end_gL,g/L,9.4307367,,1,0.0,,1,9.4307367,,,,False
+K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,arabitol_end_gL,g/L,3.3364397,,1,0.0,,1,3.3364397,,,,False
+K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,mu_fedbatch_h,h⁻¹,0.044921891724620376,,1,0.04489021400780489,,1,3.167771681548276e-05,0.0705670879848741,,,True
+K. phaffii · hypoxia,proROL_mu-default_hypoxia,proROL_mu-default_normoxia,DO,hypoxia vs normoxia (proROL),,biomass_final_gL,g/L,92.3,,1,92.65,,1,-0.3500000000000085,-0.37776578521317994,,,True
+K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,activity_final_AU_mL,AU/mL,10.88205558057969,,1,5.8141373000000005,,1,5.06791828057969,87.16543863832884,,,False
+K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,ethanol_end_gL,g/L,13.240551,,1,0.0,,1,13.240551,,,,False
+K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,arabitol_end_gL,g/L,0.0,,1,0.0,,1,0.0,,,,False
+K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,mu_fedbatch_h,h⁻¹,0.04664516770321187,,1,0.04217608702752292,,1,0.0044690806756889495,10.59624301508235,,,True
+K. phaffii · hypoxia,CalB_mu-default_hypoxia,CalB_mu-default_normoxia,DO,hypoxia vs normoxia (CalB),,biomass_final_gL,g/L,97.3875,,1,89.6,,1,7.7875000000000085,8.69140625,,,True

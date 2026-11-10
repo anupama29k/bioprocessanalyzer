@@ -18,3 +18,8 @@ CHO-K1 · Uhlendorff,other,lowered impeller (batch),,uhlendorff2026_cho:EXP009_R
 CHO-K1 · Uhlendorff,feed,fed-batch vs batch (TC-42),,uhlendorff2026_cho:EXP010_R01,uhlendorff2026_cho:EXP005_R01;uhlendorff2026_cho:EXP005_R02,uhlendorff2026_cho,viability_end_pct,mu_batch_h
 CHO-K1 · Uhlendorff,medium,TCX6D vs TC-42 medium (fed-batch),,uhlendorff2026_cho:EXP012_R01;uhlendorff2026_cho:EXP012_R02,uhlendorff2026_cho:EXP010_R01,uhlendorff2026_cho,viability_end_pct,
 CHO-K1 · Uhlendorff,other,lowered impeller (fed-batch),,uhlendorff2026_cho:EXP011_R01,uhlendorff2026_cho:EXP012_R01;uhlendorff2026_cho:EXP012_R02,uhlendorff2026_cho,viability_end_pct,
+K. phaffii · hypoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.03 h⁻¹)",0.03,salesvallverdu2024:Crl1_mu0.030_hypoxia,salesvallverdu2024:Crl1_mu0.030_normoxia,salesvallverdu2024,glucose_depletion_h;mu_batch_h;Yxs_batch_gg,
+K. phaffii · hypoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.1 h⁻¹)",0.1,salesvallverdu2024:Crl1_mu0.100_hypoxia,salesvallverdu2024:Crl1_mu0.100_normoxia,salesvallverdu2024,glucose_depletion_h;mu_batch_h;Yxs_batch_gg,
+K. phaffii · hypoxia,DO,"hypoxia vs normoxia (Crl1, µ = 0.12 h⁻¹)",0.12,salesvallverdu2024:Crl1_mu0.120_hypoxia,salesvallverdu2024:Crl1_mu0.120_normoxia,salesvallverdu2024,glucose_depletion_h;mu_batch_h;Yxs_batch_gg,
+K. phaffii · hypoxia,DO,hypoxia vs normoxia (proROL),,salesvallverdu2024:proROL_mu-default_hypoxia,salesvallverdu2024:proROL_mu-default_normoxia,salesvallverdu2024,glucose_depletion_h;mu_batch_h;Yxs_batch_gg,
+K. phaffii · hypoxia,DO,hypoxia vs normoxia (CalB),,salesvallverdu2024:CalB_mu-default_hypoxia,salesvallverdu2024:CalB_mu-default_normoxia,salesvallverdu2024,glucose_depletion_h;mu_batch_h;Yxs_batch_gg,
