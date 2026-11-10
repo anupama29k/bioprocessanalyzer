@@ -127,8 +127,8 @@ def generate_fedbatch_multiprobe():
         
         od[i] = od[i-1] * (1 + mu_eff * 0.5)
     
-    od = od + np.random.normal(0, 0.5, len(od))
-    od = np.maximum(od, 0.1)
+    od = od * (1 + rng.normal(0, 0.02, len(od)))   # 2 % proportional noise
+    od = np.maximum(od, 0.05)
     
     biomass = od * 0.35
     
@@ -324,64 +324,62 @@ def generate_temperature_study_multiprobe():
 
 def generate_diauxic_multiprobe():
     """
-    Diauxic growth with substrate switching and multiple probes
-    Reference: Journal of Bacteriology (2004)
+    Simulated glucose -> lactose diauxie (E. coli MG1655).
+    Kinetic parameters typical of the literature (Monod 1942 diauxie;
+    mu_glc ~0.52 h-1, mu_lac ~0.35 h-1, Yx/s ~0.45 g/g). SIMULATED, not measured.
     """
-    time = np.arange(0, 40, 0.5)
-    
-    # Diauxic growth
-    od = np.zeros_like(time)
-    glucose = np.zeros_like(time)
-    lactose = np.zeros_like(time)
-    
-    # First phase - glucose
-    t1 = np.where(time < 12)[0]
-    od[t1] = 0.05 * np.exp(0.52 * time[t1])
-    glucose[t1] = 10 - (od[t1] - 0.05) / 0.9
-    
-    # Diauxic lag
-    t_lag = np.where((time >= 12) & (time < 15))[0]
-    od[t_lag] = od[t_lag[0]-1] * (1 + 0.02 * (time[t_lag] - 12))
-    
-    # Second phase - lactose
-    t2 = np.where(time >= 15)[0]
-    if len(t2) > 0:
-        od[t2] = od[15*2] * np.exp(0.35 * (time[t2] - 15))
-        lactose[t2] = 5 * (1 - np.exp(-0.15 * (time[t2] - 15)))
-    
-    od = np.minimum(od, 9.5) + np.random.normal(0, 0.04, len(od))
-    
-    # Beta-galactosidase
-    beta_gal = np.zeros_like(time)
-    for i, t in enumerate(time):
-        if t >= 15 and lactose[i] > 0.5:
-            beta_gal[i] = 0.3 * od[i] * (1 - np.exp(-0.3 * (t - 15))) + np.random.normal(0, 0.02)
-    
-    # DO - shows diauxic shift
-    DO = 100 - 50 * (od / 9.5) + np.random.normal(0, 2, len(od))
-    DO = np.clip(DO, 20, 100)
-    
-    # CO2 - spikes at diauxic shift
-    CO2 = 0.8 * (od / 9.5) + 0.5 * np.exp(-0.5 * (time - 12)**2) + np.random.normal(0, 0.05, len(od))
-    
-    # pH - drops then recovers
-    pH = 7.0 - 0.2 * (od / 9.5) + 0.1 * np.exp(-0.3 * (time - 14)**2) + np.random.normal(0, 0.02, len(od))
-    pH = np.clip(pH, 6.7, 7.0)
-    
-    df = pd.DataFrame({
-        'Time_h': np.round(time, 2),
+    rng = np.random.default_rng(42)
+    dt = 0.05
+    t_fine = np.arange(0, 30 + dt, dt)
+    X = 0.02          # g DCW/L  (OD = X / 0.4)
+    G, L = 2.0, 3.0   # g/L glucose, lactose
+    Y = 0.45
+    mu_g, mu_l, Ks = 0.52, 0.35, 0.05
+    lag_after_glc = 1.5   # h for lac operon induction
+    t_glc_out = None
+    Xs, Gs, Ls, mus = [], [], [], []
+    for t in t_fine:
+        if G > 1e-4:
+            mu = mu_g * G / (Ks + G)
+        else:
+            if t_glc_out is None:
+                t_glc_out = t
+            mu = 0.0 if t - t_glc_out < lag_after_glc else mu_l * L / (Ks + L)
+        dX = mu * X * dt
+        if G > 1e-4:
+            G = max(G - dX / Y, 0.0)
+        else:
+            L = max(L - dX / Y, 0.0)
+        X += dX
+        Xs.append(X); Gs.append(G); Ls.append(L); mus.append(mu)
+    keep = np.isclose((t_fine / 0.5) % 1, 0, atol=1e-6) | np.isclose((t_fine / 0.5) % 1, 1, atol=1e-6)
+    time = np.round(t_fine[keep], 2)
+    X = np.array(Xs)[keep]; glucose = np.array(Gs)[keep]; lactose = np.array(Ls)[keep]
+    mu_arr = np.array(mus)[keep]
+    od = X / 0.4
+    od = od * (1 + rng.normal(0, 0.02, len(od)))          # 2 % proportional noise
+
+    lac_induced = (glucose <= 1e-4) & (lactose < 3.0)
+    beta_gal = np.where(lac_induced, 300 * (3.0 - lactose) / 3.0, 0) + rng.normal(0, 2, len(od))
+    beta_gal = np.clip(beta_gal, 0, None)
+
+    OUR = 30 * mu_arr * X + rng.normal(0, 0.1, len(od))   # mmol/L/h, O2 demand tracks growth
+    DO = np.clip(100 - 6 * OUR + rng.normal(0, 1.5, len(od)), 5, 100)
+    CO2 = np.clip(0.04 + 0.06 * OUR + rng.normal(0, 0.01, len(od)), 0.03, None)
+    pH = np.clip(7.0 - 0.05 * (od / od.max()) + rng.normal(0, 0.01, len(od)), 6.7, 7.1)
+
+    return pd.DataFrame({
+        'Time_h': time,
         'OD_600nm': np.round(od, 3),
-        'Glucose_gL': np.round(glucose, 2),
-        'Lactose_gL': np.round(lactose, 2),
-        'Beta_Galactosidase_U': np.round(beta_gal, 3),
+        'Glucose_gL': np.round(glucose, 3),
+        'Lactose_gL': np.round(lactose, 3),
+        'Beta_Galactosidase_U': np.round(beta_gal, 1),
         'DO_percent': np.round(DO, 1),
         'CO2_percent': np.round(CO2, 3),
         'pH': np.round(pH, 2),
         'Strain': 'E. coli MG1655',
-        'Condition': 'Diauxic growth'
+        'Condition': 'Diauxic growth (simulated)'
     })
-    
-    return df
 
 def generate_high_cell_density_multiprobe():
     """
@@ -389,9 +387,10 @@ def generate_high_cell_density_multiprobe():
     Reference: Korz et al. (1995)
     """
     time = np.arange(0, 48, 1)
-    
-    # High density growth
-    od = np.zeros_like(time)
+    rng = np.random.default_rng(43)
+
+    # High density growth (float array -- an int array truncated every OD to 0)
+    od = np.zeros(len(time), dtype=float)
     od[0] = 0.1
     
     for i in range(1, len(time)):
@@ -401,8 +400,8 @@ def generate_high_cell_density_multiprobe():
             mu = 0.15 * (1 - od[i-1]/120)
         od[i] = od[i-1] * (1 + mu * 1)
     
-    od = od + np.random.normal(0, 0.5, len(od))
-    od = np.maximum(od, 0.1)
+    od = od * (1 + rng.normal(0, 0.02, len(od)))   # 2 % proportional noise
+    od = np.maximum(od, 0.05)
     
     # All sensors
     biomass = od * 0.35
@@ -441,190 +440,202 @@ def generate_high_cell_density_multiprobe():
         'Foam_level_percent': np.round(foam, 2),
         'OxygenTransfer_mmol': np.round(oxygen_transfer, 0),
         'Strain': 'E. coli BL21(DE3)',
-        'Condition': 'High cell density'
+        'Condition': 'High cell density (simulated)'
     })
     
     return df
 
-# Generate all datasets
-print("="*80)
-print("GENERATING MULTI-PROBE FERMENTATION DATASETS")
-print("="*80)
-
-datasets = {
-    'standard_multiprobe': generate_standard_ecoli_multiprobe(),
-    'fedbatch_multiprobe': generate_fedbatch_multiprobe(),
-    'stress_multiprobe': generate_stress_multiprobe(),
-    'temperature_study_multiprobe': generate_temperature_study_multiprobe(),
-    'diauxic_multiprobe': generate_diauxic_multiprobe(),
-    'high_cell_density_multiprobe': generate_high_cell_density_multiprobe()
+GENERATORS = {
+    'standard_multiprobe': generate_standard_ecoli_multiprobe,
+    'fedbatch_multiprobe': generate_fedbatch_multiprobe,
+    'stress_multiprobe': generate_stress_multiprobe,
+    'temperature_study_multiprobe': generate_temperature_study_multiprobe,
+    'diauxic_multiprobe': generate_diauxic_multiprobe,
+    'high_cell_density_multiprobe': generate_high_cell_density_multiprobe,
 }
 
-# Save all datasets
-for name, df in datasets.items():
-    filename = f"{name}.csv"
-    df.to_csv(filename, index=False)
-    print(f"\n✅ {filename}")
-    print(f"   Shape: {df.shape}")
-    print(f"   Columns: {', '.join(df.columns[:8])}...")
-    print(f"   Probes included:")
-    probes = [col for col in df.columns if col not in ['Time_h', 'OD_600nm', 'Strain', 'Condition']]
-    for probe in probes[:5]:
-        print(f"     - {probe}")
-    if len(probes) > 5:
-        print(f"     - ... and {len(probes)-5} more")
 
-# Create summary
-print("\n" + "="*80)
-print("DATASET SUMMARY")
-print("="*80)
+def main(names=None):
+    """Regenerate the named datasets (default: all). Usage:
+        python generate_multiprobe_data.py [dataset_name ...]
+    """
+    # Generate all datasets
+    print("="*80)
+    print("GENERATING MULTI-PROBE FERMENTATION DATASETS")
+    print("="*80)
 
-summary = []
-for name, df in datasets.items():
-    summary.append({
-        'Dataset': name,
-        'Time_h': df['Time_h'].max(),
-        'Max_OD': df['OD_600nm'].max(),
-        'Probes': len([c for c in df.columns if c not in ['Time_h', 'OD_600nm', 'Strain', 'Condition']]),
-        'Has_Substrate': any(c in df.columns for c in ['Glucose_gL', 'Lactose_gL']),
-        'Has_Product': any(c in df.columns for c in ['Acetate_gL', 'HeatShockProteins_gL', 'Beta_Galactosidase_U']),
-        'Has_pH': 'pH' in df.columns,
-        'Has_DO': 'DO_percent' in df.columns,
-        'Has_Temp': 'Temperature_C' in df.columns,
-        'Has_Gas': any(c in df.columns for c in ['CER_mmol_Lh', 'OUR_mmol_Lh', 'CO2_percent'])
-    })
+    datasets = {n: GENERATORS[n]() for n in (names or GENERATORS)}
 
-summary_df = pd.DataFrame(summary)
-print("\n" + summary_df.to_string(index=False))
+    # Save all datasets
+    for name, df in datasets.items():
+        filename = f"{name}.csv"
+        df.to_csv(filename, index=False)
+        print(f"\n✅ {filename}")
+        print(f"   Shape: {df.shape}")
+        print(f"   Columns: {', '.join(df.columns[:8])}...")
+        print(f"   Probes included:")
+        probes = [col for col in df.columns if col not in ['Time_h', 'OD_600nm', 'Strain', 'Condition']]
+        for probe in probes[:5]:
+            print(f"     - {probe}")
+        if len(probes) > 5:
+            print(f"     - ... and {len(probes)-5} more")
 
-# Create README
-readme = """
-# MULTI-PROBE FERMENTATION DATASETS
+    # Create summary
+    print("\n" + "="*80)
+    print("DATASET SUMMARY")
+    print("="*80)
 
-## Overview
-Six comprehensive datasets with multiple sensor readings for testing bioprocess analyzers.
+    summary = []
+    for name, df in datasets.items():
+        summary.append({
+            'Dataset': name,
+            'Time_h': df['Time_h'].max(),
+            'Max_OD': df['OD_600nm'].max(),
+            'Probes': len([c for c in df.columns if c not in ['Time_h', 'OD_600nm', 'Strain', 'Condition']]),
+            'Has_Substrate': any(c in df.columns for c in ['Glucose_gL', 'Lactose_gL']),
+            'Has_Product': any(c in df.columns for c in ['Acetate_gL', 'HeatShockProteins_gL', 'Beta_Galactosidase_U']),
+            'Has_pH': 'pH' in df.columns,
+            'Has_DO': 'DO_percent' in df.columns,
+            'Has_Temp': 'Temperature_C' in df.columns,
+            'Has_Gas': any(c in df.columns for c in ['CER_mmol_Lh', 'OUR_mmol_Lh', 'CO2_percent'])
+        })
 
-## Datasets
+    summary_df = pd.DataFrame(summary)
+    print("\n" + summary_df.to_string(index=False))
 
-### 1. standard_multiprobe.csv
-**Standard E. coli batch fermentation**
-- **Time**: 0-24 hours (15 min intervals)
-- **Substrates**: Glucose (10→0 g/L)
-- **Products**: Acetate (0→1.2 g/L)
-- **Probes**: pH, DO, Temperature, CER, OUR, RQ, Agitation, Airflow, Pressure
-- **Reference**: Neidhardt, F.C. (1996)
+    # Create README
+    readme = """
+    # MULTI-PROBE FERMENTATION DATASETS
 
-### 2. fedbatch_multiprobe.csv
-**Fed-batch fermentation with controlled feeding**
-- **Time**: 0-72 hours (30 min intervals)
-- **Substrates**: Glucose (controlled feed)
-- **Products**: Minimal acetate
-- **Probes**: pH, DO, Temperature, CER, OUR, RQ, Agitation, Feed rate, Base addition, Off-gas CO2
-- **Reference**: Korz et al. (1995)
+    ## Overview
+    Six comprehensive datasets with multiple sensor readings for testing bioprocess analyzers.
 
-### 3. stress_multiprobe.csv
-**Osmotic stress conditions**
-- **Time**: 0-48 hours (30 min intervals)
-- **Stress markers**: Trehalose, Proline
-- **Probes**: pH, DO, Temperature, Osmolality, Viscosity
-- **Reference**: Record et al. (1998)
+    ## Datasets
 
-### 4. temperature_study_multiprobe.csv
-**Temperature shift study (37°C → 42°C → 37°C)**
-- **Time**: 0-36 hours (30 min intervals)
-- **Products**: Heat shock proteins
-- **Probes**: Temperature (controlled), DO, Heat shock proteins
-- **Reference**: Applied and Environmental Microbiology (2008)
+    ### 1. standard_multiprobe.csv
+    **Standard E. coli batch fermentation**
+    - **Time**: 0-24 hours (15 min intervals)
+    - **Substrates**: Glucose (10→0 g/L)
+    - **Products**: Acetate (0→1.2 g/L)
+    - **Probes**: pH, DO, Temperature, CER, OUR, RQ, Agitation, Airflow, Pressure
+    - **Reference**: Neidhardt, F.C. (1996)
 
-### 5. diauxic_multiprobe.csv
-**Diauxic growth with substrate switching**
-- **Time**: 0-40 hours (30 min intervals)
-- **Substrates**: Glucose → Lactose
-- **Products**: β-galactosidase
-- **Probes**: DO, CO2, pH (shows diauxic shift)
-- **Reference**: Journal of Bacteriology (2004)
+    ### 2. fedbatch_multiprobe.csv
+    **Fed-batch fermentation with controlled feeding**
+    - **Time**: 0-72 hours (30 min intervals)
+    - **Substrates**: Glucose (controlled feed)
+    - **Products**: Minimal acetate
+    - **Probes**: pH, DO, Temperature, CER, OUR, RQ, Agitation, Feed rate, Base addition, Off-gas CO2
+    - **Reference**: Korz et al. (1995)
 
-### 6. high_cell_density_multiprobe.csv
-**High cell density fermentation**
-- **Time**: 0-48 hours (1 hour intervals)
-- **Maximum OD**: 85-100
-- **Probes**: DO, pH, Temperature, CER, OUR, RQ, Agitation, Airflow, Foam, Oxygen transfer
-- **Reference**: Korz et al. (1995)
+    ### 3. stress_multiprobe.csv
+    **Osmotic stress conditions**
+    - **Time**: 0-48 hours (30 min intervals)
+    - **Stress markers**: Trehalose, Proline
+    - **Probes**: pH, DO, Temperature, Osmolality, Viscosity
+    - **Reference**: Record et al. (1998)
 
-## Sensor Types Included
+    ### 4. temperature_study_multiprobe.csv
+    **Temperature shift study (37°C → 42°C → 37°C)**
+    - **Time**: 0-36 hours (30 min intervals)
+    - **Products**: Heat shock proteins
+    - **Probes**: Temperature (controlled), DO, Heat shock proteins
+    - **Reference**: Applied and Environmental Microbiology (2008)
 
-| Sensor Type | Variables |
-|-------------|-----------|
-| **Biomass** | OD_600nm, Biomass_gL |
-| **Substrates** | Glucose_gL, Lactose_gL |
-| **Products** | Acetate_gL, HeatShockProteins_gL, Beta_Galactosidase_U, Trehalose_gL, Proline_gL |
-| **Physicochemical** | pH, Temperature_C, DO_percent, Osmolality_mOsm, Viscosity_cP |
-| **Gas Exchange** | CER_mmol_Lh, OUR_mmol_Lh, RQ, CO2_percent, Offgas_CO2_percent |
-| **Process** | Agitation_rpm, Airflow_vvm, Pressure_bar, FeedRate_mLh, BaseAddition_mLh, Foam_level_percent |
-| **Cumulative** | OxygenTransfer_mmol |
+    ### 5. diauxic_multiprobe.csv
+    **Diauxic growth with substrate switching**
+    - **Time**: 0-40 hours (30 min intervals)
+    - **Substrates**: Glucose → Lactose
+    - **Products**: β-galactosidase
+    - **Probes**: DO, CO2, pH (shows diauxic shift)
+    - **Reference**: Journal of Bacteriology (2004)
 
-## Testing Your Bioprocess Analyzer
+    ### 6. high_cell_density_multiprobe.csv
+    **High cell density fermentation**
+    - **Time**: 0-48 hours (1 hour intervals)
+    - **Maximum OD**: 85-100
+    - **Probes**: DO, pH, Temperature, CER, OUR, RQ, Agitation, Airflow, Foam, Oxygen transfer
+    - **Reference**: Korz et al. (1995)
 
-### What to Test:
+    ## Sensor Types Included
 
-1. **Growth Kinetics**
-   - μ_max calculation under different conditions
-   - Phase detection (lag, exponential, stationary)
-   - Diauxic shift detection
+    | Sensor Type | Variables |
+    |-------------|-----------|
+    | **Biomass** | OD_600nm, Biomass_gL |
+    | **Substrates** | Glucose_gL, Lactose_gL |
+    | **Products** | Acetate_gL, HeatShockProteins_gL, Beta_Galactosidase_U, Trehalose_gL, Proline_gL |
+    | **Physicochemical** | pH, Temperature_C, DO_percent, Osmolality_mOsm, Viscosity_cP |
+    | **Gas Exchange** | CER_mmol_Lh, OUR_mmol_Lh, RQ, CO2_percent, Offgas_CO2_percent |
+    | **Process** | Agitation_rpm, Airflow_vvm, Pressure_bar, FeedRate_mLh, BaseAddition_mLh, Foam_level_percent |
+    | **Cumulative** | OxygenTransfer_mmol |
 
-2. **Substrate Utilization**
-   - Glucose consumption profiles
-   - Lactose utilization after diauxic shift
-   - Yield calculations (Yx/s)
+    ## Testing Your Bioprocess Analyzer
 
-3. **Product Formation**
-   - Acetate production (overflow metabolism)
-   - Heat shock protein induction
-   - β-galactosidase expression
+    ### What to Test:
 
-4. **Process Parameters**
-   - DO profiles during growth
-   - pH control effectiveness
-   - Temperature effects on growth
-   - CER/OUR patterns
+    1. **Growth Kinetics**
+       - μ_max calculation under different conditions
+       - Phase detection (lag, exponential, stationary)
+       - Diauxic shift detection
 
-5. **Advanced Features**
-   - Fed-batch detection
-   - Stress condition identification
-   - Multi-parameter correlation
-   - Time-series visualization
+    2. **Substrate Utilization**
+       - Glucose consumption profiles
+       - Lactose utilization after diauxic shift
+       - Yield calculations (Yx/s)
 
-### Expected Results:
+    3. **Product Formation**
+       - Acetate production (overflow metabolism)
+       - Heat shock protein induction
+       - β-galactosidase expression
 
-| Dataset | Expected μ_max | Expected Features |
-|---------|---------------|-------------------|
-| Standard | 0.43-0.47 h⁻¹ | DO dip, acetate production |
-| Fed-batch | 0.43-0.47 (batch) | Controlled DO, feed profile |
-| Stress | 0.16-0.20 h⁻¹ | Extended lag, stress markers |
-| Temperature | 0.30-0.34 h⁻¹ | Heat shock response |
-| Diauxic | 0.52 (1st), 0.35 (2nd) | Two growth phases, DO spike |
-| High density | 0.43-0.47 (batch) | Multiple sensors, foam |
+    4. **Process Parameters**
+       - DO profiles during growth
+       - pH control effectiveness
+       - Temperature effects on growth
+       - CER/OUR patterns
 
-## Usage
+    5. **Advanced Features**
+       - Fed-batch detection
+       - Stress condition identification
+       - Multi-parameter correlation
+       - Time-series visualization
 
-1. Upload any CSV to your bioprocess analyzer
-2. Map the columns correctly
-3. Analyze growth kinetics and process parameters
-4. Compare with expected values above
+    ### Expected Results:
 
-Your app should handle all these sensor types and provide meaningful visualizations!
-"""
+    | Dataset | Expected μ_max | Expected Features |
+    |---------|---------------|-------------------|
+    | Standard | 0.43-0.47 h⁻¹ | DO dip, acetate production |
+    | Fed-batch | 0.43-0.47 (batch) | Controlled DO, feed profile |
+    | Stress | 0.16-0.20 h⁻¹ | Extended lag, stress markers |
+    | Temperature | 0.30-0.34 h⁻¹ | Heat shock response |
+    | Diauxic | 0.52 (1st), 0.35 (2nd) | Two growth phases, DO spike |
+    | High density | 0.43-0.47 (batch) | Multiple sensors, foam |
 
-with open('MULTIPROBE_DATASET_README.md', 'w') as f:
-    f.write(readme)
+    ## Usage
 
-print("\n" + "="*80)
-print("✅ All datasets generated successfully!")
-print("="*80)
-print("\n📁 Files created:")
-for name in datasets.keys():
-    print(f"   - {name}.csv")
-print("\n📖 README: MULTIPROBE_DATASET_README.md")
-print("\n🎯 Ready to test your bioprocess analyzer with real fermentation data!")
-print("\nRun: streamlit run app.py")
-print("Then upload these CSV files to see all the new features!")
+    1. Upload any CSV to your bioprocess analyzer
+    2. Map the columns correctly
+    3. Analyze growth kinetics and process parameters
+    4. Compare with expected values above
+
+    Your app should handle all these sensor types and provide meaningful visualizations!
+    """
+
+    with open('MULTIPROBE_DATASET_README.md', 'w') as f:
+        f.write(readme)
+
+    print("\n" + "="*80)
+    print("✅ All datasets generated successfully!")
+    print("="*80)
+    print("\n📁 Files created:")
+    for name in datasets.keys():
+        print(f"   - {name}.csv")
+    print("\n📖 README: MULTIPROBE_DATASET_README.md")
+    print("\n🎯 Ready to test your bioprocess analyzer with real fermentation data!")
+    print("\nRun: streamlit run app.py")
+    print("Then upload these CSV files to see all the new features!")
+
+
+if __name__ == "__main__":
+    import sys
+    main(sys.argv[1:] or None)

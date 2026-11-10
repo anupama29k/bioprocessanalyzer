@@ -7,3 +7,6 @@ run_registry.json
 validation_log.txt
 *.log
 bpa_app/data/
+validation_report.txt
+validation_report_auto.md
+auto_validation_results.csv
