@@ -21,7 +21,7 @@ A multi-page Streamlit app built around `ferment.py`, an analysis engine with au
 | **AI Assistant** | Context-aware natural-language Q&A grounded in the currently loaded run data (`ANTHROPIC_API_KEY` in env; never committed) |
 | **Dashboard** | Central hub for stored runs and fermentation data management |
 
-**Validation:** `test_with_literature.py` and `auto_validate.py` benchmark the calculations against published values for each organism; 30+ literature-derived and synthetic multiprobe datasets ship in the repo (see `MULTIPROBE_DATASET_README.md`).
+**Validation:** `test_with_literature.py` and `auto_validate.py` benchmark the calculations against published kinetic values for each organism. The 30+ bundled datasets are simulated with literature-typical parameters (see [`bpa_app/DATASETS.md`](bpa_app/DATASETS.md) for provenance).
 
 ## The rest of the platform
 

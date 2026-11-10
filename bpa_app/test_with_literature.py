@@ -6,7 +6,13 @@ Fixed version with complete literature data for all strains
 import pandas as pd
 import numpy as np
 from scipy.stats import linregress
+import os
+import sys
 import warnings
+
+# Bundled test files are reused as-is; pass --regenerate to rebuild them.
+REGENERATE = '--regenerate' in sys.argv
+np.random.seed(42)
 warnings.filterwarnings('ignore')
 
 # ============================================================================
@@ -367,13 +373,18 @@ def generate_all_test_datasets():
             df['Glucose_gL'] = np.round(glucose, 2)
         
         filename = f"test_{strain_type}.csv"
-        df.to_csv(filename, index=False)
-        print(f"  ✅ Created: {filename}")
+        if os.path.exists(filename) and not REGENERATE:
+            df = pd.read_csv(filename)
+            print(f"  ↺ Using bundled: {filename}")
+        else:
+            df.to_csv(filename, index=False)
+            print(f"  ✅ Created: {filename}")
         all_datasets.append(df)
     
     # Create combined dataset
     combined_df = pd.concat(all_datasets, ignore_index=True)
-    combined_df.to_csv('ALL_LITERATURE_VALIDATION_DATASETS.csv', index=False)
+    if REGENERATE or not os.path.exists('ALL_LITERATURE_VALIDATION_DATASETS.csv'):
+        combined_df.to_csv('ALL_LITERATURE_VALIDATION_DATASETS.csv', index=False)
     print(f"\n✅ Created: ALL_LITERATURE_VALIDATION_DATASETS.csv (combined file)")
     
     return combined_df
