@@ -48,67 +48,730 @@ hans2020,W3110,BW25113,strain,W3110,,acetate_reconsumed_frac,–,0.5633446503847
 hans2020,W3110,BW25113,strain,W3110,,DO_min_pct,% sat.,0.0,0.0,3,0.0,0.0,3,0.0,,,,False
 hans2020,W3110,BW25113,strain,W3110,,mu_fedbatch_h,h⁻¹,0.07221812669932538,0.023064102454079652,3,0.08213555633031767,0.020017835097346885,3,-0.009917429630992292,-12.074465766212384,-0.45925186253541517,0.6043869838991454,True
 hans2020,W3110,BW25113,strain,W3110,,biomass_final_gL,g/L,13.10075,2.2421399426663804,3,12.678033333333333,1.9648059556437967,3,0.4227166666666662,3.3342447961171695,0.20052605064713877,0.8182813938611261,True
+schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,vcd_max_1e6_mL,10⁶ cells/mL,9.785,0.27577164466275395,2,26.74,,1,-16.955,-63.406881077038136,,,False
+schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,viability_end_pct,%,72.3,21.778888860545667,2,96.98,,1,-24.680000000000007,-25.448546091977732,,,False
+schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,lactate_peak_gL,g/L,4.725,0.26162950903902266,2,0.58,,1,4.145,714.655172413793,,,False
+schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,1794.96,49.21463197058364,2,4485.24,,1,-2690.2799999999997,-59.98073681675897,,,False
+schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,titer_final_gL,g/L,1.725,0.03535533905932741,2,3.32,,1,-1.5949999999999998,-48.04216867469879,,,False
+schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,qp_pg_cell_day,pg/cell/day,19.657238305055355,0.16078421736544016,2,16.3201969125398,,1,3.3370413925155553,20.447310840664578,,,False
+schellenberg2021 · ambr15 · nutrients,decreased feed,standard process,feed,decreased feed,,diameter_end_um,µm,20.655,0.8273149339882593,2,17.36,,1,3.2950000000000017,18.980414746543794,,,False
+schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,mu_batch_h,h⁻¹,0.024908406610316028,0.0007390938159546749,2,0.02902963388649005,,1,-0.004121227276174023,-14.196621604973048,,,False
+schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,vcd_max_1e6_mL,10⁶ cells/mL,24.064999999999998,0.10606601717798363,2,26.74,,1,-2.6750000000000007,-10.0037397157816,,,False
+schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,viability_end_pct,%,97.0,0.7071067811865476,2,96.98,,1,0.01999999999999602,0.02062280882655365,,,False
+schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,lactate_peak_gL,g/L,0.805,0.007071067811865481,2,0.58,,1,0.2250000000000001,38.793103448275886,,,False
+schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,3782.8199999999997,24.352757544064737,2,4485.24,,1,-702.4200000000001,-15.66070043074619,,,False
+schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,titer_final_gL,g/L,3.9850000000000003,0.12020815280171335,2,3.32,,1,0.6650000000000005,20.030120481927717,,,False
+schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,qp_pg_cell_day,pg/cell/day,23.667685856904438,0.8701612699146758,2,16.3201969125398,,1,7.347488944364638,45.02083512680608,,,False
+schellenberg2021 · ambr15 · nutrients,glucose 12 g/L (overfeeding),standard process,feed,glucose 12 g/L (overfeeding),,diameter_end_um,µm,17.495,0.02121320343559723,2,17.36,,1,0.13500000000000156,0.7776497695852536,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,mu_batch_h,h⁻¹,0.014085665567320244,0.000742543372726626,2,0.02902963388649005,,1,-0.014943968319169807,-51.47832169569491,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,vcd_max_1e6_mL,10⁶ cells/mL,6.4,1.1172287142747452,2,26.74,,1,-20.339999999999996,-76.06581899775617,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,viability_end_pct,%,93.85,1.6263455967290572,2,96.98,,1,-3.1300000000000097,-3.22746958135699,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,lactate_peak_gL,g/L,1.51,0.07071067811865482,2,0.58,,1,0.93,160.3448275862069,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,835.26,128.89142407468387,2,4485.24,,1,-3649.9799999999996,-81.37758514594536,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,titer_final_gL,g/L,1.43,0.07071067811865482,2,3.32,,1,-1.89,-56.92771084337349,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,qp_pg_cell_day,pg/cell/day,33.73517809679702,3.377181355441788,2,16.3201969125398,,1,17.414981184257222,106.70815602032495,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 1.2 g/L (low glutamine),standard process,medium,glutamate 1.2 g/L (low glutamine),,diameter_end_um,µm,21.03,0.09899494936611705,2,17.36,,1,3.6700000000000017,21.140552995391726,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,mu_batch_h,h⁻¹,0.013437006937978743,0.0011257035363758053,2,0.02902963388649005,,1,-0.015592626948511308,-53.7127922779897,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,vcd_max_1e6_mL,10⁶ cells/mL,6.43,0.21213203435596412,2,26.74,,1,-20.31,-75.95362752430816,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,viability_end_pct,%,94.75,0.9192388155425198,2,96.98,,1,-2.230000000000004,-2.299443184161687,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,lactate_peak_gL,g/L,1.625,0.007071067811865324,2,0.58,,1,1.045,180.17241379310346,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,801.9,39.11714713523976,2,4485.24,,1,-3683.3399999999997,-82.1213580544185,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,titer_final_gL,g/L,1.39,0.0,2,3.32,,1,-1.93,-58.13253012048193,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,qp_pg_cell_day,pg/cell/day,34.15960961624813,1.6663255710701246,2,16.3201969125398,,1,17.839412703708334,109.30880797155842,,,False
+schellenberg2021 · ambr15 · nutrients,glutamate 2 g/L (low glutamine),standard process,medium,glutamate 2 g/L (low glutamine),,diameter_end_um,µm,20.814999999999998,0.03535533905932788,2,17.36,,1,3.4549999999999983,19.902073732718883,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,mu_batch_h,h⁻¹,0.028104128908733192,0.0010582488728699533,2,0.027701400638799487,,1,0.00040272826993370536,1.4538191594891003,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,vcd_max_1e6_mL,10⁶ cells/mL,23.17,0.9050966799187792,2,24.86,,1,-1.6899999999999977,-6.798069187449707,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,viability_end_pct,%,95.98500000000001,1.3364318164425752,2,96.03,,1,-0.044999999999987494,-0.04686035613868933,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,lactate_peak_gL,g/L,2.0250000000000004,0.21920310216782976,2,1.33,,1,0.6950000000000003,52.25563909774438,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,3627.1800000000003,72.54915574973971,2,3714.24,,1,-87.05999999999949,-2.343951925562149,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,titer_final_gL,g/L,3.45,0.05656854249492385,2,3.32,,1,0.13000000000000034,3.915662650602414,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,qp_pg_cell_day,pg/cell/day,22.76229402094838,0.08098307618286903,2,21.387955544068237,,1,1.374338476880144,6.425758993413022,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 0,standard process,pH,pH 7.3 from day 0,,diameter_end_um,µm,18.67,0.02828427124746381,2,18.11,,1,0.5600000000000023,3.0922142462727953,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,mu_batch_h,h⁻¹,0.028124554856328508,0.001470595203284668,2,0.027701400638799487,,1,0.0004231542175290211,1.527555314067186,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,vcd_max_1e6_mL,10⁶ cells/mL,21.995,0.9121677477306457,2,24.86,,1,-2.8649999999999984,-11.524537409493153,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,viability_end_pct,%,96.05000000000001,2.616295090390228,2,96.03,,1,0.020000000000010232,0.02082682495054833,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,lactate_peak_gL,g/L,1.11,0.014142135623730963,2,1.33,,1,-0.21999999999999997,-16.541353383458645,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,3458.52,190.40971403791335,2,3714.24,,1,-255.7199999999998,-6.884853967433435,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,titer_final_gL,g/L,3.465,0.049497474683058214,2,3.32,,1,0.14500000000000002,4.367469879518082,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,qp_pg_cell_day,pg/cell/day,24.002494880711637,0.9779815626451177,2,21.387955544068237,,1,2.6145393366434,12.224353708124847,,,False
+schellenberg2021 · ambr15 · pH,pH 7.3 from day 5,standard process,pH,pH 7.3 from day 5,,diameter_end_um,µm,18.63,0.282842712474618,2,18.11,,1,0.5199999999999996,2.8713418001104385,,,False
+schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,mu_batch_h,h⁻¹,0.02805618081623216,0.0012499014528480018,3,0.027640936126508465,,1,0.00041524468972369694,1.5022815718801485,,,False
+schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,vcd_max_1e6_mL,10⁶ cells/mL,18.683333333333334,0.5689756878227158,3,23.37,,1,-4.686666666666667,-20.054200542005418,,,False
+schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,viability_end_pct,%,92.66666666666667,0.5507570547286147,3,96.4,,1,-3.7333333333333343,-3.87275242047026,,,False
+schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,lactate_peak_gL,g/L,0.7133333333333333,0.011547005383792525,3,1.11,,1,-0.39666666666666683,-35.73573573573575,,,False
+schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,3313.8799999999997,50.671317330418724,3,3906.36,,1,-592.4800000000005,-15.167060895565188,,,False
+schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,titer_final_gL,g/L,2.8633333333333333,0.10214368964029709,3,2.76,,1,0.1033333333333335,3.7439613526570215,,,False
+schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,qp_pg_cell_day,pg/cell/day,20.3705573017144,0.6118797097790577,3,16.83408595213959,,1,3.5364713495748106,21.00780143115124,,,False
+schellenberg2021 · shake flask,CO2 limitation,standard process,other,CO2 limitation,,diameter_end_um,µm,17.456666666666667,0.17039170558842728,3,14.89,,1,2.5666666666666664,17.237519588090432,,,False
+schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,mu_batch_h,h⁻¹,0.02893713540732104,0.0014446355029084142,3,0.027640936126508465,,1,0.001296199280812576,4.689418892616604,,,False
+schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,vcd_max_1e6_mL,10⁶ cells/mL,22.459999999999997,0.1931320791582808,3,23.37,,1,-0.9100000000000037,-3.8938810440736105,,,False
+schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,viability_end_pct,%,92.66666666666667,0.378593889720013,3,96.4,,1,-3.7333333333333343,-3.87275242047026,,,False
+schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,lactate_peak_gL,g/L,0.4666666666666666,0.04041451884327381,3,1.11,,1,-0.6433333333333335,-57.95795795795797,,,False
+schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,ivcd_1e9_cells_h_L,10⁹ cells·h/L,4097.24,61.961420254864926,3,3906.36,,1,190.87999999999965,4.886390399246343,,,False
+schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,titer_final_gL,g/L,2.4633333333333334,0.11150485789118485,3,2.76,,1,-0.2966666666666664,-10.748792270531393,,,False
+schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,qp_pg_cell_day,pg/cell/day,14.045052081717964,0.8408701313470199,3,16.83408595213959,,1,-2.7890338704216244,-16.567777296320287,,,False
+schellenberg2021 · shake flask,nutrient limitation,standard process,medium,nutrient limitation,,diameter_end_um,µm,16.243333333333332,0.12662279942148283,3,14.89,,1,1.3533333333333317,9.088873964629496,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,vcd_max_1e6_mL,10⁶ cells/mL,40.436081560000005,0.9107903602894324,2,124.87852496,5.747706157166353,2,-84.44244339999999,-67.61966753454836,-20.52088016724336,0.02691655541704969,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,viability_end_pct,%,26.11666666666667,1.6970562748477132,2,90.07833333333332,2.255670631985075,2,-63.961666666666645,-71.00671637648712,-32.04488698457965,0.0014577977093204342,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,ethanol_end_pct_ww,% w/w,1.3,0.0,2,2.2,0.0,2,-0.9000000000000001,-40.90909090909092,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,extract_consumed_frac,–,0.5366760584976907,0.0,2,0.6120956724200985,0.00517040114011938,2,-0.07541961392240781,-12.321540131825214,-20.628852189126114,0.030836510127409643,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,DO_min_pct,% sat.,62.1975,0.6399316369738264,2,69.5995,6.330727011963152,2,-7.402000000000008,-10.635133873088176,-1.6451404114955204,0.344047833874348,False
+uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,ivcd_1e9_cells_h_L,10⁹ cells·h/L,1483.0071252675,73.09811104592349,2,7101.1800089825,169.2760256331387,2,-5618.172883715,-79.11604658110906,-43.090872299853565,0.004242288574049394,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,vcd_max_1e6_mL,10⁶ cells/mL,89.15071144,0.4421312428589541,2,131.45634432,1.733154472007084,2,-42.305632880000005,-32.18226788432268,-33.449174831391105,0.012445071298457348,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,viability_end_pct,%,67.875,0.6434671708797558,2,91.63000000000002,0.9239528607504359,2,-23.755000000000024,-25.924915420713756,-29.83699806716196,0.0020369944904463488,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,ethanol_end_pct_ww,% w/w,4.65,0.07071067811865513,2,6.35,0.07071067811865513,2,-1.6999999999999993,-26.77165354330707,-24.04163056034248,0.0017256268250040892,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,extract_consumed_frac,–,0.5661435588727532,0.00892411616277431,2,0.5815544608648062,0.0,2,-0.015410901992052972,-2.649949923715833,-2.4421809631384823,0.24741812049397546,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,DO_min_pct,% sat.,36.084,0.5034600282048192,2,60.2545,10.498414380276667,2,-24.170499999999997,-40.11401638051929,-3.2522064617143296,0.18899467374648696,False
+uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,ivcd_1e9_cells_h_L,10⁹ cells·h/L,5403.9283206475,48.33655078960897,2,6454.5301881375,22.191119743144746,2,-1050.6018674899997,-16.276968839976224,-27.934881252433318,0.0067405240947016175,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,mu_batch_h,h⁻¹,0.06183051145723966,,1,0.11622007778338231,0.019399113055017098,8,-0.05438956632614265,-46.79876950996115,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,vcd_max_1e6_mL,10⁶ cells/mL,144.3274861,6.484286417204525,4,230.27995171999999,3.2230228249409447,8,-85.95246562,-37.32520568030628,-16.78678306514361,2.534463471079756e-05,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,viability_end_pct,%,89.31166666666667,4.36042004432635,4,97.21375,0.3807571300231815,8,-7.902083333333337,-8.12856548927835,-2.5531645766290416,0.03585872234504767,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,ethanol_end_pct_ww,% w/w,1.625,0.04999999999999993,4,1.5875,0.14577379737113255,8,0.03750000000000009,2.3622047244094446,0.3441236008058435,0.5282858852206523,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,extract_consumed_frac,–,0.6107949346876861,0.009913526880091117,4,0.5885086790813199,0.007764166153100041,8,0.022286255606366212,3.7869034728860385,2.5029656391276127,0.011373419325263145,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,DO_min_pct,% sat.,69.7825,3.600448536872412,4,69.76825,4.14680085814871,8,0.014250000000004093,0.020424763413173785,0.003669611152033576,0.9952744926768912,False
+uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-68 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,ivcd_1e9_cells_h_L,10⁹ cells·h/L,8402.80997899875,299.4604157269757,4,13686.50825147375,408.89821995062806,8,-5283.698272475,-38.605159003254585,-14.743231448157,4.678973465477591e-09,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,mu_batch_h,h⁻¹,0.06022231752437958,0.0010243015100084658,2,0.06183051145723966,,1,-0.0016081939328600817,-2.600971421645548,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,vcd_max_1e6_mL,10⁶ cells/mL,124.87852496,5.747706157166353,2,144.3274861,6.484286417204525,4,-19.448961139999994,-13.47557673562222,-3.1742652246585856,0.04975059833929867,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,viability_end_pct,%,90.07833333333332,2.255670631985075,2,89.31166666666667,4.36042004432635,4,0.7666666666666515,0.8584171534140594,0.22085194483237625,0.7913344409999291,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,ethanol_end_pct_ww,% w/w,2.2,0.0,2,1.625,0.04999999999999993,4,0.5750000000000002,35.384615384615394,16.26345596729062,0.00018002781454780375,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,extract_consumed_frac,–,0.6120956724200985,0.00517040114011938,2,0.6107949346876861,0.009913526880091117,4,0.0013007377324124603,0.2129581727912555,0.16452447444182824,0.843612264646662,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,DO_min_pct,% sat.,69.5995,6.330727011963152,2,69.7825,3.600448536872412,4,-0.18299999999999272,-0.26224339913301087,-0.03553520848715541,0.9746042933796744,False
+uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,ivcd_1e9_cells_h_L,10⁹ cells·h/L,7101.1800089825,169.2760256331387,2,8402.80997899875,299.4604157269757,4,-1301.62997001625,-15.490413007903669,-5.351227674990361,0.0034918702368252545,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,mu_batch_h,h⁻¹,0.04674767486100016,0.0025387906066750825,2,0.06022231752437958,0.0010243015100084658,2,-0.013474642663379416,-22.374832482865713,-6.960758047665271,0.05353055216939403,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,vcd_max_1e6_mL,10⁶ cells/mL,131.45634432,1.733154472007084,2,124.87852496,5.747706157166353,2,6.5778193600000066,5.267374324053686,1.5495473358633762,0.33655677441692194,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,viability_end_pct,%,91.63000000000002,0.9239528607504359,2,90.07833333333332,2.255670631985075,2,1.551666666666705,1.7225747960109228,0.9002365615360782,0.5014003131442446,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,ethanol_end_pct_ww,% w/w,6.35,0.07071067811865513,2,2.2,0.0,2,4.1499999999999995,188.63636363636357,82.99999999999955,0.007669746642945359,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,extract_consumed_frac,–,0.5815544608648062,0.0,2,0.6120956724200985,0.00517040114011938,2,-0.030541211555292325,-4.989614031175671,-8.353664333248044,0.07584752144673805,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,DO_min_pct,% sat.,60.2545,10.498414380276667,2,69.5995,6.330727011963152,2,-9.345000000000006,-13.426820594975542,-1.078008817445636,0.41397474273974255,False
+uhlendorff2026 · W-68,W-68 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,ivcd_1e9_cells_h_L,10⁹ cells·h/L,6454.5301881375,22.191119743144746,2,7101.1800089825,169.2760256331387,2,-646.6498208450002,-9.106230514182611,-5.356592143711489,0.11159755607535668,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,scale,10 L vs 0.7 L,10.0,mu_batch_h,h⁻¹,0.0425003509926341,,1,0.06022231752437958,0.0010243015100084658,2,-0.01772196653174548,-29.427573132786133,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,scale,10 L vs 0.7 L,10.0,vcd_max_1e6_mL,10⁶ cells/mL,92.13949248,,1,124.87852496,5.747706157166353,2,-32.73903247999999,-26.216703384738626,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,scale,10 L vs 0.7 L,10.0,viability_end_pct,%,81.19,,1,90.07833333333332,2.255670631985075,2,-8.888333333333321,-9.867337687568211,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,scale,10 L vs 0.7 L,10.0,ethanol_end_pct_ww,% w/w,2.2,,1,2.2,0.0,2,0.0,0.0,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,scale,10 L vs 0.7 L,10.0,extract_consumed_frac,–,0.6157516981277317,,1,0.6120956724200985,0.00517040114011938,2,0.003656025707633126,0.5972964476579135,,,False
 uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,scale,10 L vs 0.7 L,10.0,DO_min_pct,% sat.,72.33,,1,69.5995,6.330727011963152,2,2.730499999999992,3.9231603675313753,,,False
+uhlendorff2026 · W-68,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-68 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,scale,10 L vs 0.7 L,10.0,ivcd_1e9_cells_h_L,10⁹ cells·h/L,5422.534342365001,,1,7101.1800089825,169.2760256331387,2,-1678.645666617499,-23.63896795313073,,,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,mu_batch_h,h⁻¹,0.006267592945561884,0.003784742667531536,2,0.06189852099234687,,1,-0.05563092804678499,-89.87440597112682,,,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,vcd_max_1e6_mL,10⁶ cells/mL,105.67654468,0.1856951220007547,2,104.86369628,7.3128507568870385,2,0.8128484000000071,0.775147576173163,0.15714402419917722,0.9007452917184533,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,viability_end_pct,%,87.595,0.28991378028648207,2,93.35666666666667,0.3064129385141733,2,-5.76166666666667,-6.171671367872323,-19.3164667037191,0.0027072371158387443,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,ethanol_end_pct_ww,% w/w,2.05,0.07071067811865482,2,1.25,0.07071067811865482,2,0.7999999999999998,63.99999999999999,11.313708498984747,0.0077221232863323675,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,extract_consumed_frac,–,0.6227825167962578,0.0,2,0.48255169514199303,0.006756744077386014,2,0.14023082165426481,29.06026920348943,29.35087189552202,0.021681591480869244,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,DO_min_pct,% sat.,46.7285,5.526039494972872,2,32.2695,36.46478959900907,2,14.458999999999996,44.80701591285887,0.5544329057278036,0.6744192047201659,False
+uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 37 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,37 °C vs 22 °C (same day),37.0,ivcd_1e9_cells_h_L,10⁹ cells·h/L,2303.6551573787497,108.44678024452398,2,5978.5273374749995,184.05813107407369,2,-3674.87218009625,-61.46784939931902,-24.327274699984923,0.004542745585673118,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,mu_batch_h,h⁻¹,0.06939815717524103,0.004655893570605096,2,0.04824921438160565,0.0008238887897563486,2,0.021148942793635384,43.83271948506198,6.325651659514157,0.09002970261512558,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,vcd_max_1e6_mL,10⁶ cells/mL,113.0484544,7.268637632601142,2,129.23039024,1.202596980576339,2,-16.181935839999994,-12.521772788852326,-3.106191475170669,0.18778298937805982,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,viability_end_pct,%,89.44166666666666,1.793694201609872,2,97.74833333333333,0.5397581763057228,2,-8.306666666666672,-8.498013606370103,-6.271479947152013,0.0754438519498064,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,ethanol_end_pct_ww,% w/w,4.8,0.0,2,5.800000000000001,0.14142135623730964,2,-1.0000000000000009,-17.24137931034484,-10.0,0.06345103486110713,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,extract_consumed_frac,–,0.5578517635722803,0.0,2,0.5381148608872717,0.010099478253984476,2,0.019736902685008606,3.667786214353086,2.7637264771935244,0.2210184369601051,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,DO_min_pct,% sat.,1.4255,1.3244110011624035,2,11.8605,16.773279956526093,2,-10.435,-87.9811137810379,-0.8770812546234121,0.5401702011856947,False
+uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 30 °C · 0.7 L,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,temperature,"30 °C vs 22 °C (same day, 24 °P)",30.0,ivcd_1e9_cells_h_L,10⁹ cells·h/L,6487.6279681324995,303.02625323850765,2,6315.58508714,71.4274076119703,2,172.0428809924997,2.7241004375480493,0.7815014734405232,0.5668356304241658,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,mu_batch_h,h⁻¹,0.07346771665588969,0.0025486610128266952,4,0.1477723155323598,0.013987827628399138,8,-0.07430459887647012,-50.28316610508724,-7.390749009222209,5.663618982069377e-07,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,vcd_max_1e6_mL,10⁶ cells/mL,110.28789618,3.8812760880271413,4,187.19429701,9.37957602541832,8,-76.90640083000001,-41.0837306789809,-10.714526378175913,2.4370634316265655e-09,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,viability_end_pct,%,93.35083333333333,1.0227138008839503,4,94.85041666666666,3.8071146586108444,8,-1.4995833333333337,-1.5809981505967685,-0.5379713896794693,0.32560579328261663,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,ethanol_end_pct_ww,% w/w,1.2000000000000002,0.08164965809277258,4,1.2999999999999998,0.10690449676496976,8,-0.09999999999999964,-7.692307692307665,-1.05131496607569,0.1106053118343181,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,extract_consumed_frac,–,0.5173359626384301,0.02126792572213901,4,0.5956961571982791,0.012677382934854476,8,-0.078360194559849,-13.154389803083221,-4.475750288352291,0.0022349906627156537,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,DO_min_pct,% sat.,13.5465,16.559608962774455,4,14.648125,19.050557107995555,8,-1.1016250000000003,-7.520587105858256,-0.06172055949342653,0.9206990600721695,False
+uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,W-34/70 · 24 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,preculture,3 h vs 24 h pre-culture,3.0,ivcd_1e9_cells_h_L,10⁹ cells·h/L,6314.28238034125,84.98148885015524,4,10953.633185985,488.4042221718509,8,-4639.3508056437495,-42.35444739540599,-13.234762024510085,7.084606248122617e-09,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,mu_batch_h,h⁻¹,0.06189852099234687,,1,0.07346771665588969,0.0025486610128266952,4,-0.011569195663542822,-15.74731894517829,,,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,vcd_max_1e6_mL,10⁶ cells/mL,104.86369628,7.3128507568870385,2,110.28789618,3.8812760880271413,4,-5.424199900000005,-4.918218669387986,-0.9265567236668976,0.4741199142885398,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,viability_end_pct,%,93.35666666666667,0.3064129385141733,2,93.35083333333333,1.0227138008839503,4,0.005833333333342239,0.006248828344701529,0.007727006748106998,0.9921468188620366,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,ethanol_end_pct_ww,% w/w,1.25,0.07071067811865482,2,1.2000000000000002,0.08164965809277258,4,0.04999999999999982,4.166666666666652,0.6546536707079748,0.5071279715680346,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,extract_consumed_frac,–,0.48255169514199303,0.006756744077386014,2,0.5173359626384301,0.02126792572213901,4,-0.03478426749643704,-6.723728874179969,-2.204411512775698,0.04244183065297055,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,DO_min_pct,% sat.,32.2695,36.46478959900907,2,13.5465,16.559608962774455,4,18.723,138.21282250027681,0.661152408508595,0.5976663698324846,False
+uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 1 vvm · 22 °C · 0.7 L,aeration,0.5 vs 1 vvm,0.5,ivcd_1e9_cells_h_L,10⁹ cells·h/L,5978.5273374749995,184.05813107407369,2,6314.28238034125,84.98148885015524,4,-335.75504286625073,-5.317390364288799,-2.342181782426609,0.20873255509757377,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,mu_batch_h,h⁻¹,0.04824921438160565,0.0008238887897563486,2,0.06189852099234687,,1,-0.013649306610741221,-22.051102985851344,,,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,vcd_max_1e6_mL,10⁶ cells/mL,129.23039024,1.202596980576339,2,104.86369628,7.3128507568870385,2,24.366693959999992,23.23653926420606,4.649758807393772,0.12530886740444946,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,viability_end_pct,%,97.74833333333333,0.5397581763057228,2,93.35666666666667,0.3064129385141733,2,4.391666666666666,4.704181097582749,10.006577638005984,0.020269492492856943,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,ethanol_end_pct_ww,% w/w,5.800000000000001,0.14142135623730964,2,1.25,0.07071067811865482,2,4.550000000000001,364.00000000000006,40.69643719049614,0.00319457851721324,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,extract_consumed_frac,–,0.5381148608872717,0.010099478253984476,2,0.48255169514199303,0.006756744077386014,2,0.05556316574527864,11.514448359554287,6.466671001595288,0.03205960024121269,False
 uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,DO_min_pct,% sat.,11.8605,16.773279956526093,2,32.2695,36.46478959900907,2,-20.409,-63.245479477525215,-0.7190941326167156,0.5726156027242126,False
+uhlendorff2026 · W-34/70,W-34/70 · 3 h pre · 24 °P · 0.5 vvm · 22 °C · 0.7 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 22 °C · 0.7 L,medium,24 °P vs 12 °P wort,24.0,ivcd_1e9_cells_h_L,10⁹ cells·h/L,6315.58508714,71.4274076119703,2,5978.5273374749995,184.05813107407369,2,337.0577496650003,5.637805610626434,2.41436242264193,0.20181559458819537,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP001, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",other,100 rpm + 0.04 vvm vs 80 rpm + 0.125 vvm,,mu_batch_h,h⁻¹,0.030297144632752487,9.861519888007349e-06,2,0.02993716186427993,0.0018590956062813602,8,0.00035998276847255817,1.2024612423333192,0.2738349493973638,0.6009482359193913,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              600000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP006, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 6e5 · Gln 8 mM","<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,seeding 6e5 vs 4e5 cells/mL,600000.0,mu_batch_h,h⁻¹,0.022912488781660613,0.00011929008209863727,2,0.030297144632752487,9.861519888007349e-06,2,-0.0073846558510918744,-24.374098419521527,-87.24930389782836,0.006882513099231852,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       6
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP007, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 6 mM","<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,glutamine 6 vs 8 mM,6.0,mu_batch_h,h⁻¹,0.031647763838303394,0.0011065356901144023,2,0.030297144632752487,9.861519888007349e-06,2,0.001350619205550907,4.45790922518432,1.726097193539049,0.33425394558528226,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (batch),,mu_batch_h,h⁻¹,0.029142828418639313,0.0011978060604599945,2,0.030297144632752487,9.861519888007349e-06,2,-0.001154316214113174,-3.809983508694448,-1.3628202232171254,0.40297980347757106,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,mu_batch_h,h⁻¹,0.034869490694278915,0.002420420096953771,2,0.029142828418639313,0.0011978060604599945,2,0.005726662275639602,19.650331098188524,2.9988746819249537,0.13750249628883637,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,glucose_depletion_h,h,95.0,0.0,2,117.5,0.0,2,-22.5,-19.14893617021277,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,vcd_max_1e6_mL,10⁶ cells/mL,7.946666666666667,0.09899494936611705,2,3.9283333333333337,0.1956328761282786,2,4.0183333333333335,102.29104794229956,25.91873841082865,0.006026621715034126,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,DO_min_pct,% sat.,16.2235,0.23829498525986634,2,15.7045,4.3734554416387965,2,0.5190000000000019,3.304785252634601,0.1675768176280557,0.894175888897171,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,lactate_peak_gL,g/L,3.527,0.07566042558696041,2,4.1075,0.01767766952966394,2,-0.5804999999999998,-14.132684114424832,-10.565903356172926,0.04761161254725002,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,881.4776125000001,26.461249792102343,2,552.4382499999999,29.281881064585857,2,329.03936250000015,59.56129259695544,11.790472706028815,0.007384192631083183,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,viability_80_h,h,119.0,0.0,2,145.5,4.949747468305833,2,-26.5,-18.21305841924399,-7.571428571428571,0.08359800487376252,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (batch),,diameter_end_um,µm,12.903333333333329,0.028284271247462554,2,15.186666666666664,0.12256517540566604,2,-2.283333333333335,-15.035118525021963,-25.67146034810868,0.017987586244156407,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",feed,fed-batch vs batch (TC-42),,mu_batch_h,h⁻¹,0.027552273331174743,,1,0.030297144632752487,9.861519888007349e-06,2,-0.002744871301577745,-9.059834960851143,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,mu_batch_h,h⁻¹,0.03549498738129418,0.0003936293517391647,2,0.027552273331174743,,1,0.00794271405011944,28.82779926958858,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,glucose_depletion_h,h,115.75,6.010407640085654,2,217.5,,1,-101.75,-46.7816091954023,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,vcd_max_1e6_mL,10⁶ cells/mL,7.013333333333334,0.014142135623731277,2,16.06666666666667,,1,-9.053333333333336,-56.34854771784232,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,DO_min_pct,% sat.,25.451,3.302188668141178,2,11.17,,1,14.281,127.85138764547898,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,lactate_peak_gL,g/L,7.53,0.12020815280171303,2,7.6,,1,-0.0699999999999994,-0.9210526315789447,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,746.9227500000001,9.400866804744979,2,2617.616583333333,,1,-1870.6938333333328,-71.465540264539,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,viability_80_h,h,136.0,0.0,2,285.5,,1,-149.5,-52.364273204903675,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,diameter_end_um,µm,14.198333333333334,0.12020815280170549,2,13.72,,1,0.4783333333333335,3.486394557823136,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",medium,TCX6D vs TC-42 medium (fed-batch),,mu_fedbatch_h,h⁻¹,-0.023360026623495185,0.004484903552609328,2,-0.018964229105775467,,1,-0.004395797517719718,23.179415800144486,,,True
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,mu_batch_h,h⁻¹,0.03461306079316824,,1,0.03549498738129418,0.0003936293517391647,2,-0.0008819265881259419,-2.4846510822841283,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,glucose_depletion_h,h,162.5,,1,115.75,6.010407640085654,2,46.75,40.388768898488124,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,vcd_max_1e6_mL,10⁶ cells/mL,5.946666666666667,,1,7.013333333333334,0.014142135623731277,2,-1.0666666666666664,-15.209125475285168,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,DO_min_pct,% sat.,44.693,,1,25.451,3.302188668141178,2,19.241999999999997,75.6041019999214,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,lactate_peak_gL,g/L,8.58,,1,7.53,0.12020815280171303,2,1.0499999999999998,13.944223107569709,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,ivcd_1e9_cells_h_L,10⁹ cells·h/L,557.65925,,1,746.9227500000001,9.400866804744979,2,-189.26350000000002,-25.339099659235174,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,viability_80_h,h,148.5,,1,136.0,0.0,2,12.5,9.191176470588225,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,diameter_end_um,µm,13.54333333333333,,1,14.198333333333334,0.12020815280170549,2,-0.6550000000000047,-4.613217513792733,,,False
+CHO-K1 · Uhlendorff,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",other,lowered impeller (fed-batch),,mu_fedbatch_h,h⁻¹,-0.0523260348691337,,1,-0.023360026623495185,0.004484903552609328,2,-0.028966008245638518,123.99818164806761,,,True

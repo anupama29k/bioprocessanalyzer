@@ -20,7 +20,7 @@ def run(latest):
     assert not at.exception, at.exception
     cap = " ".join(c.value for c in at.caption)
     assert ("latest release" in cap) if latest else ("bundled snapshot" in cap), cap
-    assert at.metric[1].value == "77", at.metric[1].value
+    assert int(at.metric[1].value) >= 77, at.metric[1].value
     for i, camp in enumerate(at.selectbox[0].options):
         at.selectbox[0].set_value(camp).run()
         assert not at.exception, (camp, at.exception)

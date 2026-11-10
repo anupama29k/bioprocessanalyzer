@@ -76,3 +76,480 @@ uhlendorff2026:EXP013_W-68_pilot-scale,uhlendorff2026,Saccharomyces cerevisiae,W
 uhlendorff2026:EXP014_W-3470_pilot-scale,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),10.0,"brewer's wort, 12 °P",22.0,,1,EXP014,W-34/70 · 24 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,W-34/70 · 24 h pre · 12 °P · 0.5 vvm · 22 °C · 10 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
 uhlendorff2026:EXP015_W-3470_pilot-scale,uhlendorff2026,Saccharomyces pastorianus,W-34/70,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),10.0,"brewer's wort, 12 °P",30.0,,1,EXP015,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 30 °C · 10 L,W-34/70 · 3 h pre · 12 °P · 0.5 vvm · 30 °C · 10 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
 uhlendorff2026:EXP016_W-68_pilot-scale,uhlendorff2026,Saccharomyces cerevisiae,W-68,Batch,stirred-tank bioreactor (4 parallel at 0.7 L; single at 10 L),10.0,"brewer's wort, 12 °P",30.0,,1,EXP016,W-68 · 24 h pre · 12 °P · 0.5 vvm · 30 °C · 10 L,W-68 · 24 h pre · 12 °P · 0.5 vvm · 30 °C · 10 L,none,,,True,,10.5281/zenodo.19690248,CC BY 4.0,aeration 0.5 vvm; pH and DO not controlled; 400 rpm
+schellenberg2021:nu_1.1_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,glutamate 1.2 g/L (low glutamine),medium,glutamate 1.2 g/L (low glutamine),1.2,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value; glutamine near zero at day 0 in these vessels (as measured)
+schellenberg2021:nu_1.1_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · ambr15 · nutrients,standard process,glutamate 1.2 g/L (low glutamine),medium,glutamate 1.2 g/L (low glutamine),1.2,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value; glutamine near zero at day 0 in these vessels (as measured)
+schellenberg2021:nu_1.2_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,glutamate 2 g/L (low glutamine),medium,glutamate 2 g/L (low glutamine),2.0,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value; glutamine near zero at day 0 in these vessels (as measured)
+schellenberg2021:nu_1.2_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · ambr15 · nutrients,standard process,glutamate 2 g/L (low glutamine),medium,glutamate 2 g/L (low glutamine),2.0,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value; glutamine near zero at day 0 in these vessels (as measured)
+schellenberg2021:nu_2_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,glucose 12 g/L (overfeeding),feed,glucose 12 g/L (overfeeding),12.0,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:nu_2_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · ambr15 · nutrients,standard process,glucose 12 g/L (overfeeding),feed,glucose 12 g/L (overfeeding),12.0,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:nu_3_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,decreased feed,feed,decreased feed,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:nu_3_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · ambr15 · nutrients,standard process,decreased feed,feed,decreased feed,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:nu_reference_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · nutrients,standard process,standard process,none,,,True,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_0_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,7.3,1,schellenberg2021 · ambr15 · pH,standard process,pH 7.3 from day 0,pH,pH 7.3 from day 0,7.3,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_0_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,7.3,2,schellenberg2021 · ambr15 · pH,standard process,pH 7.3 from day 0,pH,pH 7.3 from day 0,7.3,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_5_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,7.3,1,schellenberg2021 · ambr15 · pH,standard process,pH 7.3 from day 5,pH,pH 7.3 from day 5,7.3,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_5_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,7.3,2,schellenberg2021 · ambr15 · pH,standard process,pH 7.3 from day 5,pH,pH 7.3 from day 5,7.3,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:ph_reference_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,ambr15 microbioreactor,0.015,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · ambr15 · pH,standard process,standard process,none,,,True,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_co2_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · shake flask,standard process,CO2 limitation,other,CO2 limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_co2_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · shake flask,standard process,CO2 limitation,other,CO2 limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_co2_3,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,3,schellenberg2021 · shake flask,standard process,CO2 limitation,other,CO2 limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_nu_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · shake flask,standard process,nutrient limitation,medium,nutrient limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_nu_2,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,2,schellenberg2021 · shake flask,standard process,nutrient limitation,medium,nutrient limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_nu_3,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,3,schellenberg2021 · shake flask,standard process,nutrient limitation,medium,nutrient limitation,,False,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+schellenberg2021:sf_reference_1,schellenberg2021,Cricetulus griseus (CHO),"CHO DG44, IgG producer",Fed-batch,500 mL shake flask,,"chemically defined, fed-batch (12 d)",,,1,schellenberg2021 · shake flask,standard process,standard process,none,,,True,,10.25835/0066265,CC0 1.0,reference arm has a single vessel: effects get a difference but no p-value
+uhlendorff2026_cho:EXP001_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP001, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP001, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP001; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP001_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP001, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP001, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP001; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP002_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP002, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP002, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP002; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP002_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP002, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP002, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP002; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP003_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP003, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP003, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP003; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP003_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP003, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                      Batch
+medium                                                    TC-42
+agitation_rpm                                                80
+aeration_vvm                                              0.125
+seeding_cells_mL                                         400000
+glutamine_mM                                                  8
+lower_impeller                                 standard (20 mm)
+feeding                                                    none
+events              no multifrequency permittivity scan for R02
+Name: EXP003, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP003; no multifrequency permittivity scan for R02
+uhlendorff2026_cho:EXP004_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                     80
+aeration_vvm                   0.125
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP004, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                     80
+aeration_vvm                   0.125
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP004, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP004
+uhlendorff2026_cho:EXP004_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                     80
+aeration_vvm                   0.125
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP004, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                     80
+aeration_vvm                   0.125
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP004, dtype: object> · TC-42 · 80 rpm · 0.125 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP004
+uhlendorff2026_cho:EXP005_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP005; O2 supply impaired after ~55 h (cylinder closed); visible from ~103.6 h; reopened at 121.35 h
+uhlendorff2026_cho:EXP005_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                            Batch
+medium                                                          TC-42
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                       standard (20 mm)
+feeding                                                          none
+events              O2 supply impaired after ~55 h (cylinder close...
+Name: EXP005, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP005; O2 supply impaired after ~55 h (cylinder closed); visible from ~103.6 h; reopened at 121.35 h
+uhlendorff2026_cho:EXP006_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              600000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP006, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 6e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              600000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP006, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 6e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP006
+uhlendorff2026_cho:EXP006_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              600000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP006, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 6e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              600000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP006, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 6e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP006
+uhlendorff2026_cho:EXP007_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       6
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP007, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 6 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       6
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP007, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 6 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP007
+uhlendorff2026_cho:EXP007_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       6
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP007, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 6 mM","<bound method Series.mode of mode                           Batch
+medium                         TC-42
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       6
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP007, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 6 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP007
+uhlendorff2026_cho:EXP008_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TCX6D,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP008
+uhlendorff2026_cho:EXP008_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TCX6D,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                           Batch
+medium                         TCX6D
+agitation_rpm                    100
+aeration_vvm                    0.04
+seeding_cells_mL              400000
+glutamine_mM                       8
+lower_impeller      standard (20 mm)
+feeding                         none
+events                           NaN
+Name: EXP008, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP008
+uhlendorff2026_cho:EXP009_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TCX6D,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP009
+uhlendorff2026_cho:EXP009_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.65,TCX6D,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                         Batch
+medium                       TCX6D
+agitation_rpm                  100
+aeration_vvm                  0.04
+seeding_cells_mL            400000
+glutamine_mM                     8
+lower_impeller      lowered (6 mm)
+feeding                       none
+events                         NaN
+Name: EXP009, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP009
+uhlendorff2026_cho:EXP010_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TC-42,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP010; R02 feed line blocked; feed effective from ~66 h
+uhlendorff2026_cho:EXP010_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TC-42,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                                                       Fed-batch
+medium                                                         TC-42
+agitation_rpm                                                    100
+aeration_vvm                                                    0.04
+seeding_cells_mL                                              400000
+glutamine_mM                                                       8
+lower_impeller                                      standard (20 mm)
+feeding                                        exponential from 48 h
+events              R02 feed line blocked; feed effective from ~66 h
+Name: EXP010, dtype: object> · TC-42 · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP010; R02 feed line blocked; feed effective from ~66 h; excluded from contrasts: feed line blocked until ~66 h
+uhlendorff2026_cho:EXP011_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TCX6D,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP011; R02 bacterial contamination from ~51 h; R02 feed and O2 enrichment stopped ~67 h; Pen/Strep added to both reactors
+uhlendorff2026_cho:EXP011_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TCX6D,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller","<bound method Series.mode of mode                                                        Fed-batch
+medium                                                          TCX6D
+agitation_rpm                                                     100
+aeration_vvm                                                     0.04
+seeding_cells_mL                                               400000
+glutamine_mM                                                        8
+lower_impeller                                         lowered (6 mm)
+feeding                                         exponential from 48 h
+events              R02 bacterial contamination from ~51 h; R02 fe...
+Name: EXP011, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM · lowered impeller",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP011; R02 bacterial contamination from ~51 h; R02 feed and O2 enrichment stopped ~67 h; Pen/Strep added to both reactors; excluded from contrasts: bacterial contamination from ~51 h
+uhlendorff2026_cho:EXP012_R01,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TCX6D,37.0,7.0,1,uhlendorff2026_cho,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP012
+uhlendorff2026_cho:EXP012_R02,uhlendorff2026_cho,Cricetulus griseus (CHO),CHO-K1 (non-producing),Fed-batch,"DASGIP parallel stirred-tank bioreactor, 1 L max",0.55,TCX6D,37.0,7.0,2,uhlendorff2026_cho,"<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM","<bound method Series.mode of mode                            Fed-batch
+medium                              TCX6D
+agitation_rpm                         100
+aeration_vvm                         0.04
+seeding_cells_mL                   400000
+glutamine_mM                            8
+lower_impeller           standard (20 mm)
+feeding             exponential from 48 h
+events                                NaN
+Name: EXP012, dtype: object> · TCX6D · 100 rpm · 0.04 vvm · seed 4e5 · Gln 8 mM",none,,,True,,10.5281/zenodo.20829178,CC BY 4.0,experiment EXP012
