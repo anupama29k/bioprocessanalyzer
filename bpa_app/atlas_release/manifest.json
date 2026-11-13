@@ -1,20 +1,21 @@
 {
-  "schema_version": "0.4",
-  "datasets": 8,
-  "runs": 171,
-  "observations": 222062,
-  "conditions": 73,
+  "schema_version": "0.5",
+  "datasets": 9,
+  "runs": 172,
+  "observations": 222437,
+  "conditions": 74,
   "contrasts": 30,
   "organisms": [
     "Bacillus subtilis",
     "Cricetulus griseus (CHO)",
     "Escherichia coli",
+    "Homo sapiens (HEK293)",
     "Komagataella phaffii",
     "Saccharomyces cerevisiae",
     "Saccharomyces pastorianus"
   ],
   "perturbations": 31,
-  "observations_sha256_16": "5f0b6e868e796e3a",
+  "observations_sha256_16": "24d20e2f98697fc4",
   "engine": "bioprocessanalyzer@2439bf9",
   "variables": {
     "od600": {
@@ -131,11 +132,11 @@
     },
     "ammonium_gL": {
       "unit": "g/L",
-      "description": "ammonium in broth (mass basis, as reported)"
+      "description": "ammonium in broth, mass basis exactly as reported (basis unstated)"
     },
-    "galactosylation_index": {
-      "unit": "galactoses/glycan",
-      "description": "mean galactose residues per N-glycan on the product (0–2)"
+    "galactosylation_percent": {
+      "unit": "%",
+      "description": "galactosylation index: galactose residues as a share of possible galactosylation sites on the product N-glycans (Schäpertöns et al. 2026, Eq. 7)"
     },
     "afucosylation_percent": {
       "unit": "%",
@@ -144,6 +145,10 @@
     "g0f_percent": {
       "unit": "%",
       "description": "share of the product carrying G0F on both heavy chains"
+    },
+    "dilution_rate_h": {
+      "unit": "1/h",
+      "description": "dilution rate of a continuous culture (feed rate ÷ working volume)"
     },
     "product_activity_AU_mL": {
       "unit": "AU/mL",
@@ -241,9 +246,9 @@
       "description": "product titer ÷ biomass at the last sample",
       "confounded_by_feed": false
     },
-    "galactosylation_end_idx": {
-      "unit": "galactoses/glycan",
-      "description": "mean galactose per N-glycan at the last sample (product quality)",
+    "galactosylation_end_pct": {
+      "unit": "%",
+      "description": "galactosylation index at the last sample (product quality)",
       "confounded_by_feed": false
     },
     "afucosylation_end_pct": {

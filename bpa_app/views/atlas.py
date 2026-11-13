@@ -7,7 +7,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 # The atlas lives in its own repository; this page only reads its release tables.
-ATLAS_REPO = "https://github.com/anupama29k/bioprocess-atlas"
+ATLAS_REPO = "https://github.com/anupama29k/Bioprocess-Atlas"
 REMOTE = "https://raw.githubusercontent.com/anupama29k/bioprocess-atlas/main/release/"
 REL = Path(__file__).parent.parent / "atlas_release"   # bundled snapshot, used offline
 FILES = ["runs.csv", "observations.csv.gz", "phenotypes.csv", "effects.csv", "datasets.csv",
